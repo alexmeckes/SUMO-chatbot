@@ -120,7 +120,7 @@ class MozillaSupportBotMultiTurn:
         if "gpt-5" in model_id:
             # GPT-5 specific settings
             model_args['max_tokens'] = 2000
-            model_args['temperature'] = 0.7  # GPT-5 default temperature
+            model_args['temperature'] = 1  # GPT-5 only supports temperature=1
         else:
             model_args['temperature'] = 0.3
             model_args['max_tokens'] = 500
