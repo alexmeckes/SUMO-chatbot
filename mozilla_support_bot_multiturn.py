@@ -224,25 +224,36 @@ class MozillaSupportBotMultiTurn:
                 
                 agent_trace = loop.run_until_complete(self.agent.run_async(query))
             
-            # Extract the response
+            # Extract the response - the agent_trace should be a string for OpenAI agents
             response_text = None
             
-            # Check for final_output first
-            if hasattr(agent_trace, 'final_output') and agent_trace.final_output:
+            # For OpenAI agents, the response should be the direct output
+            if isinstance(agent_trace, str):
+                response_text = agent_trace
+            # Check various possible attributes
+            elif hasattr(agent_trace, 'output'):
+                response_text = agent_trace.output
+            elif hasattr(agent_trace, 'final_output'):
                 response_text = agent_trace.final_output
+            elif hasattr(agent_trace, 'content'):
+                response_text = agent_trace.content
+            elif hasattr(agent_trace, 'message'):
+                response_text = agent_trace.message
+            # Try to convert to string as last resort
+            else:
+                try:
+                    response_text = str(agent_trace)
+                    # If it's the raw search results, it's wrong
+                    if response_text.startswith("**[") or response_text.startswith("Title:"):
+                        logger.warning("Got tool output instead of agent response")
+                        response_text = "I found relevant information but couldn't format the response properly. Please try again."
+                except:
+                    response_text = "Response generated but could not extract text."
             
-            # If no final_output, look in spans for the LLM output
-            if not response_text and hasattr(agent_trace, 'spans') and agent_trace.spans:
-                for span in reversed(agent_trace.spans):
-                    if hasattr(span, 'attributes') and 'gen_ai.output' in span.attributes:
-                        output = span.attributes['gen_ai.output']
-                        if output:
-                            response_text = output
-                            break
-            
-            # Final fallback
-            if not response_text:
-                response_text = "Response generated but could not extract text."
+            # Log for debugging
+            logger.info(f"Response type: {type(agent_trace)}")
+            if hasattr(agent_trace, '__dict__'):
+                logger.info(f"Response attributes: {list(agent_trace.__dict__.keys())}")
             
             # Update conversation history if using history
             if use_history:
