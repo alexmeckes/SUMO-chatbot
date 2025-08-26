@@ -1,0 +1,22 @@
+{
+  "slug": "built-themes-firefox-alternative-complete-themes",
+  "title": "Built-in themes in Firefox - alternative to complete themes",
+  "summary": "How to enable Firefox's built-in themes.",
+  "url": "https://support.mozilla.org/en-US/kb/built-themes-firefox-alternative-complete-themes",
+  "html": "<p>Complete themes have been replaced by built-in themes with lighter and darker color schemes.\n</p><p>You can enable one of these built-in themes by following these steps:\n</p>\n<ol><li>Click the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">, click <span class=\"for\" data-for=\"not fx140\"><span class=\"menu\">Add-ons and themes</span></span><span class=\"for\" data-for=\"fx140\"><span class=\"menu\">Extensions and themes</span></span> and select <span class=\"menu\">Themes</span>.\n\n</li><li>Click <strong>Enable</strong> next to the desired theme.\n<dl><dt><img alt=\"Fx101EnableTheme\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2022-11-26-02-39-46-9b2ed4.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n</li></ol>\n<p>Additionally, thousands of lightweight themes are available from <a href=\"https://addons.mozilla.org/firefox/themes/\">addons.mozilla.org</a>. For more information, see <a href=\"/en-US/kb/use-themes-change-look-of-firefox\">Use themes to change the look of Firefox</a>.\n</p>",
+  "text": "Complete themes have been replaced by built-in themes with lighter and darker color schemes. You can enable one of these built-in themes by following these steps: Click the menu button , click Add-ons and themes Extensions and themes and select Themes . Click Enable next to the desired theme. Additionally, thousands of lightweight themes are available from addons.mozilla.org . For more information, see Use themes to change the look of Firefox .",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "add-ons-extensions-and-themes",
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1418,
+    "text_bytes": 448,
+    "word_count": 72,
+    "downloaded_at": "2025-08-26T10:38:02.531791"
+  }
+}

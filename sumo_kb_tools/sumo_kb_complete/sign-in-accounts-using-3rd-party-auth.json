@@ -1,0 +1,25 @@
+{
+  "slug": "sign-in-accounts-using-3rd-party-auth",
+  "title": "Sign in to a Mozilla account using 3rd-party authentication",
+  "summary": "You can use your existing Google or Apple ID to sign up for a Mozilla account. Learn more.",
+  "url": "https://support.mozilla.org/en-US/kb/sign-in-accounts-using-3rd-party-auth",
+  "html": "<p>You can use your existing Google or Apple ID to create a Mozilla account. This is a convenient way to <a href=\"/en-US/kb/access-mozilla-services-firefox-account\">access Mozilla’s products and services</a> and eliminates the need for you to remember yet another username and password.\n</p>\n<div class=\"note\"><strong>Note:</strong> You cannot use your Google or Apple ID to sign in to Firefox Sync, because Sync requires a password to encrypt your data. See <a href=\"/en-US/kb/why-cant-i-use-firefox-sync-my-google-or-apple-id\">Why can’t I use Firefox sync with my Google or Apple ID?</a> to learn more.</div>\n<h1 id=\"w_sign-up-for-a-mozilla-account-using-your-existing-google-or-apple-id\">Sign up for a Mozilla account using your existing Google or Apple ID</h1>\n<ol><li>Go to <a href=\"https://accounts.firefox.com\">https://accounts.firefox.com</a>.\n</li><li>Click <strong>Continue with Google</strong> or <strong>Continue with Apple</strong>.\n</li><li>Go through the Google or Apple authentication flow to sign in. You may have to enter authentication codes related to your chosen account, if prompted.\n</li></ol>\n<div class=\"note\"><strong>Note:</strong> If the email address for your current Mozilla account is the same as the one you use for your Google or Apple ID, your Mozilla account will be linked automatically when you sign in using your Google or Apple ID.</div>\n<p>If you no longer want to use your Google or Apple ID to sign in to your Mozilla account, you can unlink it in the <em>Linked Accounts</em> section of your account settings. Before you do, you will be prompted to set a password for your Mozilla account if one has not been set, so that you have a way of signing in. For more information, see <a href=\"/en-US/kb/unlink-google-or-apple-id-your-account\">Unlink your Google or Apple ID from your Mozilla account</a>.\n</p>\n<h1 id=\"w_how-we-use-your-google-or-apple-data\">How we use your Google or Apple data</h1>\n<p>We receive your email address from Google or Apple, which we use for authentication purposes. Additionally, we receive your profile picture, although we don’t use this data for any purpose. We do not provide any data back to Google or Apple.\n</p>\n<h1 id=\"w_related-articles\">Related articles</h1>\n<ul><li><a href=\"/en-US/kb/firefox-accounts-managing-account-data\">Mozilla account - Managing account data</a>\n</li><li><a href=\"/en-US/kb/change-your-firefox-accounts-password\">Change your Mozilla account password</a>\n</li><li><a href=\"/en-US/kb/im-having-problems-my-firefox-account\">I'm having problems with my Mozilla account</a>\n</li></ul>",
+  "text": "You can use your existing Google or Apple ID to create a Mozilla account. This is a convenient way to access Mozilla’s products and services and eliminates the need for you to remember yet another username and password. Note: You cannot use your Google or Apple ID to sign in to Firefox Sync, because Sync requires a password to encrypt your data. See Why can’t I use Firefox sync with my Google or Apple ID? to learn more. Sign up for a Mozilla account using your existing Google or Apple ID Go to https://accounts.firefox.com . Click Continue with Google or Continue with Apple . Go through the Google or Apple authentication flow to sign in. You may have to enter authentication codes related to your chosen account, if prompted. Note: If the email address for your current Mozilla account is the same as the one you use for your Google or Apple ID, your Mozilla account will be linked automatically when you sign in using your Google or Apple ID. If you no longer want to use your Google or Apple ID to sign in to your Mozilla account, you can unlink it in the Linked Accounts section of your account settings. Before you do, you will be prompted to set a password for your Mozilla account if one has not been set, so that you have a way of signing in. For more information, see Unlink your Google or Apple ID from your Mozilla account . How we use your Google or Apple data We receive your email address from Google or Apple, which we use for authentication purposes. Additionally, we receive your profile picture, although we don’t use this data for any purpose. We do not provide any data back to Google or Apple. Related articles Mozilla account - Managing account data Change your Mozilla account password I'm having problems with my Mozilla account",
+  "products": [
+    "firefox",
+    "mozilla-account"
+  ],
+  "topics": [
+    "accounts",
+    "passwords-and-sign-in",
+    "privacy-and-security",
+    "security"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2580,
+    "text_bytes": 1758,
+    "word_count": 316,
+    "downloaded_at": "2025-08-26T10:56:30.099664"
+  }
+}

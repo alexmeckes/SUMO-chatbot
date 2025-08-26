@@ -1,0 +1,23 @@
+{
+  "slug": "how-do-i-delete-my-firefox-account",
+  "title": "How do I delete my Mozilla account?",
+  "summary": "How to delete your Mozilla account.",
+  "url": "https://support.mozilla.org/en-US/kb/how-do-i-delete-my-firefox-account",
+  "html": "<h2 id=\"w_delete-your-mozilla-account\">Delete your Mozilla account</h2>\n<ol><li>Visit <a href=\"https://accounts.firefox.com\">https://accounts.firefox.com</a>.\n</li><li>Sign in to your account if you haven't already.\n</li><li>Scroll to the bottom and click the <span class=\"button\">Delete Account</span> button.\n</li><li>Click the checkboxes to acknowledge you understand the effects of deleting your account, and click <span class=\"button\">Continue</span>.\n</li><li>Enter your Mozilla account password.\n</li><li>Click the <span class=\"button\">Delete Account</span> button. Once you do this, your account will be permanently deleted.\n</li></ol>\n<p>You will return to the sign up page displaying a message saying <em>Account deleted successfully</em>.\n</p>\n<div class=\"note\"><strong>Note:</strong> Any add-ons or themes you have developed will be deleted when you delete your Mozilla account unless another account holder shares ownership of them. Please see <a href=\"/en-US/kb/access-your-add-ons-firefox-accounts\">Access your add-ons with a Mozilla account</a> for more information. \n</div>\n<h2 id=\"w_delete-sync-data\">Delete sync data</h2>\n<p>You can also <a href=\"/en-US/kb/delete-sync-data-firefox-signing-out-firefox-account\">delete synced data</a> on a device you are signed into with your Mozilla account if you don't wish to delete your Mozilla account.\n</p>",
+  "text": "Delete your Mozilla account Visit https://accounts.firefox.com . Sign in to your account if you haven't already. Scroll to the bottom and click the Delete Account button. Click the checkboxes to acknowledge you understand the effects of deleting your account, and click Continue . Enter your Mozilla account password. Click the Delete Account button. Once you do this, your account will be permanently deleted. You will return to the sign up page displaying a message saying Account deleted successfully . Note: Any add-ons or themes you have developed will be deleted when you delete your Mozilla account unless another account holder shares ownership of them. Please see Access your add-ons with a Mozilla account for more information. Delete sync data You can also delete synced data on a device you are signed into with your Mozilla account if you don't wish to delete your Mozilla account.",
+  "products": [
+    "firefox",
+    "mozilla-account"
+  ],
+  "topics": [
+    "account-management",
+    "accounts"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1365,
+    "text_bytes": 894,
+    "word_count": 145,
+    "downloaded_at": "2025-08-26T10:37:51.347758"
+  }
+}

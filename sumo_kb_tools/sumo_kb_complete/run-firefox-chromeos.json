@@ -1,0 +1,22 @@
+{
+  "slug": "run-firefox-chromeos",
+  "title": "Run Firefox on ChromeOS",
+  "summary": "This page explains how to install Firefox on Chromebooks and other devices running ChromeOS.",
+  "url": "https://support.mozilla.org/en-US/kb/run-firefox-chromeos",
+  "html": "<p>Firefox can now be installed on Chromebooks and other devices running ChromeOS. This article will explain the system requirements needed in order to run Firefox on ChromeOS and how to set this up.\n</p>\n<h1 id=\"w_how-to-run-firefox-on-chromeos\">How to run Firefox on ChromeOS</h1>\n<p>To run Firefox on ChromeOS, you first need to ensure that your system meets the following requirements:\n</p>\n<h2 id=\"w_system-requirements\">System Requirements</h2>\n<ul><li><strong>x86 based Chromebook running ChromeOS 80 or later</strong>\n</li></ul>\n<p>You can check this by going to <code>chrome://version</code> in the Chrome browser address bar. <a href=\"https://support.google.com/chromebook/answer/177889\">Follow these instructions from Google</a> if you need to upgrade your OS.\n</p>\n<ul><li><strong>Enable Linux support for ChromeOS</strong>\n</li></ul>\n<p>Visit <a href=\"https://support.google.com/chromebook/answer/9145439\">this Google Support page</a> to learn more about how to set up Linux (Beta) on your Chromebook.\n</p><p>Once you've enabled Linux, check the Terminal to see if you have the correct version:\n</p><p><code>cat /etc/os-release</code>\n</p><p>If the version is not 10 (buster) or above, you'll need to run the update script:\n</p><p><code>sudo bash /opt/google/cros-containers/bin/upgrade_container</code>\n</p><p>This script will take some time depending on how fast your Chromebook and internet speeds are. Once it's done, you'll need to restart your Linux container. You can either right click the <em>Terminal</em> icon and select <strong>Shut down Linux (Beta)</strong> or just restart your Chromebook.\n</p>\n<ul><li><strong>Enable Flatpak</strong>\n</li></ul>\n<p>Flatpak is a new packaging format for Linux. Follow <a href=\"https://flatpak.org/setup/Chrome%20OS/\">these instructions from Flatpak</a> to learn how to add Flatpak support.\n</p>\n<h2 id=\"w_install-firefox\">Install Firefox</h2>\n<p>Once the setup is complete, you can install Firefox from a Terminal:\n</p><p><code>flatpak install firefox</code>\n</p>",
+  "text": "Firefox can now be installed on Chromebooks and other devices running ChromeOS. This article will explain the system requirements needed in order to run Firefox on ChromeOS and how to set this up. How to run Firefox on ChromeOS To run Firefox on ChromeOS, you first need to ensure that your system meets the following requirements: System Requirements x86 based Chromebook running ChromeOS 80 or later You can check this by going to chrome://version in the Chrome browser address bar. Follow these instructions from Google if you need to upgrade your OS. Enable Linux support for ChromeOS Visit this Google Support page to learn more about how to set up Linux (Beta) on your Chromebook. Once you've enabled Linux, check the Terminal to see if you have the correct version: cat /etc/os-release If the version is not 10 (buster) or above, you'll need to run the update script: sudo bash /opt/google/cros-containers/bin/upgrade_container This script will take some time depending on how fast your Chromebook and internet speeds are. Once it's done, you'll need to restart your Linux container. You can either right click the Terminal icon and select Shut down Linux (Beta) or just restart your Chromebook. Enable Flatpak Flatpak is a new packaging format for Linux. Follow these instructions from Flatpak to learn how to add Flatpak support. Install Firefox Once the setup is complete, you can install Firefox from a Terminal: flatpak install firefox",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "install",
+    "installation-and-updates"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2024,
+    "text_bytes": 1447,
+    "word_count": 235,
+    "downloaded_at": "2025-08-26T10:53:14.886525"
+  }
+}

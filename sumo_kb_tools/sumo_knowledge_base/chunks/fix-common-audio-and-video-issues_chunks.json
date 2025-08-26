@@ -1,0 +1,65 @@
+[
+  {
+    "chunk_id": "f1356cbc7191_chunk_0",
+    "doc_id": "f1356cbc7191",
+    "chunk_index": 0,
+    "text": "Sometimes, the video or audio content in a web page cannot be properly downloaded or played in Firefox. This article will help you solve these problems. Table of Contents 1 Check volume control for Firefox in the Volume Mixer 2 Reload the website 3 Allow autoplay of media with sound 4 You may need to install the required PulseAudio software 5 HTML5 audio and video 6 You may need the latest Media Feature Pack for N versions of Windows 7 Digital Rights Management (DRM) protected videos 8 Clear the cache 9 Disable interfering extensions or ad-blocking software 10 Check some Firefox settings 11 Reset preferences 12 Remove specific entries in the hosts file (advanced users) 13 Related links Check volume control for Firefox in the Volume Mixer The Volume Mixer has a specific volume control for Firefox. Check the Volume Mixer and make sure the volume level for Mozilla Firefox is not low or muted. Reload the website Sometimes a change you make in the system settings, such as selecting another sound device in the Volume Mixer , may not be applied correctly in an already open tab. Try reloading the website to see if it solves the issue. Allow autoplay of media with sound Firefox may be blocking media with sound from playing automatically. To allow media autoplay, see Allow or block media autoplay in Firefox . You may need to install the required PulseAudio software If you see a notification saying “ To play audio, you may need to install the required PulseAudio software ”, it means that Firefox cannot find or use PulseAudio. The PulseAudio software is required to play any audio from Firefox. Most Linux distributions now come with PulseAudio pre-installed. Use your system's software package manager and ensure that PulseAudio is correctly installed. HTML5 audio and video Firefox has built in support for open media formats usually associated with MP3, WebM, Ogg, and Wave containers. However, MP4 containers usually depend on platform decoders for AAC and H.264 audio and video streams. For more information, see Audio and video files in Firefox . You may need the latest Media Feature Pack for N versions of Windows Windows N versions are missing Windows Media Player and related software for media functions. You may need to install or update the Media Feature Pack from Microsoft. See Fix video and audio problems on Firefox for Windows N editions for details. Digital Rights Management (DRM) protected videos If you have problems playing DRM-controlled content from Amazon Prime, Netflix, Hulu, Disney+ and other streaming services, make sure that your Firefox Settings General panel Digital Rights Management (DRM) Content setting, Play DRM-controlled content is check marked and that the Google Widevine plugin is enabled. See Watch DRM content on Firefox for more information. Note: Google Widevine ended support for 32-bit Linux on May 31, 2021. Only 64-bit Linux is supported. Note: The current version of Google Widevine is no longer compatible with older Mac operating systems such as OS X 10.9 and",
+    "citation": {
+      "title": "Fix common audio and video issues",
+      "url": "https://support.mozilla.org/en-US/kb/fix-common-audio-and-video-issues",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "audio-and-video, browse"
+    },
+    "metadata": {
+      "chunk_words": 500,
+      "total_chunks": 3,
+      "slug": "fix-common-audio-and-video-issues",
+      "title": "Fix common audio and video issues",
+      "position": "beginning"
+    }
+  },
+  {
+    "chunk_id": "f1356cbc7191_chunk_1",
+    "doc_id": "f1356cbc7191",
+    "chunk_index": 1,
+    "text": "[Continued from Fix common audio and video issues] details. Digital Rights Management (DRM) protected videos If you have problems playing DRM-controlled content from Amazon Prime, Netflix, Hulu, Disney+ and other streaming services, make sure that your Firefox Settings General panel Digital Rights Management (DRM) Content setting, Play DRM-controlled content is check marked and that the Google Widevine plugin is enabled. See Watch DRM content on Firefox for more information. Note: Google Widevine ended support for 32-bit Linux on May 31, 2021. Only 64-bit Linux is supported. Note: The current version of Google Widevine is no longer compatible with older Mac operating systems such as OS X 10.9 and 10.10. Only versions OS X 10.11 and above are supported. Clear the cache See How to clear the Firefox cache . Disable interfering extensions or ad-blocking software Ad-blocking software, such as anti-banner filters of your Internet Security program, or extensions, such as uBlock Origin or Adblock Plus, can prevent audio or video content from playing. If the site works with ad-blocking disabled, you may want to add the site to your whitelist in your adblocker filter. If the video or audio plays when you disable all extensions, then one of your extensions was causing the problem. For more information, see Troubleshoot extensions, themes and hardware acceleration issues to solve common Firefox problems . Check some Firefox settings Cookies: In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . Select the Privacy & Security panel and go to the Cookies and Site Data section. Verify that cookies are enabled and that the site is not blocked in the Exceptions list. History: In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . Select the Privacy & Security panel and go to the History section. Make sure that Firefox is set to Remember history . Pop-up windows: In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . Select the Privacy & Security panel and go to the Permissions section. Allow the website as an exception to the Block pop-up windows setting. Reset preferences See Reset Firefox preferences to troubleshoot and fix problems . Remove specific entries in the hosts file (advanced users) If you use a hosts file , you can temporarily disable it by renaming it Xhosts . Or, you can edit the hosts file to remove specific entries that may be causing videos on certain sites to fail (see this thread for an example). To apply changes to your hosts file, you may need to flush the DNS cache by entering the command: ipconfig /flushdns in the Run dialog box on Windows . Related links I can’t play audio on a Remote Desktop Connection Videos",
+    "citation": {
+      "title": "Fix common audio and video issues",
+      "url": "https://support.mozilla.org/en-US/kb/fix-common-audio-and-video-issues",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "audio-and-video, browse"
+    },
+    "metadata": {
+      "chunk_words": 500,
+      "total_chunks": 3,
+      "slug": "fix-common-audio-and-video-issues",
+      "title": "Fix common audio and video issues",
+      "position": "middle"
+    }
+  },
+  {
+    "chunk_id": "f1356cbc7191_chunk_2",
+    "doc_id": "f1356cbc7191",
+    "chunk_index": 2,
+    "text": "[Continued from Fix common audio and video issues] to troubleshoot and fix problems . Remove specific entries in the hosts file (advanced users) If you use a hosts file , you can temporarily disable it by renaming it Xhosts . Or, you can edit the hosts file to remove specific entries that may be causing videos on certain sites to fail (see this thread for an example). To apply changes to your hosts file, you may need to flush the DNS cache by entering the command: ipconfig /flushdns in the Run dialog box on Windows . Related links I can’t play audio on a Remote Desktop Connection Videos don't have sound on Citrix What to do if Firefox won't play any sounds Manage file types and download actions in Firefox Mixed content blocking in Firefox Based on information from Video or audio does not play (mozillaZine KB)",
+    "citation": {
+      "title": "Fix common audio and video issues",
+      "url": "https://support.mozilla.org/en-US/kb/fix-common-audio-and-video-issues",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "audio-and-video, browse"
+    },
+    "metadata": {
+      "chunk_words": 139,
+      "total_chunks": 3,
+      "slug": "fix-common-audio-and-video-issues",
+      "title": "Fix common audio and video issues",
+      "position": "end"
+    }
+  }
+]

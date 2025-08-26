@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozilla Support Chat - Multi-turn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 900px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .firefox-logo {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+        }
+        
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            background: #4ade80;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        .conversation-info {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+        
+        .controls {
+            padding: 10px 20px;
+            background: #f7f7f7;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .control-btn {
+            padding: 8px 15px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+        
+        .control-btn:hover {
+            background: #f0f0f0;
+        }
+        
+        .control-btn.danger {
+            color: #dc2626;
+            border-color: #dc2626;
+        }
+        
+        .toggle-history {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-left: auto;
+        }
+        
+        .toggle-switch {
+            position: relative;
+            width: 40px;
+            height: 20px;
+            background: #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .toggle-switch.active {
+            background: #4ade80;
+        }
+        
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: white;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+        
+        .toggle-switch.active::after {
+            transform: translateX(20px);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #fafafa;
+        }
+        
+        .message {
+            margin-bottom: 20px;
+            animation: slideIn 0.3s ease;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .message.user {
+            text-align: right;
+        }
+        
+        .message.bot {
+            text-align: left;
+        }
+        
+        .message-bubble {
+            display: inline-block;
+            max-width: 70%;
+            padding: 12px 18px;
+            border-radius: 18px;
+            word-wrap: break-word;
+        }
+        
+        .user .message-bubble {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .bot .message-bubble {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .message-time {
+            font-size: 11px;
+            color: #999;
+            margin-top: 5px;
+        }
+        
+        .typing-indicator {
+            display: none;
+            padding: 15px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: fit-content;
+        }
+        
+        .typing-indicator.show {
+            display: inline-block;
+        }
+        
+        .typing-indicator span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #999;
+            border-radius: 50%;
+            margin: 0 2px;
+            animation: typing 1.4s infinite;
+        }
+        
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes typing {
+            0%, 60%, 100% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .input-container {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            gap: 10px;
+        }
+        
+        #messageInput {
+            flex: 1;
+            padding: 12px 18px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        #messageInput:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        #sendButton {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        #sendButton:hover {
+            transform: scale(1.05);
+        }
+        
+        #sendButton:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .suggestions {
+            margin-top: 10px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .suggestion {
+            padding: 6px 12px;
+            background: #f0f0f0;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .suggestion:hover {
+            background: #e0e0e0;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <svg class="firefox-logo" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9.23 1.6c.26.37.41.81.48 1.25.06.37.1.74.1 1.12 0 .31-.03.62-.08.93.42-.35.92-.61 1.46-.75-.11-.45-.29-.88-.55-1.26-.42-.62-1.02-1.08-1.41-1.29zm5.33 2.66c-.41.34-.91.59-1.44.72.05.31.08.62.08.93 0 1.58-.63 3.01-1.66 4.06.35.42.61.92.75 1.46.45-.11.88-.29 1.26-.55 1.87-1.24 2.38-3.78 1.13-5.65-.37-.55-.84-.98-1.12-1.23-.26.08-.52.16-.77.26zm-7.32 4.9c1.03 1.05 2.48 1.69 4.06 1.66-.13-.54-.38-1.04-.72-1.46-.34-.41-.76-.73-1.23-.97.08-.26.16-.52.26-.77-.25-.28-.68-.75-1.23-1.12-1.87-1.25-4.41-.74-5.65 1.13-.26.38-.44.81-.55 1.26.54.14 1.04.38 1.46.72 1.05-1.03 2.48-1.66 4.06-1.66-.31.05-.62.08-.93.08-.38 0-.75-.04-1.12-.1-.44-.07-.88-.22-1.25-.48.21-.39.67-.99 1.29-1.41z"/>
+                </svg>
+                Mozilla Support Chat
+            </h1>
+            <div class="status">
+                <span class="conversation-info">
+                    <span id="conversationLength">0</span> messages
+                </span>
+                <span class="status-indicator"></span>
+                <span id="modelName">Loading...</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn danger" onclick="clearConversation()">
+                🧹 Clear Memory
+            </button>
+            <button class="control-btn" onclick="clearUIHistory()">
+                📜 Clear UI
+            </button>
+            <div class="toggle-history">
+                <label for="useHistory">Use Context:</label>
+                <div class="toggle-switch active" id="useHistoryToggle" onclick="toggleHistory()"></div>
+            </div>
+        </div>
+        
+        <div class="chat-container" id="chatContainer">
+            <div class="message bot">
+                <div class="message-bubble">
+                    👋 Hello! I'm your Firefox Support Assistant with memory! I can remember our conversation to provide better help. Ask me anything about Firefox!
+                </div>
+                <div class="message-time">System</div>
+            </div>
+            <div class="typing-indicator" id="typingIndicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <div class="input-wrapper">
+                <input type="text" id="messageInput" placeholder="Ask me anything about Firefox..." 
+                       onkeypress="handleKeyPress(event)">
+                <button id="sendButton" onclick="sendMessage()">Send</button>
+            </div>
+            <div class="suggestions">
+                <div class="suggestion" onclick="sendSuggestion('What is Firefox Sync?')">
+                    What is Firefox Sync?
+                </div>
+                <div class="suggestion" onclick="sendSuggestion('How do I clear my cache?')">
+                    How do I clear my cache?
+                </div>
+                <div class="suggestion" onclick="sendSuggestion('Firefox is running slowly')">
+                    Firefox is running slowly
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE = 'http://localhost:8080';
+        let useHistory = true;
+        
+        async function init() {
+            try {
+                const response = await fetch(`${API_BASE}/api/status`);
+                const data = await response.json();
+                document.getElementById('modelName').textContent = data.model || 'Not configured';
+                updateConversationLength(data.conversation_memory_count || 0);
+            } catch (error) {
+                console.error('Failed to fetch status:', error);
+                document.getElementById('modelName').textContent = 'Offline';
+            }
+        }
+        
+        function toggleHistory() {
+            useHistory = !useHistory;
+            const toggle = document.getElementById('useHistoryToggle');
+            toggle.classList.toggle('active', useHistory);
+            
+            if (!useHistory) {
+                addSystemMessage('Context disabled - each question will be independent');
+            } else {
+                addSystemMessage('Context enabled - I will remember our conversation');
+            }
+        }
+        
+        function updateConversationLength(length) {
+            document.getElementById('conversationLength').textContent = length;
+        }
+        
+        async function clearConversation() {
+            if (confirm('Clear conversation memory? The bot will forget all context.')) {
+                try {
+                    const response = await fetch(`${API_BASE}/api/clear_conversation`, {
+                        method: 'POST'
+                    });
+                    const data = await response.json();
+                    if (data.status === 'success') {
+                        addSystemMessage('Conversation memory cleared - starting fresh!');
+                        updateConversationLength(0);
+                    }
+                } catch (error) {
+                    console.error('Failed to clear conversation:', error);
+                }
+            }
+        }
+        
+        function clearUIHistory() {
+            if (confirm('Clear UI display? This only clears the visual chat, not the bot memory.')) {
+                const container = document.getElementById('chatContainer');
+                container.innerHTML = `
+                    <div class="message bot">
+                        <div class="message-bubble">
+                            Chat display cleared. My memory is intact - I still remember our conversation!
+                        </div>
+                        <div class="message-time">System</div>
+                    </div>
+                    <div class="typing-indicator" id="typingIndicator">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                `;
+            }
+        }
+        
+        function addSystemMessage(text) {
+            const container = document.getElementById('chatContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message bot';
+            messageDiv.innerHTML = `
+                <div class="message-bubble">ℹ️ ${text}</div>
+                <div class="message-time">System</div>
+            `;
+            
+            const typingIndicator = document.getElementById('typingIndicator');
+            container.insertBefore(messageDiv, typingIndicator);
+            container.scrollTop = container.scrollHeight;
+        }
+        
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+        
+        function sendSuggestion(text) {
+            document.getElementById('messageInput').value = text;
+            sendMessage();
+        }
+        
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            const sendButton = document.getElementById('sendButton');
+            sendButton.disabled = true;
+            input.value = '';
+            
+            // Add user message
+            const container = document.getElementById('chatContainer');
+            const userMessageDiv = document.createElement('div');
+            userMessageDiv.className = 'message user';
+            userMessageDiv.innerHTML = `
+                <div class="message-bubble">${escapeHtml(message)}</div>
+                <div class="message-time">${new Date().toLocaleTimeString()}</div>
+            `;
+            
+            const typingIndicator = document.getElementById('typingIndicator');
+            container.insertBefore(userMessageDiv, typingIndicator);
+            
+            // Show typing indicator
+            typingIndicator.classList.add('show');
+            container.scrollTop = container.scrollHeight;
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/chat`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        query: message,
+                        use_history: useHistory
+                    })
+                });
+                
+                const data = await response.json();
+                
+                // Hide typing indicator
+                typingIndicator.classList.remove('show');
+                
+                // Add bot response
+                const botMessageDiv = document.createElement('div');
+                botMessageDiv.className = 'message bot';
+                
+                const responseHtml = formatResponse(data.response || 'Sorry, I encountered an error.');
+                botMessageDiv.innerHTML = `
+                    <div class="message-bubble">${responseHtml}</div>
+                    <div class="message-time">${new Date().toLocaleTimeString()}</div>
+                `;
+                
+                container.insertBefore(botMessageDiv, typingIndicator);
+                
+                // Update conversation length
+                if (data.conversation_info) {
+                    updateConversationLength(data.conversation_info.conversation_length);
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                typingIndicator.classList.remove('show');
+                
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'message bot';
+                errorDiv.innerHTML = `
+                    <div class="message-bubble">❌ Sorry, I encountered an error. Please try again.</div>
+                    <div class="message-time">Error</div>
+                `;
+                container.insertBefore(errorDiv, typingIndicator);
+            } finally {
+                sendButton.disabled = false;
+                container.scrollTop = container.scrollHeight;
+            }
+        }
+        
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return text.replace(/[&<>"']/g, m => map[m]);
+        }
+        
+        function formatResponse(text) {
+            // Convert markdown-style links to HTML
+            text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+            
+            // Convert **bold** to <strong>
+            text = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+            
+            // Convert numbered lists
+            text = text.replace(/^\d+\.\s+(.+)$/gm, '<li>$1</li>');
+            text = text.replace(/(<li>.*<\/li>\n?)+/g, '<ol>$&</ol>');
+            
+            // Convert bullet points
+            text = text.replace(/^[•·]\s+(.+)$/gm, '<li>$1</li>');
+            text = text.replace(/(<li>.*<\/li>\n?)+/g, function(match) {
+                if (!match.includes('<ol>')) {
+                    return '<ul>' + match + '</ul>';
+                }
+                return match;
+            });
+            
+            // Convert line breaks
+            text = text.replace(/\n/g, '<br>');
+            
+            return text;
+        }
+        
+        // Initialize on load
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "slug": "firefox-macos-session-resume-feature",
+  "title": "Firefox macOS session resume feature",
+  "summary": "Learn about Firefox’s macOS session resume feature, which reopens Firefox after system restarts for continued browsing.",
+  "url": "https://support.mozilla.org/en-US/kb/firefox-macos-session-resume-feature",
+  "html": "<p>Starting with <a href=\"/en-US/kb/find-what-version-firefox-you-are-using\">Firefox version</a> 132, macOS users will experience automatic session resume. When Firefox is active at the time of a macOS restart due to a system update or shutdown, the browser will automatically reopen upon system startup, restoring any open tabs and active sessions. This feature is designed to enhance browsing continuity, saving users the step of manually reopening Firefox.\n</p>\n<h1 id=\"w_how-it-works\">How it works</h1>\n<p>The session resume feature detects when Firefox is active during a macOS system restart. After such a restart, Firefox automatically launches, returning to the last browsing session.\n</p>\n<h1 id=\"w_additional-information\">Additional information</h1>\n<ul><li>This feature is enabled by default; no setup is needed.\n</li><li>For manual session management options, see <a href=\"/en-US/kb/restore-previous-session\">Restore previous session - Configure when Firefox shows your most recent tabs and windows</a>.\n</li></ul>",
+  "text": "Starting with Firefox version 132, macOS users will experience automatic session resume. When Firefox is active at the time of a macOS restart due to a system update or shutdown, the browser will automatically reopen upon system startup, restoring any open tabs and active sessions. This feature is designed to enhance browsing continuity, saving users the step of manually reopening Firefox. How it works The session resume feature detects when Firefox is active during a macOS system restart. After such a restart, Firefox automatically launches, returning to the last browsing session. Additional information This feature is enabled by default; no setup is needed. For manual session management options, see Restore previous session - Configure when Firefox shows your most recent tabs and windows .",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "browse"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1026,
+    "text_bytes": 802,
+    "word_count": 124,
+    "downloaded_at": "2025-08-26T10:57:29.323413"
+  }
+}

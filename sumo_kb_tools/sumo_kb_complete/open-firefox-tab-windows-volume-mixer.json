@@ -1,0 +1,22 @@
+{
+  "slug": "open-firefox-tab-windows-volume-mixer",
+  "title": "Why is each open Firefox tab showing up in the Windows volume mixer?",
+  "summary": "If each open Firefox tab shows up in your Windows volume mixer, a fix will be released in Firefox version 76. Here is a workaround in the meantime.",
+  "url": "https://support.mozilla.org/en-US/kb/open-firefox-tab-windows-volume-mixer",
+  "html": "<div class=\"for\" data-for=\"mac,linux\"><div class=\"warning\">This article applies to Windows only.</div></div>\n<p>If your Windows volume mixer has a slider for each open Firefox tab, this is a <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1430907\">bug</a> related to multiprocess (E10s) that will be fixed in <a href=\"/en-US/kb/find-what-version-firefox-you-are-using\">Firefox version</a> 76.\n</p><p>In the meantime, in Firefox versions previous to 76, you can set the number of Firefox processes to \"1\" to resolve the issue:\n</p>\n<div class=\"warning\">Setting the number of processes to <em>1</em> effectively turns off the multiprocess feature, which may significantly affect Firefox's performance.</div>\n<ol><li><span class=\"for\" data-for=\"mac\">In the Menu bar at the top of the screen, click <span class=\"menu\">Firefox</span> and then select <span class=\"menu\">Preferences</span> or <span class=\"menu\">Settings</span>, depending on your macOS version.</span><span class=\"for\" data-for=\"win,linux\">Click the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> and select <span class=\"menu\">Settings</span>.</span>\n\n</li><li>In the <em>General</em> panel, scroll down to <em>Performance</em>.\n</li><li>Remove the check mark next to <em>Use recommended performance settings</em>.\n</li><li>Choose <strong>1</strong> in the drop-down menu for <em>Content process limit</em>.\n<dl><dt><img alt=\"set e10s to 1\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2019-08-01-09-51-55-aa8e8f.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n</li></ol>",
+  "text": "This article applies to Windows only. If your Windows volume mixer has a slider for each open Firefox tab, this is a bug related to multiprocess (E10s) that will be fixed in Firefox version 76. In the meantime, in Firefox versions previous to 76, you can set the number of Firefox processes to \"1\" to resolve the issue: Setting the number of processes to 1 effectively turns off the multiprocess feature, which may significantly affect Firefox's performance. In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . In the General panel, scroll down to Performance . Remove the check mark next to Use recommended performance settings . Choose 1 in the drop-down menu for Content process limit .",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "audio-and-video",
+    "browse"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1971,
+    "text_bytes": 812,
+    "word_count": 140,
+    "downloaded_at": "2025-08-26T10:51:43.658357"
+  }
+}

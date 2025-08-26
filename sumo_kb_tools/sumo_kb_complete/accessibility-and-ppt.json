@@ -1,0 +1,21 @@
+{
+  "slug": "accessibility-and-ppt",
+  "title": "Accessibility not available during multi-process support",
+  "summary": "Accessibility features are not yet fully supported in multiprocess Firefox. Restart Firefox to change it back to single process mode.",
+  "url": "https://support.mozilla.org/en-US/kb/accessibility-and-ppt",
+  "html": "<p>Accessibility features are not yet fully supported in multiprocess Firefox. If third-party software (screen readers, Windows touchscreen software or anti-spyware) requests access to Firefox's accessibility features, Firefox limits this access to web content to prevent stability issues. Restarting Firefox will change it back to single process mode and re-enable accessibility features automatically.\n</p>\n<h1 id=\"w_how-to-re-enable-firefoxs-accessibility-features\">How to re-enable Firefox's accessibility features</h1>\n<ol><li>To fully enable accessibility features after having received a notification, restart Firefox. It will restart in single process mode.\n</li><li>To force enable electrolysis for testing purposes, go to the <a href=\"/en-US/kb/about-config-editor-firefox\">Configuration Editor</a> (<em>about:config</em> page) and set the <span class=\"pref\">browser.tabs.remote.force-enable</span> preference to <span class=\"pref\"><strong>true</strong></span>. <div class=\"warning\"><strong>Warning:</strong> These instructions are for experienced Firefox users. Changing settings in the <a href=\"/en-US/kb/about-config-editor-firefox\">Configuration Editor</a> (<em>about:config</em>) can have serious effects on your browser’s stability, security and performance.\n<br><strong>Only proceed if you are comfortable with advanced settings and understand the potential impacts</strong>.</div>\n</li><li>Avoid running third-party software that request accessibility features within Firefox.\n</li></ol>",
+  "text": "Accessibility features are not yet fully supported in multiprocess Firefox. If third-party software (screen readers, Windows touchscreen software or anti-spyware) requests access to Firefox's accessibility features, Firefox limits this access to web content to prevent stability issues. Restarting Firefox will change it back to single process mode and re-enable accessibility features automatically. How to re-enable Firefox's accessibility features To fully enable accessibility features after having received a notification, restart Firefox. It will restart in single process mode. To force enable electrolysis for testing purposes, go to the Configuration Editor ( about:config page) and set the browser.tabs.remote.force-enable preference to true . Warning: These instructions are for experienced Firefox users. Changing settings in the Configuration Editor ( about:config ) can have serious effects on your browser’s stability, security and performance. Only proceed if you are comfortable with advanced settings and understand the potential impacts . Avoid running third-party software that request accessibility features within Firefox.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "accessibility"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1505,
+    "text_bytes": 1144,
+    "word_count": 153,
+    "downloaded_at": "2025-08-26T10:37:07.904216"
+  }
+}

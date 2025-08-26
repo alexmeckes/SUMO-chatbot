@@ -1,0 +1,22 @@
+{
+  "slug": "captive-portal",
+  "title": "Captive portal detection",
+  "summary": "Description of how Firefox detects captive portal networks.",
+  "url": "https://support.mozilla.org/en-US/kb/captive-portal",
+  "html": "<p>Firefox's <a href=\"https://wikipedia.org/wiki/Captive_portal\">captive portal</a> detector tests whether the network connection requires you to log in or accept the network's terms before permitting you to use the network. This is most often the case when using a public Wi-Fi hotspot, but it can also be a corporate guest network that prompts you to agree to its acceptable use policy. To learn more, see <a href=\"https://firefox-source-docs.mozilla.org/networking/captive_portals.html\">Captive Portal Detection</a> in <em>Firefox Source Docs</em>.\n</p>\n<div id=\"toc\"><h2>Table of Contents</h2><ul><li class=\"toclevel-1\"><a href=\"#w_captive-portal-checks\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Captive portal checks</span></a></li><li class=\"toclevel-1\"><a href=\"#w_what-to-do-after-the-captive-portal-check\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">What to do after the captive portal check</span></a></li><li class=\"toclevel-1\"><a href=\"#w_how-captive-portals-work\"><span class=\"tocnumber\">3</span> <span class=\"toctext\">How captive portals work</span></a></li></ul></div>\n<h1 id=\"w_captive-portal-checks\">Captive portal checks</h1>\n<p>Firefox tests if the connection is a captive portal by regularly connecting to <code>http://detectportal.firefox.com/canonical.html</code>. Firefox will also make connections to this URL to check if your current network supports certain technologies such as IPv6.\n</p>\n<h1 id=\"w_what-to-do-after-the-captive-portal-check\">What to do after the captive portal check</h1>\n<p>If the page was left open by Firefox, you may simply close it.\n</p><p><strong>If this happens frequently, please file a <a href=\"https://bugzilla.mozilla.org/enter_bug.cgi?product=Core&amp;component=Networking&amp;short_desc=Captive+portal+tab+was+left+open&amp;comment=Steps+to+reproduce&amp;blocked=1198508&amp;bug_type=defect\">Networking bug</a></strong> and describe your case (requires creating a Bugzilla account).\n</p>\n<h1 id=\"w_how-captive-portals-work\">How captive portals work</h1>\n<p>Most captive portals redirect you to a login page or a page where you must agree to an <a href=\"https://wikipedia.org/wiki/Acceptable_use_policy\">Acceptable Use Policy (AUP)</a>. Firefox will make automatic connections to detect these redirects and will notify you by indicating that you may need to log into the network. After doing this, the tab should be closed automatically by Firefox. Occasionally, it will be kept around to display a message from the network's owners.\n</p>",
+  "text": "Firefox's captive portal detector tests whether the network connection requires you to log in or accept the network's terms before permitting you to use the network. This is most often the case when using a public Wi-Fi hotspot, but it can also be a corporate guest network that prompts you to agree to its acceptable use policy. To learn more, see Captive Portal Detection in Firefox Source Docs . Table of Contents 1 Captive portal checks 2 What to do after the captive portal check 3 How captive portals work Captive portal checks Firefox tests if the connection is a captive portal by regularly connecting to http://detectportal.firefox.com/canonical.html . Firefox will also make connections to this URL to check if your current network supports certain technologies such as IPv6. What to do after the captive portal check If the page was left open by Firefox, you may simply close it. If this happens frequently, please file a Networking bug and describe your case (requires creating a Bugzilla account). How captive portals work Most captive portals redirect you to a login page or a page where you must agree to an Acceptable Use Policy (AUP) . Firefox will make automatic connections to detect these redirects and will notify you by indicating that you may need to log into the network. After doing this, the tab should be closed automatically by Firefox. Occasionally, it will be kept around to display a message from the network's owners.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "advanced-and-experimental-features",
+    "performance-and-connectivity"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2519,
+    "text_bytes": 1449,
+    "word_count": 243,
+    "downloaded_at": "2025-08-26T10:54:02.245640"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "how-it-works-firefox-weather",
+  "title": "How it works - Firefox Weather",
+  "summary": "Explains how the weather features in the address bar and New Tab page work.",
+  "url": "https://support.mozilla.org/en-US/kb/how-it-works-firefox-weather",
+  "html": "<div class=\"note\"><strong>Note:</strong> At the moment, weather updates are only available to users in Brazil, Argentina, Chile, Colombia, Ecuador, Mexico, Australia, New Zealand, South Africa, India, Bangladesh, Pakistan, Turkey, Indonesia, Philippines, Malaysia, Vietnam, Thailand, Japan, Taiwan, Egypt, Canada and the U.S. We are working to bring it to more countries soon.</div>\n<p>Weather features in the Firefox address bar and <a href=\"/en-US/kb/about-new-tab-page\">New Tab page</a> show the current weather of the closest city or town.\n</p><p>Firefox uses your IP address to determine the closest city or town. Firefox then separately fetches current weather conditions for that location. Weather conditions are sourced from <a href=\"https://accuweather.com/\">AccuWeather</a> (a 3rd party partner) without sharing your device’s IP address or other identifiable information with AccuWeather. If you click on the weather results to see more information, you will navigate directly to the AccuWeather website and your information will be processed according to <a href=\"https://www.accuweather.com/en/privacy\">AccuWeather's Privacy Policy</a>.\n</p><p>If you change your location manually by searching for a city, Firefox uses your IP address to detect your country and suggest cities matching your search query from AccuWeather. Your search query and country are shared with AccuWeather, but your device’s IP address and other identifiable information are not. Once selected, Firefox will remember your preferred location.\n</p><p>These features can be disabled or customized by following these instructions:\n</p>\n<ul><li> <a href=\"/en-US/kb/customize-items-on-firefox-new-tab-page#w_weather\">New Tab page</a>\n</li><li> <a href=\"/en-US/kb/get-your-local-weather-forecast-firefox-address-bar\">Firefox address bar</a>\n</li></ul>",
+  "text": "Note: At the moment, weather updates are only available to users in Brazil, Argentina, Chile, Colombia, Ecuador, Mexico, Australia, New Zealand, South Africa, India, Bangladesh, Pakistan, Turkey, Indonesia, Philippines, Malaysia, Vietnam, Thailand, Japan, Taiwan, Egypt, Canada and the U.S. We are working to bring it to more countries soon. Weather features in the Firefox address bar and New Tab page show the current weather of the closest city or town. Firefox uses your IP address to determine the closest city or town. Firefox then separately fetches current weather conditions for that location. Weather conditions are sourced from AccuWeather (a 3rd party partner) without sharing your device’s IP address or other identifiable information with AccuWeather. If you click on the weather results to see more information, you will navigate directly to the AccuWeather website and your information will be processed according to AccuWeather's Privacy Policy . If you change your location manually by searching for a city, Firefox uses your IP address to detect your country and suggest cities matching your search query from AccuWeather. Your search query and country are shared with AccuWeather, but your device’s IP address and other identifiable information are not. Once selected, Firefox will remember your preferred location. These features can be disabled or customized by following these instructions: New Tab page Firefox address bar",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "browse"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1830,
+    "text_bytes": 1446,
+    "word_count": 219,
+    "downloaded_at": "2025-08-26T10:59:42.924943"
+  }
+}

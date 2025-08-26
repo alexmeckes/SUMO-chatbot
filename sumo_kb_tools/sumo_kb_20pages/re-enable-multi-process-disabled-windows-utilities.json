@@ -1,0 +1,21 @@
+{
+  "slug": "re-enable-multi-process-disabled-windows-utilities",
+  "title": "Re-enable multi-process support disabled by Windows utilities",
+  "summary": "Some Windows accessibility tools might turn off Firefox's multi-process support. Here's how to re-enable it.",
+  "url": "https://support.mozilla.org/en-US/kb/re-enable-multi-process-disabled-windows-utilities",
+  "html": "<div class=\"for\" data-for=\"not win\"><div class=\"warning\">This article applies to Windows computers only.</div></div>\n<p>Some accessibility tools on Windows might turn off Firefox's multi-process support. Follow these steps to re-enable it:\n</p><div class=\"warning\"><strong>Warning:</strong> These instructions are for experienced Firefox users. Changing settings in the <a href=\"/en-US/kb/about-config-editor-firefox\">Configuration Editor</a> (<em>about:config</em>) can have serious effects on your browser’s stability, security and performance.\n<br><strong>Only proceed if you are comfortable with advanced settings and understand the potential impacts</strong>.</div>\n<p></p>\n<ol><li>Type <strong>about:config</strong> in the <a href=\"/en-US/kb/search-firefox-address-bar\">address bar</a> and press <span class=\"for\" data-for=\"win,linux\"><span class=\"key\">Enter</span></span><span class=\"for\" data-for=\"mac\"><span class=\"key\">Return</span></span>.<br>A warning page may appear. Click <span class=\"button\">Accept the Risk and Continue</span> to go to the <em>about:config</em> page.\n\n</li><li> Toggle the <span class=\"pref\">accessibility.loadedInLastSession</span> preference to change its value to <span class=\"pref\"><strong>false</strong></span>.\n</li><li> Toggle the <span class=\"pref\">accessibility.lastLoadDate</span> preference to reset its value to the default setting.\n</li><li>Restart Firefox.\n</li></ol>",
+  "text": "This article applies to Windows computers only. Some accessibility tools on Windows might turn off Firefox's multi-process support. Follow these steps to re-enable it: Warning: These instructions are for experienced Firefox users. Changing settings in the Configuration Editor ( about:config ) can have serious effects on your browser’s stability, security and performance. Only proceed if you are comfortable with advanced settings and understand the potential impacts . Type about:config in the address bar and press Enter Return . A warning page may appear. Click Accept the Risk and Continue to go to the about:config page. Toggle the accessibility.loadedInLastSession preference to change its value to false . Toggle the accessibility.lastLoadDate preference to reset its value to the default setting. Restart Firefox.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1415,
+    "text_bytes": 823,
+    "word_count": 120,
+    "downloaded_at": "2025-08-26T10:37:28.345973"
+  }
+}

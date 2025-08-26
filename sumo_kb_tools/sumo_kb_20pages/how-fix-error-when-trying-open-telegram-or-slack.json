@@ -1,0 +1,22 @@
+{
+  "slug": "how-fix-error-when-trying-open-telegram-or-slack",
+  "title": "How to fix an error when trying to open Telegram or Slack on Firefox",
+  "summary": "How to fix the NS_ERROR_DOM_ABORT_ERR while trying to open web.telegram.org or app.slack.com on Firefox 87 or above.",
+  "url": "https://support.mozilla.org/en-US/kb/how-fix-error-when-trying-open-telegram-or-slack",
+  "html": "<div class=\"note\"><strong>Note:</strong> This article describes a problem that has been fixed since at least <a href=\"/en-US/kb/find-what-version-firefox-you-are-using\">Firefox version</a> 93. You should <a href=\"/en-US/kb/update-firefox-latest-release\">update Firefox</a> to resolve this issue.</div>\n<p>If you’re getting an <strong>NS_ERROR_DOM_ABORT_ERR</strong> while trying to open <a href=\"http://web.telegram.org\">web.telegram.org</a> or <a href=\"http://app.slack.com\">app.slack.com</a> on Firefox 87 or above, or if these pages aren’t loading at all, here’s a workaround you can try:\n</p>\n<ol><li>Enter <strong>about:serviceworkers</strong> in the address bar.\n</li><li>Click <span class=\"button\">Unregister</span> for the site you’re trying to visit.\n</li><li>Reload the site.\n</li><li>If the site still isn’t loading properly, clear the storage for that site (see <a href=\"/en-US/kb/clear-cookies-and-site-data-firefox#w_clear-cookies-for-any-website\">Clear cookies and site data</a> for more information.)\n</li></ol>",
+  "text": "Note: This article describes a problem that has been fixed since at least Firefox version 93. You should update Firefox to resolve this issue. If you’re getting an NS_ERROR_DOM_ABORT_ERR while trying to open web.telegram.org or app.slack.com on Firefox 87 or above, or if these pages aren’t loading at all, here’s a workaround you can try: Enter about:serviceworkers in the address bar. Click Unregister for the site you’re trying to visit. Reload the site. If the site still isn’t loading properly, clear the storage for that site (see Clear cookies and site data for more information.)",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "crashing-and-slow-performance",
+    "performance-and-connectivity"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1027,
+    "text_bytes": 587,
+    "word_count": 95,
+    "downloaded_at": "2025-08-26T10:54:08.937554"
+  }
+}

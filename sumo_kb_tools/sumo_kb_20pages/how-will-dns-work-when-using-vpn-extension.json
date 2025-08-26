@@ -1,0 +1,23 @@
+{
+  "slug": "how-will-dns-work-when-using-vpn-extension",
+  "title": "How will DNS work when using the VPN extension?",
+  "summary": "Learn how your DNS (Domain Name System) settings work while using your Mozilla VPN extension.",
+  "url": "https://support.mozilla.org/en-US/kb/how-will-dns-work-when-using-vpn-extension",
+  "html": "<p>In the context of Firefox, DNS (<a href=\"https://wikipedia.org/wiki/Domain_Name_System\">Domain Name System</a>) queries are critical to how browsers translate website names into IP addresses. When using the Mozilla VPN browser extension, all DNS queries originated in Firefox are securely routed through the Mozilla VPN connection, enhancing their privacy and protection.\n</p><p>If you enable any privacy features in the Mozilla VPN application such as blocking ads, ad trackers or malware – or use the <strong>Custom DNS</strong> option, your device will utilize specific DNS resolvers designed to block these threats. These settings, configured in the Mozilla VPN application, will affect your browsing experience in Firefox.\n</p><p>However, if Firefox is set to use <a href=\"/en-US/kb/dns-over-https-doh-faqs\">DNS over HTTPS (DoH)</a>, the DNS resolver specified in Firefox will take priority over the resolver configured in the Mozilla VPN application.\n</p>\n<h1 id=\"w_common-questions\">Common questions</h1>\n<h2 id=\"w_do-client-dns-settings-apply-to-the-extension-if-the-vpn-client-is-turned-off\">Do client DNS settings apply to the extension if the VPN client is turned off?</h2>\n<p>Yes. DNS preferences configured in the Mozilla VPN client will still apply to the Mozilla VPN extension, even if the Mozilla VPN client is turned off while the Mozilla VPN extension is turned on. This ensures consistent DNS behavior across both components, regardless of the client’s status.\n</p>\n<h1 id=\"w_related-articles\">Related articles</h1>\n<ul><li><a href=\"/en-US/kb/how-do-i-change-my-dns-settings\">How do I change my DNS settings?</a>\n</li><li><a href=\"/en-US/kb/how-do-i-change-my-privacy-features\">How do I change my Privacy features?</a>\n</li></ul>",
+  "text": "In the context of Firefox, DNS ( Domain Name System ) queries are critical to how browsers translate website names into IP addresses. When using the Mozilla VPN browser extension, all DNS queries originated in Firefox are securely routed through the Mozilla VPN connection, enhancing their privacy and protection. If you enable any privacy features in the Mozilla VPN application such as blocking ads, ad trackers or malware – or use the Custom DNS option, your device will utilize specific DNS resolvers designed to block these threats. These settings, configured in the Mozilla VPN application, will affect your browsing experience in Firefox. However, if Firefox is set to use DNS over HTTPS (DoH) , the DNS resolver specified in Firefox will take priority over the resolver configured in the Mozilla VPN application. Common questions Do client DNS settings apply to the extension if the VPN client is turned off? Yes. DNS preferences configured in the Mozilla VPN client will still apply to the Mozilla VPN extension, even if the Mozilla VPN client is turned off while the Mozilla VPN extension is turned on. This ensures consistent DNS behavior across both components, regardless of the client’s status. Related articles How do I change my DNS settings? How do I change my Privacy features?",
+  "products": [
+    "firefox",
+    "mozilla-vpn"
+  ],
+  "topics": [
+    "add-ons-extensions-and-themes",
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1751,
+    "text_bytes": 1295,
+    "word_count": 212,
+    "downloaded_at": "2025-08-26T10:57:38.142179"
+  }
+}

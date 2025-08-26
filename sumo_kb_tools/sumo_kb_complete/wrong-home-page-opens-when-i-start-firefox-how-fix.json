@@ -1,0 +1,24 @@
+{
+  "slug": "wrong-home-page-opens-when-i-start-firefox-how-fix",
+  "title": "Wrong home page opens when I start Firefox - How to fix",
+  "summary": "Learn how to restore your home page if a third-party software vendor changes it so that their page always opens when you launch Firefox.",
+  "url": "https://support.mozilla.org/en-US/kb/wrong-home-page-opens-when-i-start-firefox-how-fix",
+  "html": "<div class=\"for\" data-for=\"mac,linux\"><div class=\"warning\"><strong>Mac and Linux users:</strong> This article applies to Windows only.</div></div>\n<p>Some third-party software providers might change Firefox's shortcut so that the browser always opens their page. To prevent this from happening, make sure you decline any options to set your site preferences when installing or updating a third-party application.\n</p><p>If the wrong home page keeps opening even when you've taken steps to <a href=\"/en-US/kb/remove-toolbar-has-taken-over-your-firefox-search\">remove a toolbar that's taken over Firefox</a> and <a href=\"/en-US/kb/how-to-set-the-home-page\">restored your home page</a>, try checking the Firefox shortcut:\n</p>\n<ol><li>Right-click on the Firefox icon on your desktop or task bar, then click on <span class=\"button\">Properties</span>. \n</li><li>In the <em>Target:</em> field, you'll see the web address that the software provider keeps telling Firefox to load when you open the browser (for example, \"http://bitable.com\"). Delete that web address and click <span class=\"button\">OK</span> to save your changes:\n<dl><dt><img alt=\"hijacked shortcut\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2014-10-08-19-07-44-8ff0f7.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n</li></ol>",
+  "text": "Mac and Linux users: This article applies to Windows only. Some third-party software providers might change Firefox's shortcut so that the browser always opens their page. To prevent this from happening, make sure you decline any options to set your site preferences when installing or updating a third-party application. If the wrong home page keeps opening even when you've taken steps to remove a toolbar that's taken over Firefox and restored your home page , try checking the Firefox shortcut: Right-click on the Firefox icon on your desktop or task bar, then click on Properties . In the Target: field, you'll see the web address that the software provider keeps telling Firefox to load when you open the browser (for example, \"http://bitable.com\"). Delete that web address and click OK to save your changes:",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "browse",
+    "customization",
+    "home-screen",
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1456,
+    "text_bytes": 814,
+    "word_count": 133,
+    "downloaded_at": "2025-08-26T11:03:42.714045"
+  }
+}

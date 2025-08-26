@@ -1,0 +1,23 @@
+{
+  "slug": "accounts-blocked",
+  "title": "My sign in was blocked for security reasons on Mozilla account",
+  "summary": "Sign-in attempts are blocked for security reasons if unusual activity is detected on your Mozilla account. Learn how to regain access.",
+  "url": "https://support.mozilla.org/en-US/kb/accounts-blocked",
+  "html": "<p>If sign-in attempts on your Mozilla account are blocked and your account has been locked for security reasons, it means unusual activity was detected on your account. This security measure prevents access until we verify your identity. To proceed, we’ll send you an email to confirm it’s you trying to sign in or to report unfamiliar activity.\n</p>\n<div id=\"toc\"><h2>Table of Contents</h2><ul><li class=\"toclevel-1\"><a href=\"#w_verification-e-mail\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">Verification E-mail</span></a></li><li class=\"toclevel-1\"><a href=\"#w_i-havent-received-the-verification-email-what-should-i-do\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">I haven’t received the verification email. What should I do?</span></a></li></ul></div>\n<h1 id=\"w_verification-e-mail\">Verification E-mail</h1>\n<p>If your Mozilla account blocks a sign-in attempt, you will receive an email with a verification code. The email will include details about the attempt, such as the device type, location, IP address and time. If the activity looks familiar, enter the verification code from the email to confirm your identity.\n</p>\n<dl><dt><img alt=\"MZA confirmation email\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2024-07-24-05-36-49-1cb353.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n<div class=\"note\"><strong>How do I know that this email is really from Mozilla?</strong> Mozilla will never request your passwords, credit card details or bank information. Always check the sender’s email address for an official Mozilla domain and be cautious of any suspicious links or requests for personal information.</div>\n<p>\n</p>\n<h1 id=\"w_i-havent-received-the-verification-email-what-should-i-do\">I haven’t received the verification email. What should I do?</h1>\n<p>First, check your spam folder and filters to make sure it didn’t end up in the wrong folder. For other solutions, see <a href=\"/en-US/kb/im-having-problems-confirming-my-firefox-account\">I'm having problems confirming my Mozilla account</a>. You can also contact the Mozilla account support team by completing <a href=\"https://support.mozilla.org/questions/new/mozilla-account/form\">this form</a>, linked from the  <span class=\"button\">Contact Support</span> button in the <em>Still need help?</em> block shown below.\n</p>",
+  "text": "If sign-in attempts on your Mozilla account are blocked and your account has been locked for security reasons, it means unusual activity was detected on your account. This security measure prevents access until we verify your identity. To proceed, we’ll send you an email to confirm it’s you trying to sign in or to report unfamiliar activity. Table of Contents 1 Verification E-mail 2 I haven’t received the verification email. What should I do? Verification E-mail If your Mozilla account blocks a sign-in attempt, you will receive an email with a verification code. The email will include details about the attempt, such as the device type, location, IP address and time. If the activity looks familiar, enter the verification code from the email to confirm your identity. How do I know that this email is really from Mozilla? Mozilla will never request your passwords, credit card details or bank information. Always check the sender’s email address for an official Mozilla domain and be cautious of any suspicious links or requests for personal information. I haven’t received the verification email. What should I do? First, check your spam folder and filters to make sure it didn’t end up in the wrong folder. For other solutions, see I'm having problems confirming my Mozilla account . You can also contact the Mozilla account support team by completing this form , linked from the Contact Support button in the Still need help? block shown below.",
+  "products": [
+    "firefox",
+    "mozilla-account"
+  ],
+  "topics": [
+    "accounts",
+    "passwords-and-sign-in"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2478,
+    "text_bytes": 1455,
+    "word_count": 241,
+    "downloaded_at": "2025-08-26T10:37:40.207307"
+  }
+}

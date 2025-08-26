@@ -1,0 +1,23 @@
+{
+  "slug": "64-bit-firefox-crashes-citrixs-xenapp-vm",
+  "title": "64-bit Firefox crashes with Citrix's XenApp VM",
+  "summary": "The API hooks from Citrix XenApp 7.13 VDA do not work with 64-bit Firefox. How to find a workaround.",
+  "url": "https://support.mozilla.org/en-US/kb/64-bit-firefox-crashes-citrixs-xenapp-vm",
+  "html": "<p>64-bit Firefox hangs or crashes on Citrix XenApp 7.13 VDA because Citrix XenApp’s API hooks are not compatible with 64-bit Firefox. Here are some solutions you can try.\n</p>\n<h1 id=\"w_how-can-i-fix-the-problem\">How can I fix the problem?</h1>\n<p>You can work around the problem by disabling XenApp’s API hooks for Firefox executable filenames “firefox.exe” and “plugin-container.exe”. See this <a href=\"https://support.citrix.com/article/CTX107825\">Citrix support article</a> for instructions.\n</p>\n<h1 id=\"w_what-is-the-long-term-solution\">What is the long term solution?</h1>\n<p>Citrix has fixed this crash in XenApp version 7.14 (Citrix issue #LC6982).\n</p><p>For more information, see:\n</p>\n<ul><li><a href=\"http://docs.citrix.com/en-us/xenapp-and-xendesktop/7-14/whats-new/fixed-issues.html\">XenApp 7.14 Citrix release notes</a>\n</li><li><a href=\"https://discussions.citrix.com/topic/386686-citrix-xenapp-713-vda-breaks-firefox-64-bit-configuration-files/\">Citrix ticket</a>\n</li><li><a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1359443\">Firefox bug</a>\n</li></ul>",
+  "text": "64-bit Firefox hangs or crashes on Citrix XenApp 7.13 VDA because Citrix XenApp’s API hooks are not compatible with 64-bit Firefox. Here are some solutions you can try. How can I fix the problem? You can work around the problem by disabling XenApp’s API hooks for Firefox executable filenames “firefox.exe” and “plugin-container.exe”. See this Citrix support article for instructions. What is the long term solution? Citrix has fixed this crash in XenApp version 7.14 (Citrix issue #LC6982). For more information, see: XenApp 7.14 Citrix release notes Citrix ticket Firefox bug",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "crashing-and-slow-performance",
+    "installation-and-updates",
+    "performance-and-connectivity"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1081,
+    "text_bytes": 577,
+    "word_count": 90,
+    "downloaded_at": "2025-08-26T10:37:55.772725"
+  }
+}

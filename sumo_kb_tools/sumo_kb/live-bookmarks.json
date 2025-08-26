@@ -1,0 +1,21 @@
+{
+  "content": "December 2018 : Firefox's built-in feed reader and Live Bookmarks have been removed, starting with Firefox version 64. For alternatives, see Feed reader replacements for Firefox . If you check specific websites for new content on a regular basis, Live Bookmarks can deliver the most recent updates to you, without having to visit the site. Note: Live Bookmarks will only work with sites that offer web feeds . When a web feed is available from a web page, you can use Firefox to subscribe to it as a Live Bookmark. Firefox checks your Live Bookmarks every hour for updates, which enables you to stay current with the latest information from your favorite sites. Live Bookmarks work with any web feed in RSS, RDF, or Atom format. Table of Contents 1 Add a Live Bookmark 2 View Live Bookmarks 2.1 Reload Live Bookmarks 3 Delete a Live Bookmark Add a Live Bookmark Press the Alt key on your keyboard to temporarily show the classic menu bar, then select the Bookmarks menu. On the menu bar, click the Bookmarks menu. If the site has a feed, the Subscribe to This Page... option will be enabled. Click it. If available, choose between feeds or comments. Click Subscribe Now on the page that appears. Pick a name for your Live Bookmark and choose where to save it. By default, it'll be saved to the Bookmarks Toolbar . Then click Subscribe . That is it! Your Live Bookmark is created. Tip: You can add a Subscribe button to your Firefox toolbar or menu (the button will darken on pages with web feeds). See Customize Firefox controls, buttons and toolbars to learn how. View Live Bookmarks Live Bookmarks are saved as folders in Bookmarks Toolbar or Menu, like bookmarks. To see what's new, click it to view the latest items from the feed. To view a page from the feed, select the item in the menu. To view the feed home page, select Open feed-name (e.g. Open \"The Mozilla Blog\" ). To retrieve a Live Bookmark URL, right-click on the Live Bookmark and select Copy . Paste it into the text field of your choice. Reload Live Bookmarks Live bookmarks automatically reload every hour, but you can reload them manually: Right-click Hold down the Control key while you click on the Live Bookmark and select Reload Live Bookmark . Delete a Live Bookmark Deleting a Live Bookmark is the same as deleting regular bookmarks. Right-click Hold down the Control key while you click on the Live Bookmark and select Delete . Note: Only the entire Live Bookmark, which displays as a folder, can be deleted. Individual entries cannot be removed from the Live Bookmark.",
+  "title": "Live Bookmarks - Subscribe to a web page for news and updates",
+  "summary": "Use the \"Subscribe to This Page\" feature to add Live Bookmarks to Firefox and receive recent news and updates without visiting the website.",
+  "url": "https://support.mozilla.org/en-US/kb/live-bookmarks",
+  "slug": "live-bookmarks",
+  "source": "Mozilla Support (SUMO)",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "bookmarks"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "char_count": 2546,
+    "word_count": 448,
+    "has_html": true,
+    "downloaded_at": "2025-08-26T08:25:28.503432"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "disable-high-contrast-mode-firefox",
+  "title": "Disable high contrast mode in Firefox",
+  "summary": "How to disable high contrast mode if it's causing problems on some web pages.",
+  "url": "https://support.mozilla.org/en-US/kb/disable-high-contrast-mode-firefox",
+  "html": "<p>If <span class=\"for\" data-for=\"win\">Windows</span> high contrast mode is making it difficult to view some web pages, you can disable it in Firefox:\n</p>\n<ol><li><span class=\"for\" data-for=\"mac\">In the Menu bar at the top of the screen, click <span class=\"menu\">Firefox</span> and then select <span class=\"menu\">Preferences</span> or <span class=\"menu\">Settings</span>, depending on your macOS version.</span><span class=\"for\" data-for=\"win,linux\">Click the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> and select <span class=\"menu\">Settings</span>.</span>\n\n</li><li>Select the <span class=\"menu\">General</span> panel and scroll down to <em>Language and Appearance</em>.\n</li><li>Under <strong>Colors</strong>, click the <span class=\"button\">Manage Colors…</span> button. \n<dl><dt><img alt=\"ColorsPanel_Settings\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2022-06-20-13-53-00-f54849.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" width=\"400\">\n</dt></dl>\n</li><li>In the drop-down menu under <em>Override the colors specified by the page with your selections above</em> choose <span class=\"menu\">Never</span>.\n<dl><dt><img alt=\"high contrast fx desktop\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2018-12-31-11-32-15-a01f93.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" width=\"400\">\n</dt></dl>\n</li><li>Click <span class=\"button\">OK</span> to save your changes.\n</li></ol>",
+  "text": "If Windows high contrast mode is making it difficult to view some web pages, you can disable it in Firefox: In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . Select the General panel and scroll down to Language and Appearance . Under Colors , click the Manage Colors… button. In the drop-down menu under Override the colors specified by the page with your selections above choose Never . Click OK to save your changes.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1941,
+    "text_bytes": 543,
+    "word_count": 97,
+    "downloaded_at": "2025-08-26T10:47:13.791147"
+  }
+}

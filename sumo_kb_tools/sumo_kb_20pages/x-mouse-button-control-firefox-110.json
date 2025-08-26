@@ -1,0 +1,23 @@
+{
+  "slug": "x-mouse-button-control-firefox-110",
+  "title": "X-Mouse Button Control in Firefox 110",
+  "summary": "Learn about an issue with X-Mouse Button Control in Firefox 110 for Windows.",
+  "url": "https://support.mozilla.org/en-US/kb/x-mouse-button-control-firefox-110",
+  "html": "<p></p><div class=\"for\" data-for=\"not win\"><div class=\"warning\">This article only applies to Firefox on Windows.</div></div>\n<p></p>\n<div class=\"note\"><strong>Note:</strong> An updated version of X-Mouse Button Control (XMBC 2.20) has been released. Issues with Firefox 110 should be fixed. To learn more, see <a href=\"https://forums.highrez.co.uk/viewtopic.php?t=4682\">this forum</a>.</div>\n<p>In advance of the release of <a href=\"/en-US/kb/find-what-version-firefox-you-are-using\">Firefox version</a> 110, an issue was identified with GPU Sandboxing causing a conflict with X-Mouse Button Control, software used to custom configure a computer mouse, that may cause mouse wheel scrolling to stop working.\n</p><p>Mozilla has reached out to the developer of X-Mouse Button Control, and they are working on a solution. Given that we do not know when this will be fixed and the benefit of GPU Sandboxing to all Firefox users, the decision has been made to proceed with rolling out this new feature in Firefox, but we are aware that this is not the best result for all at this time.\n</p><p>The best solution at the present time is to turn on the <strong>Disable Scroll Window Under Cursor</strong> setting:\n</p>\n<ul><li> Right-click the X-Mouse Button Control icon and select <strong>Setup</strong>.\n</li><li> Choose the <strong>Options</strong> tab in the right pane of the Setup window.\n</li><li> Make sure there is a checkmark next to <strong>Disable Scroll Window Under Cursor</strong>.\n</li><li> Select the <strong>Apply</strong> button near the lower-right corner of the window.\n</li></ul>\n<p>A corrected version of X-Mouse Button Control is currently being tested, and we hope it can be made more widely available very soon. If you wish to use the beta version, you can install it from <a href=\"https://forums.highrez.co.uk/viewtopic.php?p=23412#p23412\">this forum message</a>.  Please be aware that this is not a fully tested version and may have unresolved issues.\n</p>",
+  "text": "This article only applies to Firefox on Windows. Note: An updated version of X-Mouse Button Control (XMBC 2.20) has been released. Issues with Firefox 110 should be fixed. To learn more, see this forum . In advance of the release of Firefox version 110, an issue was identified with GPU Sandboxing causing a conflict with X-Mouse Button Control, software used to custom configure a computer mouse, that may cause mouse wheel scrolling to stop working. Mozilla has reached out to the developer of X-Mouse Button Control, and they are working on a solution. Given that we do not know when this will be fixed and the benefit of GPU Sandboxing to all Firefox users, the decision has been made to proceed with rolling out this new feature in Firefox, but we are aware that this is not the best result for all at this time. The best solution at the present time is to turn on the Disable Scroll Window Under Cursor setting: Right-click the X-Mouse Button Control icon and select Setup . Choose the Options tab in the right pane of the Setup window. Make sure there is a checkmark next to Disable Scroll Window Under Cursor . Select the Apply button near the lower-right corner of the window. A corrected version of X-Mouse Button Control is currently being tested, and we hope it can be made more widely available very soon. If you wish to use the beta version, you can install it from this forum message . Please be aware that this is not a fully tested version and may have unresolved issues.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "add-ons-extensions-and-themes",
+    "performance-and-connectivity",
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1975,
+    "text_bytes": 1488,
+    "word_count": 266,
+    "downloaded_at": "2025-08-26T10:55:42.903909"
+  }
+}

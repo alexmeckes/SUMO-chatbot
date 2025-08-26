@@ -1,0 +1,21 @@
+{
+  "slug": "search-open-tabs-firefox",
+  "title": "Search open tabs in Firefox",
+  "summary": "\"Search Tabs\" in Firefox's tab menu lets you find a specific open tab.",
+  "url": "https://support.mozilla.org/en-US/kb/search-open-tabs-firefox",
+  "html": "<p>Firefox lets you find a specific tab when you have a lot of tabs open:\n</p>\n<ol><li>Click the <em>List all tabs</em> <img alt=\"tab icon 2\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2024-06-25-13-37-26-16c7e5.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" width=\"16\"> button at the end of the tab bar.\n<dl><dt><img alt=\"step_1_tabs\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2025-05-13-19-45-48-4d90e7.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> <div class=\"note\"><strong>Note:</strong> If <a href=\"/en-US/kb/use-sidebar-access-tools-and-vertical-tabs\">Vertical Tabs</a> are enabled, click the <em>List all tabs</em> <img alt=\"Fx138VerticalListAllTabs\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2025-05-21-20-53-09-7cec8d.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> button in the toolbar.</div>\n</dt></dl>\n</li><li>Click <span class=\"menu\">Search Tabs</span> in the <a href=\"/en-US/kb/tab-overview-menu\">tab overview menu</a> that opens.\n<dl><dt><img alt=\"step_2_tabs\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2025-05-13-19-46-19-05aee3.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n</li></ol>\n<p>You can also find specific tabs using the address bar.  \nType a <span class=\"key\">%</span> before or after your search term to filter the results to only open tabs.\n</p><p><strong>Examples:</strong>\n</p><p>Results when typing % <strong>before</strong> the search term:\n</p>\n<dl><dt><img alt=\"exmp_1_before\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2025-05-13-19-46-53-b5284c.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n<p>Results when typing % <strong>after</strong> the search term:\n</p>\n<dl><dt><img alt=\"exmp_2_after\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2025-05-13-19-47-19-67edaa.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n<p>See the <a href=\"/en-US/kb/address-bar-autocomplete-firefox#w_changing-results-on-the-fly\">Address bar autocomplete suggestions in Firefox</a> article for more options available in the address bar.\n</p>",
+  "text": "Firefox lets you find a specific tab when you have a lot of tabs open: Click the List all tabs button at the end of the tab bar. Note: If Vertical Tabs are enabled, click the List all tabs button in the toolbar. Click Search Tabs in the tab overview menu that opens. You can also find specific tabs using the address bar. Type a % before or after your search term to filter the results to only open tabs. Examples: Results when typing % before the search term: Results when typing % after the search term: See the Address bar autocomplete suggestions in Firefox article for more options available in the address bar.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "browse"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2936,
+    "text_bytes": 616,
+    "word_count": 114,
+    "downloaded_at": "2025-08-26T10:47:20.392058"
+  }
+}

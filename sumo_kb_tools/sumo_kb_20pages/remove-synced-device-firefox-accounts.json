@@ -1,0 +1,23 @@
+{
+  "slug": "remove-synced-device-firefox-accounts",
+  "title": "Remove a synced device from your Mozilla account",
+  "summary": "Disconnect a device from your Mozilla account and stop syncing its data.",
+  "url": "https://support.mozilla.org/en-US/kb/remove-synced-device-firefox-accounts",
+  "html": "<p><a href=\"/en-US/kb/how-do-i-set-sync-my-computer\">Sync</a> allows you to sync your bookmarks, your browsing history, your saved passwords and more across multiple devices. When you're no longer using a device, you can remove it from your Mozilla account.\n</p>\n<div class=\"note\"><strong>Note</strong>: If you just want to disable Sync for a device without signing out of your Mozilla account, see <a href=\"/en-US/kb/disable-firefox-sync\">Disable Firefox Sync</a>.</div>\n<ol><li>Go to your <a href=\"https://accounts.firefox.com/settings\">Mozilla account settings</a> (you may need to sign in).\n</li><li>Click <span class=\"menu\">Connected Services</span> on the left side of the page.\n</li><li>Find the device or service you want to remove and click <span class=\"button\">Sign out</span> next to that device.\n</li><li>Select the main reason why you are disconnecting the device in the notification window that appears.\n</li><li> Click <span class=\"button\">Sign out</span>.\n</li></ol>\n<p>Firefox will disconnect from your account but won't delete any browsing information.\n</p>",
+  "text": "Sync allows you to sync your bookmarks, your browsing history, your saved passwords and more across multiple devices. When you're no longer using a device, you can remove it from your Mozilla account. Note : If you just want to disable Sync for a device without signing out of your Mozilla account, see Disable Firefox Sync . Go to your Mozilla account settings (you may need to sign in). Click Connected Services on the left side of the page. Find the device or service you want to remove and click Sign out next to that device. Select the main reason why you are disconnecting the device in the notification window that appears. Click Sign out . Firefox will disconnect from your account but won't delete any browsing information.",
+  "products": [
+    "firefox",
+    "mozilla-account"
+  ],
+  "topics": [
+    "privacy-and-security",
+    "sync-data"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1075,
+    "text_bytes": 732,
+    "word_count": 128,
+    "downloaded_at": "2025-08-26T10:46:39.821203"
+  }
+}

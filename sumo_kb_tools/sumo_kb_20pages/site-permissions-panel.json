@@ -1,0 +1,21 @@
+{
+  "slug": "site-permissions-panel",
+  "title": "Site Permissions panel",
+  "summary": "If you allow or block permissions for a website, the address bar will show a Permissions icon that opens the Permissions panel.  Learn more.",
+  "url": "https://support.mozilla.org/en-US/kb/site-permissions-panel",
+  "html": "<p>If you have granted any special permissions to a website, you will see a Permissions icon <img alt=\"Fx89PermissionsIcon\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-10-05-34-30-47c30e.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> in the address bar. Click this icon to open the Permissions panel, where you can view and adjust permissions for the website.\n</p><p><img alt=\"Fx135SitePermissionsPanel\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2025-02-11-06-26-16-9d5c35.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</p><p>\nYou can click the <strong>X</strong> next to any permission entry to clear the status. This will restore the default setting for that type of permission.\n</p>\n<div class=\"note\"><strong>Note:</strong> You will not see a Permissions icon in the address bar if you have not changed any of the default permission settings for that website.</div>\n<p>You can change any other permissions from the <strong>Page Info</strong> window, which contains a comprehensive <em>Permissions</em> section. To open the Page Info window for a website:\n</p>\n<ol><li> Click the padlock <img alt=\"Fx89Padlock\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-06-04-33-33-7bdc86.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> in the address bar.\n</li><li> Click the right arrow in the <a href=\"/en-US/kb/site-information-panel\">Site Information panel</a>.\n<dl><dt><img alt=\"Fx135SiteInfoPanel\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2025-02-11-05-40-47-eba377.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n</li><li> Click the <span class=\"button\">More Information</span> button in the next panel.\n</li></ol>\n<p>See the <a href=\"/en-US/kb/firefox-page-info-window\">Firefox Page Info window</a> article for additional information.\n</p>",
+  "text": "If you have granted any special permissions to a website, you will see a Permissions icon in the address bar. Click this icon to open the Permissions panel, where you can view and adjust permissions for the website. You can click the X next to any permission entry to clear the status. This will restore the default setting for that type of permission. Note: You will not see a Permissions icon in the address bar if you have not changed any of the default permission settings for that website. You can change any other permissions from the Page Info window, which contains a comprehensive Permissions section. To open the Page Info window for a website: Click the padlock in the address bar. Click the right arrow in the Site Information panel . Click the More Information button in the next panel. See the Firefox Page Info window article for additional information.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "privacy-and-security"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2398,
+    "text_bytes": 868,
+    "word_count": 151,
+    "downloaded_at": "2025-08-26T10:54:13.350318"
+  }
+}

@@ -1,0 +1,211 @@
+[
+  {
+    "chunk_id": "8088e80bf6d0_chunk_0",
+    "doc_id": "8088e80bf6d0",
+    "chunk_index": 0,
+    "text": "This article explains how to fix problems with images on websites, such as PNG, GIF, and JPG still images, as well as animated file formats such as animated GIF. If you are experiencing difficulty downloading or viewing images in Firefox, follow the troubleshooting instructions below. Table of Contents 1 Clear cookies and cache 2 Security software 3 Web accelerator software 4 Extensions 5 Settings modification 6 Some other reasons for problems with images 7 I'm still having problems! 8 Related links Clear cookies and cache Sometimes problems loading websites can be fixed by clearing the cookies and cache. Click the menu button to open the menu panel. Click History and select Clear recent history… In the Time range to clear: drop-down, select Everything . Below the drop-down menu, select both Cookies and Cache . Make sure other items you want to keep are not selected. Click Clear Now . Click the menu button to open the menu panel. Click History and select Clear recent history… In the When: drop-down, select Everything . Below the drop-down menu, select both Cookies and site data and Temporary cached files and pages . Make sure other items you want to keep are not selected. Click Clear . Security software Some Internet security software (including antivirus and anti-spyware programs, firewalls, privacy programs, and others) may identify and block certain images as web bugs or may prevent images from animating. Check the settings for your Internet security program to make sure it allows images to load. Web accelerator software If images on websites load, but don't look right (or don't look the way they do in other browsers), and you are using any sort of web accelerator software, disable it and see if images load properly. For more information, see the documentation that came with the software. Extensions Extensions are add-ons that add or modify Firefox features. See the Troubleshoot extensions, themes and hardware acceleration issues to solve common Firefox problems article for instructions on how to disable or uninstall extensions that may cause images not to load in Firefox. Settings modification You may have modified one of your Firefox preference settings which is causing images not to show. You can reset all preferences or try the following: Warning: These instructions are for experienced Firefox users. Changing settings in the Configuration Editor ( about:config ) can have serious effects on your browser’s stability, security and performance. Only proceed if you are comfortable with advanced settings and understand the potential impacts . Type about:config in the address bar and press Enter Return . A warning page may appear. Click Accept the Risk and Continue to go to the about:config page. Enter browser.display.document_color_use to the Search box. The preference's value should be set to 0 1 by default. Click the Reset button if its value is other than 0 1 . Some other reasons for problems with images The site that displays the images may be down or experiencing difficulties. To verify, try loading the site from a",
+    "citation": {
+      "title": "Fix problems that cause images to not show",
+      "url": "https://support.mozilla.org/en-US/kb/fix-problems-images-not-show",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "browse, images-and-documents"
+    },
+    "metadata": {
+      "chunk_words": 500,
+      "total_chunks": 2,
+      "slug": "fix-problems-images-not-show",
+      "title": "Fix problems that cause images to not show",
+      "position": "beginning"
+    }
+  },
+  {
+    "chunk_id": "8088e80bf6d0_chunk_1",
+    "doc_id": "8088e80bf6d0",
+    "chunk_index": 1,
+    "text": "[Continued from Fix problems that cause images to not show] Only proceed if you are comfortable with advanced settings and understand the potential impacts . Type about:config in the address bar and press Enter Return . A warning page may appear. Click Accept the Risk and Continue to go to the about:config page. Enter browser.display.document_color_use to the Search box. The preference's value should be set to 0 1 by default. Click the Reset button if its value is other than 0 1 . Some other reasons for problems with images The site that displays the images may be down or experiencing difficulties. To verify, try loading the site from a different computer or browser. Some pathnames to images contain backslashes (e.g. example.com\\MyImage.jpg ). In browsers other than Internet Explorer, these pathnames do not load. If you see that the image's URL contains a backslash, contact the site's webmaster about the issue. If the image area shows text or some form of gibberish, it's most likely caused by a misconfigured web server. Contact the website and tell them about the problem. I'm still having problems! If you have tried all of the solutions in this article and none of the reasons above apply, then try these solutions: Try refreshing Firefox . Use the Profile Manager to create a new Firefox profile . Follow the other steps in the Troubleshoot and diagnose Firefox problems article. Related links Websites look wrong or appear differently than they should Manage file types and download actions in Firefox Fix common audio and video issues Mixed content blocking in Firefox Based on information from Images or animations do not load (mozillaZine KB)",
+    "citation": {
+      "title": "Fix problems that cause images to not show",
+      "url": "https://support.mozilla.org/en-US/kb/fix-problems-images-not-show",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "browse, images-and-documents"
+    },
+    "metadata": {
+      "chunk_words": 265,
+      "total_chunks": 2,
+      "slug": "fix-problems-images-not-show",
+      "title": "Fix problems that cause images to not show",
+      "position": "end"
+    }
+  },
+  {
+    "chunk_id": "5a9205fbde75_chunk_0",
+    "doc_id": "5a9205fbde75",
+    "chunk_index": 0,
+    "text": "With Firefox, you can save a web page to your computer, enabling you to access it even when you're offline. Here's a straightforward guide on how to do it: Table of Contents 1 Saving a web page 2 Saving parts of a web page Saving a web page Click on the menu button The image \"new fx menu\" does not exist., and then click Save Page As Save Page . The Save As dialog window will open. In the dialog window, type in a name for the page you want to save and choose a location. In the Format drop-down, choose the type of file that you want to save the page as: In the Save as type drop-down, choose the type of file that you want to save the page as: At the bottom right corner of the dialog window, choose a file type from the drop-down menu Web page, complete : Save the whole web page along with pictures. This choice allows you to view it as originally shown with pictures, but it may not keep the HTML link structure of the original page. Firefox creates a new directory where the page is saved to save pictures and other files necessary to show the whole web page. Web page, HTML only : Save the original page without pictures. This choice preserves the original HTML link structure in one file. Text files : Save the original page as a text file. This choice will not preserve the original HTML link structure but will allow you to see a text version of the web page in any text editor. All files : This is equivalent to \"Web page, HTML only,\" but you may specify a file extension (e.g. \".htm\" or \".shtml\"). Click Save . A copy of the page will be saved as the type you specified in the location you chose. Saving parts of a web page To save an image : Right-click Hold down the Ctrl key while you click on the image you want to save, and then select Save Image As... from the context menu. Then select a location on your computer to save the copy of the image. To save other elements on the page, including image scripts, stylesheets, and more, use the Page Info window's Media panel .",
+    "citation": {
+      "title": "How to save a web page",
+      "url": "https://support.mozilla.org/en-US/kb/how-save-web-page",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "browse, download-and-save, save-content"
+    },
+    "metadata": {
+      "chunk_words": 384,
+      "total_chunks": 1,
+      "slug": "how-save-web-page",
+      "title": "How to save a web page"
+    }
+  },
+  {
+    "chunk_id": "5dcd5dfd1f54_chunk_0",
+    "doc_id": "5dcd5dfd1f54",
+    "chunk_index": 0,
+    "text": "Smart keywords are an easy way to search specific websites from the Firefox address bar. Instead of going to the targeted website and navigating to their search, you can start your site-specific search from any site using the address bar. For example, suppose you search The Internet Movie Database (IMDB) regularly. You can define a smart keyword such as imdb ; then you can search IMDB for information. For example, to search William Shatner, you would enter imdb William Shatner in the address bar. Add a smart keyword for search Visit the website that has the search you want to use and click on the search field. Right-click Hold down the Control key while you click to open the Context Menu . Select Add a Keyword for this Search… The Add Bookmark dialog box appears. You can edit the bookmark name, select the bookmark folder to contain the smart keyword, and enter the keyword that will be used for the search (for example imdb ). To use this created smart bookmark, type the keyword and the search string in the address bar and press Enter Return . Note: Starting in Firefox version 140, the Smart Keywords feature has been replaced with custom search engines. To learn more, see Add custom search engines in Firefox . In earlier versions of Firefox, you could use Smart keywords to search for site-specific content from the address bar, instead of going to the targeted website to use their search. Starting in Firefox version 140, this feature has been replaced with custom search engines. (To learn more, see Add custom search engines in Firefox .) Firefox has a Unified Search button with the icon of your default search engine, which appears when you start typing a search term in the address bar of any website. When you click on this button, it opens a drop-down menu where you can choose a different search engine to perform your search. Add a custom search engine from the search field of a supported website You can right-click on the search field of a supported website and select Add Search Engine from the context menu. For example, suppose you search The Internet Movie Database (IMDB) regularly. You can add it as a custom search engine, and it will appear in the Unified Search button's drop-down menu. Add a custom search engine in Settings You can add custom search engines from websites in Firefox, even if they’re not supported. Go to the main menu, , click Settings , and select Search in the left panel. Scroll down to Search Shortcuts and click Add . Fill in the Search engine name with a name for your custom search engine. In the URL box, copy & paste the URL of the custom search engine. For example: https://www.imdb.com/find/?q=ZZZZZZ Replace the URL’s search tag with %s . For example: https://www.imdb.com/find/?q=%s Add a Keyword (this is optional). Click Add Engine to save. Note: You can find the URL’s search tag by performing a unique search",
+    "citation": {
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "url": "https://support.mozilla.org/en-US/kb/how-search-from-address-bar",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "customization, search, search-tag-and-share, settings"
+    },
+    "metadata": {
+      "chunk_words": 500,
+      "total_chunks": 2,
+      "slug": "how-search-from-address-bar",
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "position": "beginning"
+    }
+  },
+  {
+    "chunk_id": "5dcd5dfd1f54_chunk_1",
+    "doc_id": "5dcd5dfd1f54",
+    "chunk_index": 1,
+    "text": "[Continued from How to search IMDB, Wikipedia and more from the address bar] from websites in Firefox, even if they’re not supported. Go to the main menu, , click Settings , and select Search in the left panel. Scroll down to Search Shortcuts and click Add . Fill in the Search engine name with a name for your custom search engine. In the URL box, copy & paste the URL of the custom search engine. For example: https://www.imdb.com/find/?q=ZZZZZZ Replace the URL’s search tag with %s . For example: https://www.imdb.com/find/?q=%s Add a Keyword (this is optional). Click Add Engine to save. Note: You can find the URL’s search tag by performing a unique search with an easy-to-spot word, such as “ZZZZZZ”. The “ZZZZZZ” in the URL is that URL’s search tag. For example, if you search for tangled on IMBD, the link is going to look like this: https://www.imdb.com/find/?q=tangled Replace tangled with %s .",
+    "citation": {
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "url": "https://support.mozilla.org/en-US/kb/how-search-from-address-bar",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "customization, search, search-tag-and-share, settings"
+    },
+    "metadata": {
+      "chunk_words": 140,
+      "total_chunks": 2,
+      "slug": "how-search-from-address-bar",
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "position": "end"
+    }
+  },
+  {
+    "chunk_id": "f1356cbc7191_chunk_0",
+    "doc_id": "f1356cbc7191",
+    "chunk_index": 0,
+    "text": "Sometimes, the video or audio content in a web page cannot be properly downloaded or played in Firefox. This article will help you solve these problems. Table of Contents 1 Check volume control for Firefox in the Volume Mixer 2 Reload the website 3 Allow autoplay of media with sound 4 You may need to install the required PulseAudio software 5 HTML5 audio and video 6 You may need the latest Media Feature Pack for N versions of Windows 7 Digital Rights Management (DRM) protected videos 8 Clear the cache 9 Disable interfering extensions or ad-blocking software 10 Check some Firefox settings 11 Reset preferences 12 Remove specific entries in the hosts file (advanced users) 13 Related links Check volume control for Firefox in the Volume Mixer The Volume Mixer has a specific volume control for Firefox. Check the Volume Mixer and make sure the volume level for Mozilla Firefox is not low or muted. Reload the website Sometimes a change you make in the system settings, such as selecting another sound device in the Volume Mixer , may not be applied correctly in an already open tab. Try reloading the website to see if it solves the issue. Allow autoplay of media with sound Firefox may be blocking media with sound from playing automatically. To allow media autoplay, see Allow or block media autoplay in Firefox . You may need to install the required PulseAudio software If you see a notification saying “ To play audio, you may need to install the required PulseAudio software ”, it means that Firefox cannot find or use PulseAudio. The PulseAudio software is required to play any audio from Firefox. Most Linux distributions now come with PulseAudio pre-installed. Use your system's software package manager and ensure that PulseAudio is correctly installed. HTML5 audio and video Firefox has built in support for open media formats usually associated with MP3, WebM, Ogg, and Wave containers. However, MP4 containers usually depend on platform decoders for AAC and H.264 audio and video streams. For more information, see Audio and video files in Firefox . You may need the latest Media Feature Pack for N versions of Windows Windows N versions are missing Windows Media Player and related software for media functions. You may need to install or update the Media Feature Pack from Microsoft. See Fix video and audio problems on Firefox for Windows N editions for details. Digital Rights Management (DRM) protected videos If you have problems playing DRM-controlled content from Amazon Prime, Netflix, Hulu, Disney+ and other streaming services, make sure that your Firefox Settings General panel Digital Rights Management (DRM) Content setting, Play DRM-controlled content is check marked and that the Google Widevine plugin is enabled. See Watch DRM content on Firefox for more information. Note: Google Widevine ended support for 32-bit Linux on May 31, 2021. Only 64-bit Linux is supported. Note: The current version of Google Widevine is no longer compatible with older Mac operating systems such as OS X 10.9 and",
+    "citation": {
+      "title": "Fix common audio and video issues",
+      "url": "https://support.mozilla.org/en-US/kb/fix-common-audio-and-video-issues",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "audio-and-video, browse"
+    },
+    "metadata": {
+      "chunk_words": 500,
+      "total_chunks": 3,
+      "slug": "fix-common-audio-and-video-issues",
+      "title": "Fix common audio and video issues",
+      "position": "beginning"
+    }
+  },
+  {
+    "chunk_id": "f1356cbc7191_chunk_1",
+    "doc_id": "f1356cbc7191",
+    "chunk_index": 1,
+    "text": "[Continued from Fix common audio and video issues] details. Digital Rights Management (DRM) protected videos If you have problems playing DRM-controlled content from Amazon Prime, Netflix, Hulu, Disney+ and other streaming services, make sure that your Firefox Settings General panel Digital Rights Management (DRM) Content setting, Play DRM-controlled content is check marked and that the Google Widevine plugin is enabled. See Watch DRM content on Firefox for more information. Note: Google Widevine ended support for 32-bit Linux on May 31, 2021. Only 64-bit Linux is supported. Note: The current version of Google Widevine is no longer compatible with older Mac operating systems such as OS X 10.9 and 10.10. Only versions OS X 10.11 and above are supported. Clear the cache See How to clear the Firefox cache . Disable interfering extensions or ad-blocking software Ad-blocking software, such as anti-banner filters of your Internet Security program, or extensions, such as uBlock Origin or Adblock Plus, can prevent audio or video content from playing. If the site works with ad-blocking disabled, you may want to add the site to your whitelist in your adblocker filter. If the video or audio plays when you disable all extensions, then one of your extensions was causing the problem. For more information, see Troubleshoot extensions, themes and hardware acceleration issues to solve common Firefox problems . Check some Firefox settings Cookies: In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . Select the Privacy & Security panel and go to the Cookies and Site Data section. Verify that cookies are enabled and that the site is not blocked in the Exceptions list. History: In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . Select the Privacy & Security panel and go to the History section. Make sure that Firefox is set to Remember history . Pop-up windows: In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . Select the Privacy & Security panel and go to the Permissions section. Allow the website as an exception to the Block pop-up windows setting. Reset preferences See Reset Firefox preferences to troubleshoot and fix problems . Remove specific entries in the hosts file (advanced users) If you use a hosts file , you can temporarily disable it by renaming it Xhosts . Or, you can edit the hosts file to remove specific entries that may be causing videos on certain sites to fail (see this thread for an example). To apply changes to your hosts file, you may need to flush the DNS cache by entering the command: ipconfig /flushdns in the Run dialog box on Windows . Related links I can’t play audio on a Remote Desktop Connection Videos",
+    "citation": {
+      "title": "Fix common audio and video issues",
+      "url": "https://support.mozilla.org/en-US/kb/fix-common-audio-and-video-issues",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "audio-and-video, browse"
+    },
+    "metadata": {
+      "chunk_words": 500,
+      "total_chunks": 3,
+      "slug": "fix-common-audio-and-video-issues",
+      "title": "Fix common audio and video issues",
+      "position": "middle"
+    }
+  },
+  {
+    "chunk_id": "f1356cbc7191_chunk_2",
+    "doc_id": "f1356cbc7191",
+    "chunk_index": 2,
+    "text": "[Continued from Fix common audio and video issues] to troubleshoot and fix problems . Remove specific entries in the hosts file (advanced users) If you use a hosts file , you can temporarily disable it by renaming it Xhosts . Or, you can edit the hosts file to remove specific entries that may be causing videos on certain sites to fail (see this thread for an example). To apply changes to your hosts file, you may need to flush the DNS cache by entering the command: ipconfig /flushdns in the Run dialog box on Windows . Related links I can’t play audio on a Remote Desktop Connection Videos don't have sound on Citrix What to do if Firefox won't play any sounds Manage file types and download actions in Firefox Mixed content blocking in Firefox Based on information from Video or audio does not play (mozillaZine KB)",
+    "citation": {
+      "title": "Fix common audio and video issues",
+      "url": "https://support.mozilla.org/en-US/kb/fix-common-audio-and-video-issues",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "audio-and-video, browse"
+    },
+    "metadata": {
+      "chunk_words": 139,
+      "total_chunks": 3,
+      "slug": "fix-common-audio-and-video-issues",
+      "title": "Fix common audio and video issues",
+      "position": "end"
+    }
+  },
+  {
+    "chunk_id": "0941920d2e5e_chunk_0",
+    "doc_id": "0941920d2e5e",
+    "chunk_index": 0,
+    "text": "When you use the simplified online Firefox Installer described in the How to install Firefox on Windows article, you can't make any changes to the installation, such as the program folder where Firefox is installed. This article explains how to customize your Firefox installation with the full, offline installer. Table of Contents 1 Where to download Firefox for a custom installation 2 How to install Firefox with custom settings 2.1 Choose where Firefox is installed 2.2 Choose optional components 2.3 Choose shortcuts 3 Summary Where to download Firefox for a custom installation You can download the Firefox Setup file in your language, from this Firefox download page . Note : You can install the 32-bit version of Firefox on 64-bit Windows but 64-bit Firefox is recommended . On 32-bit systems, only the 32-bit version of Firefox can be installed. How to install Firefox with custom settings When you run the Firefox Setup file, the Mozilla Firefox Setup Wizard will open. After clicking Next you can choose a Standard or Custom installation. The standard setup will be selected by default. A custom setup lets you choose the folder where Firefox program files will be installed, as well as which shortcuts to create. These options are not available in a standard setup. Select the Custom setup type and click Next . Choose where Firefox is installed The next step is where you can choose the location of the folder where the Firefox program will be installed. C:\\Program Files\\Mozilla Firefox\\ is the default folder path on 32-bit Windows. It's also the default location on 64-bit Windows when the 64-bit Firefox version is installed. When the 32-bit Firefox version is installed on 64-bit Windows, the default folder path is C:\\Program Files (x86)\\Mozilla Firefox\\ You can change the folder where Firefox will be installed either by manually typing the location of another folder on your computer, or you can click Browse… to select a new folder. Space required: The amount of space on your hard drive that's needed to install Firefox. Space available: The amount of space available on your hard drive. Click Next to continue. Choose optional components In the next screen, you can choose whether to install the optional Mozilla Maintenance Service which allows application updates to occur in the background, without requiring you to click Yes in the Windows User Account Control (UAC) dialog. For more information, see What is the Mozilla Maintenance Service? Note: This option may be missing in some cases, as when installing Firefox with a limited user account or when the Mozilla Maintenance Service is already installed. Choose shortcuts On my desktop: You can choose to create a Firefox shortcut icon on the Windows desktop. In my Start menu Programs folder: This will create a Firefox shortcut icon in the Windows Start menu Programs folder. After choosing which Firefox program shortcuts to create, click Next . Note: If you already have a Firefox shortcut from another installation you wish to keep, you should rename the existing shortcut before",
+    "citation": {
+      "title": "Custom installation of Firefox on Windows",
+      "url": "https://support.mozilla.org/en-US/kb/custom-installation-firefox-on-windows",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "installation-and-updates"
+    },
+    "metadata": {
+      "chunk_words": 500,
+      "total_chunks": 2,
+      "slug": "custom-installation-firefox-on-windows",
+      "title": "Custom installation of Firefox on Windows",
+      "position": "beginning"
+    }
+  },
+  {
+    "chunk_id": "0941920d2e5e_chunk_1",
+    "doc_id": "0941920d2e5e",
+    "chunk_index": 1,
+    "text": "[Continued from Custom installation of Firefox on Windows] Maintenance Service? Note: This option may be missing in some cases, as when installing Firefox with a limited user account or when the Mozilla Maintenance Service is already installed. Choose shortcuts On my desktop: You can choose to create a Firefox shortcut icon on the Windows desktop. In my Start menu Programs folder: This will create a Firefox shortcut icon in the Windows Start menu Programs folder. After choosing which Firefox program shortcuts to create, click Next . Note: If you already have a Firefox shortcut from another installation you wish to keep, you should rename the existing shortcut before you finish installing Firefox; otherwise, it will be overwritten. Summary The Summary that comes up next will show the folder location where Firefox will be installed. Check mark Use Firefox as my default web browser if you want Firefox to start up when you open a link in your mail application, an Internet shortcut or HTML document. This option will be missing if you don't have permission to set Windows registry keys or if you are installing Firefox over an existing version and Firefox is already the default browser. For more information, see Make Firefox your default browser . If you are reinstalling Firefox over an existing version, you will see an Upgrade button instead of an Install button. Click Install or Upgrade to complete the installation. When Firefox is finished installing, the Completing the Mozilla Firefox Setup Wizard screen will appear. Click Finish . This will start Firefox unless you first clear the Launch Firefox now checkbox. Congratulations, you are done installing Firefox!",
+    "citation": {
+      "title": "Custom installation of Firefox on Windows",
+      "url": "https://support.mozilla.org/en-US/kb/custom-installation-firefox-on-windows",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "installation-and-updates"
+    },
+    "metadata": {
+      "chunk_words": 264,
+      "total_chunks": 2,
+      "slug": "custom-installation-firefox-on-windows",
+      "title": "Custom installation of Firefox on Windows",
+      "position": "end"
+    }
+  }
+]

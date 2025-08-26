@@ -1,0 +1,23 @@
+{
+  "slug": "why-cant-i-use-firefox-sync-my-google-or-apple-id",
+  "title": "Why can’t I use Firefox sync with my Google or Apple ID?",
+  "summary": "You can use your Google or Apple ID to sign in to all Mozilla products and services.",
+  "url": "https://support.mozilla.org/en-US/kb/why-cant-i-use-firefox-sync-my-google-or-apple-id",
+  "html": "<p>You can use your Google or Apple ID to sign in to all Mozilla products and services, but you need to perform additional steps to use it with Firefox Sync.\n</p><p>For security purposes, Firefox Sync requires a password to be set and associated with your Mozilla account so that your Sync data can be encrypted. When you authenticate your Mozilla account using Google or Apple, we don’t have access to or store your third-party authentication password, so we will not be able to encrypt your data.\n</p><p>We’ll prompt you to set a password when you want to access Firefox Sync, if you don’t already have one set.\n</p><p><strong>Related content:</strong>\n</p>\n<ul><li><a href=\"/en-US/kb/sign-in-accounts-using-3rd-party-auth\">Sign in to a Mozilla account using 3rd-party authentication</a>\n</li><li><a href=\"/en-US/kb/firefox-accounts-managing-account-data\">Mozilla account - Managing account data</a>\n</li><li><a href=\"/en-US/kb/change-your-firefox-accounts-password\">Change your Mozilla account password</a>\n</li><li><a href=\"/en-US/kb/im-having-problems-my-firefox-account\">I'm having problems with my Mozilla account</a>\n</li></ul>",
+  "text": "You can use your Google or Apple ID to sign in to all Mozilla products and services, but you need to perform additional steps to use it with Firefox Sync. For security purposes, Firefox Sync requires a password to be set and associated with your Mozilla account so that your Sync data can be encrypted. When you authenticate your Mozilla account using Google or Apple, we don’t have access to or store your third-party authentication password, so we will not be able to encrypt your data. We’ll prompt you to set a password when you want to access Firefox Sync, if you don’t already have one set. Related content: Sign in to a Mozilla account using 3rd-party authentication Mozilla account - Managing account data Change your Mozilla account password I'm having problems with my Mozilla account",
+  "products": [
+    "firefox",
+    "mozilla-account"
+  ],
+  "topics": [
+    "passwords-and-sign-in",
+    "sync-data"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1135,
+    "text_bytes": 794,
+    "word_count": 136,
+    "downloaded_at": "2025-08-26T10:56:25.449938"
+  }
+}

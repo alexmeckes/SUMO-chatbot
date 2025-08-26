@@ -1,0 +1,23 @@
+{
+  "slug": "quick-actions-firefox-search-bar",
+  "title": "Quick actions in the Firefox search bar",
+  "summary": "This article refers to the new Quick actions feature available in the Firefox address bar drop-down menu.",
+  "url": "https://support.mozilla.org/en-US/kb/quick-actions-firefox-search-bar",
+  "html": "<p>When you click or type in the address bar, you may see buttons for <em>Quick Actions</em>.\n</p><p><span class=\"for\" data-for=\"not fx123\"><img alt=\"Fx105QuickActions\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2022-09-01-04-59-03-b9f3e8.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"></span><span class=\"for\" data-for=\"fx123\"><img alt=\"Fx123BetaQuickActions\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2024-01-28-11-29-55-f2b4bd.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"></span>\n</p>\n<div class=\"warning\"><strong>This feature is currently under development.</strong></div>\n<p>If you prefer not to use this feature, you can disable it in Firefox Settings, as follows:\n</p>\n<ol><li><span class=\"for\" data-for=\"mac\">In the Menu bar at the top of the screen, click <span class=\"menu\">Firefox</span> and then select <span class=\"menu\">Preferences</span> or <span class=\"menu\">Settings</span>, depending on your macOS version.</span><span class=\"for\" data-for=\"win,linux\">Click the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> and select <span class=\"menu\">Settings</span>.</span>\n\n</li><li>Select the <span class=\"for\" data-for=\"not fx123\"><span class=\"menu\">Privacy &amp; Security</span></span><span class=\"for\" data-for=\"fx123\"><span class=\"menu\">Search</span></span> panel.\n</li><li>Deselect the <strong>Quick actions</strong> option under the <em>Address Bar</em> section. \n<dl><dt><span class=\"for\" data-for=\"not fx123\"><img alt=\"Fx106Beta-DisableQuickActions\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2022-09-21-10-09-32-c78c0b.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"></span><span class=\"for\" data-for=\"fx123\"><img alt=\"Fx123settings-DisableQuickActions\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2024-01-28-11-11-33-98eb42.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"></span>\n</dt></dl>\n</li></ol>\n<p>For more information on using the address bar in Firefox, see these articles:\n</p>\n<ul><li> <a href=\"/en-US/kb/address-bar-autocomplete-firefox\">Address bar autocomplete suggestions in Firefox</a>\n</li><li> <a href=\"/en-US/kb/search-firefox-address-bar\">Search with the Firefox address bar</a>\n</li></ul>",
+  "text": "When you click or type in the address bar, you may see buttons for Quick Actions . This feature is currently under development. If you prefer not to use this feature, you can disable it in Firefox Settings, as follows: In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . Select the Privacy & Security Search panel. Deselect the Quick actions option under the Address Bar section. For more information on using the address bar in Firefox, see these articles: Address bar autocomplete suggestions in Firefox Search with the Firefox address bar",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "search",
+    "search-tag-and-share",
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 3027,
+    "text_bytes": 664,
+    "word_count": 114,
+    "downloaded_at": "2025-08-26T10:55:29.589046"
+  }
+}

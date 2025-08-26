@@ -1,0 +1,23 @@
+{
+  "slug": "global-privacy-control",
+  "title": "Global Privacy Control",
+  "summary": "How to make Firefox advise websites that you visit not to sell or share your browsing information.",
+  "url": "https://support.mozilla.org/en-US/kb/global-privacy-control",
+  "html": "<p>Introduced in <a href=\"/en-US/kb/find-what-version-firefox-you-are-using\">Firefox version</a> 120, you can make use of <a href=\"https://globalprivacycontrol.org/\">Global Privacy Control</a> (GPC) to automatically notify websites not to sell or share information about your browsing session on that website.\n</p><p>GPC operates as a “Do Not Sell” mechanism in some US states such as California, Colorado and Connecticut. It may also be used to indicate an opt-out of targeted advertising or general request to limit the sale or sharing of your personal data in those jurisdictions, as well as in jurisdictions such as the EU, UK, Nevada, Utah and Virginia.\n</p><p>To turn on this preference:\n</p>\n<ol><li><span class=\"for\" data-for=\"mac\">In the Menu bar at the top of the screen, click <span class=\"menu\">Firefox</span> and then select <span class=\"menu\">Preferences</span> or <span class=\"menu\">Settings</span>, depending on your macOS version.</span><span class=\"for\" data-for=\"win,linux\">Click the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> and select <span class=\"menu\">Settings</span>.</span>\n\n</li><li> In the <span class=\"menu\">Privacy &amp; Security</span> panel, scroll down to <em>Website Privacy Preferences</em> and click the <span class=\"menu\">Tell websites not to sell or share my data</span> option.\n</li><li>Close the <span class=\"menu\">Settings</span> page. Any changes you've made will automatically be saved.\n\n</li></ol>",
+  "text": "Introduced in Firefox version 120, you can make use of Global Privacy Control (GPC) to automatically notify websites not to sell or share information about your browsing session on that website. GPC operates as a “Do Not Sell” mechanism in some US states such as California, Colorado and Connecticut. It may also be used to indicate an opt-out of targeted advertising or general request to limit the sale or sharing of your personal data in those jurisdictions, as well as in jurisdictions such as the EU, UK, Nevada, Utah and Virginia. To turn on this preference: In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . In the Privacy & Security panel, scroll down to Website Privacy Preferences and click the Tell websites not to sell or share my data option. Close the Settings page. Any changes you've made will automatically be saved.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "privacy-and-security",
+    "settings",
+    "tracking-protection"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1712,
+    "text_bytes": 958,
+    "word_count": 165,
+    "downloaded_at": "2025-08-26T10:56:16.518662"
+  }
+}

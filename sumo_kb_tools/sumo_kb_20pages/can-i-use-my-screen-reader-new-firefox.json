@@ -1,0 +1,22 @@
+{
+  "slug": "can-i-use-my-screen-reader-new-firefox",
+  "title": "Can I use my screen reader with the new Firefox?",
+  "summary": "Users on slower computers have reported problems viewing certain web pages with some screen readers in Firefox 57 and above. Learn more.",
+  "url": "https://support.mozilla.org/en-US/kb/can-i-use-my-screen-reader-new-firefox",
+  "html": "<p>Modernizing Firefox required a new internal design for Firefox's accessibility functionality. We’ve worked very hard to make sure users of assistive technology can continue to enjoy Firefox but we do expect some issues. Please help us improve Firefox by reporting any problems to us.\n</p>\n<h1 id=\"w_can-i-update-to-the-latest-firefox\">Can I update to the latest Firefox?</h1>\n<p>If you are using Freedom Scientific's <a href=\"http://www.freedomscientific.com/Products/Blindness/JAWS\">JAWS</a> screen reader versions 18 or lower, Firefox 57 and above are not considered compatible with these JAWS versions. To <a href=\"/en-US/kb/update-firefox-latest-release\">update Firefox to the latest version</a>, you must first <a href=\"http://www.freedomscientific.com/Downloads/JAWS\">download the latest version of the JAWS screen reader</a> and install the new JAWS version. JAWS 2018 includes improvements necessary for users who move to Firefox version 60 or above. For more information, see <a href=\"http://www.freedomscientific.com/downloads/JAWS/JAWSWhatsNew#Enhancements\">What's New in JAWS 2018 Screen Reading Software</a>.\n</p><p>For all other screen reading software clients, Firefox will install and operate normally. If you encounter any issues see the section below.\n</p>\n<h1 id=\"w_what-should-i-do-if-my-screen-reader-doesnt-work-well\">What should I do if my screen reader doesn't work well?</h1>\n<p>We are continually trying to improve Firefox with your help. If you're still having problems, try the following:\n</p>\n<ul><li>Have a fall back browser or more recent screen reader handy.\n</li><li>Please report any problems you experience with Firefox accessibility:\n<ul><li>Submit feedback on the <a href=\"https://support.mozilla.org/en-US/questions/new/desktop\">Mozilla support site</a>.\n</li><li><a href=\"https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Reporting_a_Performance_Problem\">Report a performance problem</a> through the Mozilla Developer Network. If you are uncomfortable creating a performance profile, you can still submit the feedback and provide the steps you took to encounter the problem.\n</li><li><a href=\"https://bugzilla.mozilla.org/\">Submit a bug report</a>, or use our guided feedback.\n</li></ul>\n</li></ul>",
+  "text": "Modernizing Firefox required a new internal design for Firefox's accessibility functionality. We’ve worked very hard to make sure users of assistive technology can continue to enjoy Firefox but we do expect some issues. Please help us improve Firefox by reporting any problems to us. Can I update to the latest Firefox? If you are using Freedom Scientific's JAWS screen reader versions 18 or lower, Firefox 57 and above are not considered compatible with these JAWS versions. To update Firefox to the latest version , you must first download the latest version of the JAWS screen reader and install the new JAWS version. JAWS 2018 includes improvements necessary for users who move to Firefox version 60 or above. For more information, see What's New in JAWS 2018 Screen Reading Software . For all other screen reading software clients, Firefox will install and operate normally. If you encounter any issues see the section below. What should I do if my screen reader doesn't work well? We are continually trying to improve Firefox with your help. If you're still having problems, try the following: Have a fall back browser or more recent screen reader handy. Please report any problems you experience with Firefox accessibility: Submit feedback on the Mozilla support site . Report a performance problem through the Mozilla Developer Network. If you are uncomfortable creating a performance profile, you can still submit the feedback and provide the steps you took to encounter the problem. Submit a bug report , or use our guided feedback.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "accessibility",
+    "text-to-speech"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2251,
+    "text_bytes": 1542,
+    "word_count": 252,
+    "downloaded_at": "2025-08-26T10:38:22.845728"
+  }
+}

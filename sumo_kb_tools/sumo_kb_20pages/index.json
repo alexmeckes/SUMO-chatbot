@@ -1,0 +1,2843 @@
+{
+  "total_documents": 405,
+  "total_html_bytes": 3064387,
+  "total_text_bytes": 1403921,
+  "download_date": "2025-08-26T10:59:46.138061",
+  "documents": [
+    {
+      "slug": "fix-problems-images-not-show",
+      "title": "Fix problems that cause images to not show",
+      "url": "https://support.mozilla.org/en-US/kb/fix-problems-images-not-show",
+      "html_size": 8560,
+      "text_size": 4097
+    },
+    {
+      "slug": "how-save-web-page",
+      "title": "How to save a web page",
+      "url": "https://support.mozilla.org/en-US/kb/how-save-web-page",
+      "html_size": 4405,
+      "text_size": 1990
+    },
+    {
+      "slug": "how-search-from-address-bar",
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "url": "https://support.mozilla.org/en-US/kb/how-search-from-address-bar",
+      "html_size": 7640,
+      "text_size": 3128
+    },
+    {
+      "slug": "fix-common-audio-and-video-issues",
+      "title": "Fix common audio and video issues",
+      "url": "https://support.mozilla.org/en-US/kb/fix-common-audio-and-video-issues",
+      "html_size": 12418,
+      "text_size": 5575
+    },
+    {
+      "slug": "custom-installation-firefox-on-windows",
+      "title": "Custom installation of Firefox on Windows",
+      "url": "https://support.mozilla.org/en-US/kb/custom-installation-firefox-on-windows",
+      "html_size": 8650,
+      "text_size": 4075
+    },
+    {
+      "slug": "import-bookmarks-google-chrome",
+      "title": "Import bookmarks and other data from Google Chrome",
+      "url": "https://support.mozilla.org/en-US/kb/import-bookmarks-google-chrome",
+      "html_size": 15657,
+      "text_size": 5709
+    },
+    {
+      "slug": "import-data-another-browser",
+      "title": "Import data from another browser",
+      "url": "https://support.mozilla.org/en-US/kb/import-data-another-browser",
+      "html_size": 12501,
+      "text_size": 4851
+    },
+    {
+      "slug": "live-bookmarks",
+      "title": "Live Bookmarks - Subscribe to a web page for news and updates",
+      "url": "https://support.mozilla.org/en-US/kb/live-bookmarks",
+      "html_size": 7397,
+      "text_size": 2546
+    },
+    {
+      "slug": "firefox-page-info-window",
+      "title": "View site information with Page Info",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-page-info-window",
+      "html_size": 11690,
+      "text_size": 4385
+    },
+    {
+      "slug": "secure-connection-failed-firefox-did-not-connect",
+      "title": "Fix secure connection failed errors in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/secure-connection-failed-firefox-did-not-connect",
+      "html_size": 8809,
+      "text_size": 4556
+    },
+    {
+      "slug": "firefox-uses-too-much-memory-or-cpu-resources",
+      "title": "Firefox uses too much memory or CPU resources - How to fix",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-uses-too-much-memory-or-cpu-resources",
+      "html_size": 15774,
+      "text_size": 8363
+    },
+    {
+      "slug": "change-fonts-and-colors-websites-use",
+      "title": "Change the fonts and colors websites use",
+      "url": "https://support.mozilla.org/en-US/kb/change-fonts-and-colors-websites-use",
+      "html_size": 15483,
+      "text_size": 6257
+    },
+    {
+      "slug": "websites-look-wrong-or-appear-differently",
+      "title": "Websites look wrong or appear differently than they should",
+      "url": "https://support.mozilla.org/en-US/kb/websites-look-wrong-or-appear-differently",
+      "html_size": 12534,
+      "text_size": 5525
+    },
+    {
+      "slug": "add-ons-cause-issues-are-on-blocklist",
+      "title": "Why does Mozilla disable some add-ons from running in Firefox?",
+      "url": "https://support.mozilla.org/en-US/kb/add-ons-cause-issues-are-on-blocklist",
+      "html_size": 10004,
+      "text_size": 4867
+    },
+    {
+      "slug": "bookmarks-toolbar-display-favorite-websites",
+      "title": "Bookmarks Toolbar - Display your favorite websites at the top of the Firefox window",
+      "url": "https://support.mozilla.org/en-US/kb/bookmarks-toolbar-display-favorite-websites",
+      "html_size": 8042,
+      "text_size": 3218
+    },
+    {
+      "slug": "bookmark-folders-organize-your-bookmarks",
+      "title": "Use bookmark folders to organize your bookmarks",
+      "url": "https://support.mozilla.org/en-US/kb/bookmark-folders-organize-your-bookmarks",
+      "html_size": 3039,
+      "text_size": 1060
+    },
+    {
+      "slug": "update-failed-error-message-when-updating",
+      "title": "How to fix the Update Failed error message when updating Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/update-failed-error-message-when-updating",
+      "html_size": 4946,
+      "text_size": 2808
+    },
+    {
+      "slug": "restore-default-smart-bookmarks-folders",
+      "title": "Restore the default Smart Bookmarks Folders",
+      "url": "https://support.mozilla.org/en-US/kb/restore-default-smart-bookmarks-folders",
+      "html_size": 3697,
+      "text_size": 1668
+    },
+    {
+      "slug": "configure-windows-firewall-allow-firefox-access",
+      "title": "How to let Firefox use the internet on your Windows computer",
+      "url": "https://support.mozilla.org/en-US/kb/configure-windows-firewall-allow-firefox-access",
+      "html_size": 19004,
+      "text_size": 7153
+    },
+    {
+      "slug": "how-do-i-delete-bookmark",
+      "title": "How do I delete a bookmark?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-delete-bookmark",
+      "html_size": 4643,
+      "text_size": 1129
+    },
+    {
+      "slug": "firefox-takes-long-time-start-up",
+      "title": "Firefox takes a long time to start up",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-takes-long-time-start-up",
+      "html_size": 3916,
+      "text_size": 1958
+    },
+    {
+      "slug": "search-firefox-address-bar",
+      "title": "Search with the Firefox address bar",
+      "url": "https://support.mozilla.org/en-US/kb/search-firefox-address-bar",
+      "html_size": 19530,
+      "text_size": 8788
+    },
+    {
+      "slug": "what-to-do-if-firefox-wont-play-any-sounds",
+      "title": "What to do if Firefox won't play any sounds",
+      "url": "https://support.mozilla.org/en-US/kb/what-to-do-if-firefox-wont-play-any-sounds",
+      "html_size": 3955,
+      "text_size": 1711
+    },
+    {
+      "slug": "control-whether-firefox-automatically-fills-forms",
+      "title": "Control whether Firefox automatically fills in forms",
+      "url": "https://support.mozilla.org/en-US/kb/control-whether-firefox-automatically-fills-forms",
+      "html_size": 6027,
+      "text_size": 3074
+    },
+    {
+      "slug": "block-and-unblock-websites-parental-controls-firef",
+      "title": "Block and unblock websites with parental controls on Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/block-and-unblock-websites-parental-controls-firef",
+      "html_size": 3339,
+      "text_size": 1696
+    },
+    {
+      "slug": "disable-or-remove-add-ons",
+      "title": "Disable or remove Add-ons",
+      "url": "https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons",
+      "html_size": 10142,
+      "text_size": 3085
+    },
+    {
+      "slug": "restore-bookmarks-passwords-and-data-from-an-old-firefox-profile",
+      "title": "Restore bookmarks, passwords, and data from an old Firefox profile",
+      "url": "https://support.mozilla.org/en-US/kb/restore-bookmarks-passwords-and-data-from-an-old-firefox-profile",
+      "html_size": 9206,
+      "text_size": 4469
+    },
+    {
+      "slug": "troubleshoot-and-diagnose-firefox-problems",
+      "title": "Troubleshoot and diagnose Firefox problems",
+      "url": "https://support.mozilla.org/en-US/kb/troubleshoot-and-diagnose-firefox-problems",
+      "html_size": 19928,
+      "text_size": 9476
+    },
+    {
+      "slug": "how-to-fix-preferences-wont-save",
+      "title": "How to fix preferences that won't save",
+      "url": "https://support.mozilla.org/en-US/kb/how-to-fix-preferences-wont-save",
+      "html_size": 26524,
+      "text_size": 11354
+    },
+    {
+      "slug": "cannot-remove-add-on-extension-or-theme",
+      "title": "Cannot remove an add-on (extension or theme)",
+      "url": "https://support.mozilla.org/en-US/kb/cannot-remove-add-on-extension-or-theme",
+      "html_size": 14433,
+      "text_size": 5569
+    },
+    {
+      "slug": "unable-install-add-ons-extensions-or-themes",
+      "title": "Unable to install add-ons (extensions or themes)",
+      "url": "https://support.mozilla.org/en-US/kb/unable-install-add-ons-extensions-or-themes",
+      "html_size": 11905,
+      "text_size": 5704
+    },
+    {
+      "slug": "firefox-hangs-or-not-responding",
+      "title": "Firefox hangs or is not responding - How to fix",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-hangs-or-not-responding",
+      "html_size": 18039,
+      "text_size": 8247
+    },
+    {
+      "slug": "pop-blocker-settings-exceptions-troubleshooting",
+      "title": "Pop-up blocker settings, exceptions and troubleshooting",
+      "url": "https://support.mozilla.org/en-US/kb/pop-blocker-settings-exceptions-troubleshooting",
+      "html_size": 10228,
+      "text_size": 4625
+    },
+    {
+      "slug": "reset-preferences-fix-problems",
+      "title": "Reset Firefox preferences to troubleshoot and fix problems",
+      "url": "https://support.mozilla.org/en-US/kb/reset-preferences-fix-problems",
+      "html_size": 4653,
+      "text_size": 1854
+    },
+    {
+      "slug": "import-bookmarks-html-file",
+      "title": "Import Bookmarks from an HTML file",
+      "url": "https://support.mozilla.org/en-US/kb/import-bookmarks-html-file",
+      "html_size": 6906,
+      "text_size": 1918
+    },
+    {
+      "slug": "uninstall-firefox-from-your-computer",
+      "title": "Uninstall Firefox from your computer",
+      "url": "https://support.mozilla.org/en-US/kb/uninstall-firefox-from-your-computer",
+      "html_size": 23603,
+      "text_size": 8391
+    },
+    {
+      "slug": "import-bookmarks-and-other-data-microsoft-edge",
+      "title": "Import Bookmarks and other data from Microsoft Edge",
+      "url": "https://support.mozilla.org/en-US/kb/import-bookmarks-and-other-data-microsoft-edge",
+      "html_size": 9410,
+      "text_size": 2983
+    },
+    {
+      "slug": "create-desktop-shortcut-website",
+      "title": "Create a desktop shortcut to a website",
+      "url": "https://support.mozilla.org/en-US/kb/create-desktop-shortcut-website",
+      "html_size": 2531,
+      "text_size": 1112
+    },
+    {
+      "slug": "sort-bookmarks-quickly-find-ones-you-want",
+      "title": "Sort your bookmarks to quickly find the ones you want",
+      "url": "https://support.mozilla.org/en-US/kb/sort-bookmarks-quickly-find-ones-you-want",
+      "html_size": 4930,
+      "text_size": 1746
+    },
+    {
+      "slug": "use-primary-password-protect-stored-logins",
+      "title": "Use a Primary Password to protect stored logins and passwords",
+      "url": "https://support.mozilla.org/en-US/kb/use-primary-password-protect-stored-logins",
+      "html_size": 12675,
+      "text_size": 4415
+    },
+    {
+      "slug": "how-do-i-tell-if-my-connection-is-secure",
+      "title": "How do I tell if my connection to a website is secure?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-tell-if-my-connection-is-secure",
+      "html_size": 6749,
+      "text_size": 3097
+    },
+    {
+      "slug": "firefox-options-preferences-and-settings",
+      "title": "Change Firefox options, preferences and settings",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-options-preferences-and-settings",
+      "html_size": 16989,
+      "text_size": 7014
+    },
+    {
+      "slug": "cookies-information-websites-store-on-your-computer",
+      "title": "Cookies - Information that websites store on your computer",
+      "url": "https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer",
+      "html_size": 4460,
+      "text_size": 2388
+    },
+    {
+      "slug": "remove-websites-address-bar-suggestions",
+      "title": "Remove websites from the address bar suggestions",
+      "url": "https://support.mozilla.org/en-US/kb/remove-websites-address-bar-suggestions",
+      "html_size": 7907,
+      "text_size": 2814
+    },
+    {
+      "slug": "address-bar-autocomplete-firefox",
+      "title": "Address bar autocomplete suggestions in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/address-bar-autocomplete-firefox",
+      "html_size": 16021,
+      "text_size": 7742
+    },
+    {
+      "slug": "categorizing-bookmarks-make-them-easy-to-find",
+      "title": "Bookmark Tags - Categorize bookmarks to make them easy to find",
+      "url": "https://support.mozilla.org/en-US/kb/categorizing-bookmarks-make-them-easy-to-find",
+      "html_size": 7369,
+      "text_size": 2273
+    },
+    {
+      "slug": "changes-toolbars-and-window-sizes-are-not-saved",
+      "title": "Changes to toolbars and window sizes are not saved",
+      "url": "https://support.mozilla.org/en-US/kb/changes-toolbars-and-window-sizes-are-not-saved",
+      "html_size": 6254,
+      "text_size": 2941
+    },
+    {
+      "slug": "install-older-version-firefox",
+      "title": "Install an older version of Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/install-older-version-firefox",
+      "html_size": 49545,
+      "text_size": 11311
+    },
+    {
+      "slug": "how-stop-firefox-making-automatic-connections",
+      "title": "How to stop Firefox from making automatic connections",
+      "url": "https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections",
+      "html_size": 34360,
+      "text_size": 17317
+    },
+    {
+      "slug": "troubleshoot-firefox-issues-caused-malware",
+      "title": "Troubleshoot Firefox issues caused by malware",
+      "url": "https://support.mozilla.org/en-US/kb/troubleshoot-firefox-issues-caused-malware",
+      "html_size": 12043,
+      "text_size": 6419
+    },
+    {
+      "slug": "diagnose-firefox-issues-using-troubleshoot-mode",
+      "title": "Diagnose Firefox issues using Troubleshoot Mode",
+      "url": "https://support.mozilla.org/en-US/kb/diagnose-firefox-issues-using-troubleshoot-mode",
+      "html_size": 7733,
+      "text_size": 3293
+    },
+    {
+      "slug": "troubleshoot-extensions-themes-to-fix-problems",
+      "title": "Troubleshoot extensions, themes and hardware acceleration issues to solve common Firefox problems",
+      "url": "https://support.mozilla.org/en-US/kb/troubleshoot-extensions-themes-to-fix-problems",
+      "html_size": 20021,
+      "text_size": 7977
+    },
+    {
+      "slug": "usernames-and-passwords-are-not-saved",
+      "title": "Usernames and passwords are not saved",
+      "url": "https://support.mozilla.org/en-US/kb/usernames-and-passwords-are-not-saved",
+      "html_size": 8463,
+      "text_size": 2425
+    },
+    {
+      "slug": "mozillacrashreporter",
+      "title": "Mozilla Crash Reporter",
+      "url": "https://support.mozilla.org/en-US/kb/mozillacrashreporter",
+      "html_size": 6712,
+      "text_size": 3123
+    },
+    {
+      "slug": "find-and-install-add-ons-add-features-to-firefox",
+      "title": "Find and install add-ons to add features to Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/find-and-install-add-ons-add-features-to-firefox",
+      "html_size": 9966,
+      "text_size": 4649
+    },
+    {
+      "slug": "find-what-version-firefox-you-are-using",
+      "title": "Find what version of Firefox you are using",
+      "url": "https://support.mozilla.org/en-US/kb/find-what-version-firefox-you-are-using",
+      "html_size": 2842,
+      "text_size": 1022
+    },
+    {
+      "slug": "third-party-cookies-firefox-tracking-protection",
+      "title": "Third-party cookies and Firefox tracking protection",
+      "url": "https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection",
+      "html_size": 7334,
+      "text_size": 3225
+    },
+    {
+      "slug": "clear-cookies-and-site-data-firefox",
+      "title": "Clear cookies and site data in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox",
+      "html_size": 12893,
+      "text_size": 3704
+    },
+    {
+      "slug": "block-websites-storing-cookies-site-data-firefox",
+      "title": "Block websites from storing cookies and site data in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/block-websites-storing-cookies-site-data-firefox",
+      "html_size": 9756,
+      "text_size": 3509
+    },
+    {
+      "slug": "change-program-used-open-email-links",
+      "title": "Change the program used to open email links",
+      "url": "https://support.mozilla.org/en-US/kb/change-program-used-open-email-links",
+      "html_size": 13279,
+      "text_size": 7276
+    },
+    {
+      "slug": "cant-download-or-save-files",
+      "title": "What to do if you can't download or save files",
+      "url": "https://support.mozilla.org/en-US/kb/cant-download-or-save-files",
+      "html_size": 10280,
+      "text_size": 5029
+    },
+    {
+      "slug": "firefox-and-other-browsers-cant-load-websites",
+      "title": "Firefox and other browsers can't load websites",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-and-other-browsers-cant-load-websites",
+      "html_size": 5612,
+      "text_size": 2870
+    },
+    {
+      "slug": "back-and-restore-information-firefox-profiles",
+      "title": "Back up and restore information in Firefox profiles",
+      "url": "https://support.mozilla.org/en-US/kb/back-and-restore-information-firefox-profiles",
+      "html_size": 10177,
+      "text_size": 4333
+    },
+    {
+      "slug": "websites-show-spinning-wheel-never-finish-load",
+      "title": "Websites show a spinning wheel and never finish loading",
+      "url": "https://support.mozilla.org/en-US/kb/websites-show-spinning-wheel-never-finish-load",
+      "html_size": 2531,
+      "text_size": 1583
+    },
+    {
+      "slug": "restore-previous-session",
+      "title": "Restore previous session - Configure when Firefox shows your most recent tabs and windows",
+      "url": "https://support.mozilla.org/en-US/kb/restore-previous-session",
+      "html_size": 13749,
+      "text_size": 5539
+    },
+    {
+      "slug": "re-enable-add-ons-disabled-when-updating",
+      "title": "Re-enable add-ons that were disabled when updating Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/re-enable-add-ons-disabled-when-updating",
+      "html_size": 4227,
+      "text_size": 2077
+    },
+    {
+      "slug": "export-firefox-bookmarks-to-backup-or-transfer",
+      "title": "Export Firefox bookmarks to an HTML file to back up or transfer bookmarks",
+      "url": "https://support.mozilla.org/en-US/kb/export-firefox-bookmarks-to-backup-or-transfer",
+      "html_size": 3753,
+      "text_size": 1210
+    },
+    {
+      "slug": "how-install-firefox-windows",
+      "title": "How to install Firefox on Windows",
+      "url": "https://support.mozilla.org/en-US/kb/how-install-firefox-windows",
+      "html_size": 8486,
+      "text_size": 3661
+    },
+    {
+      "slug": "install-firefox-linux",
+      "title": "Install Firefox on Linux",
+      "url": "https://support.mozilla.org/en-US/kb/install-firefox-linux",
+      "html_size": 14944,
+      "text_size": 9097
+    },
+    {
+      "slug": "password-manager-remember-delete-edit-logins",
+      "title": "Password Manager - Remember, delete and edit logins and passwords in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/password-manager-remember-delete-edit-logins",
+      "html_size": 21666,
+      "text_size": 8016
+    },
+    {
+      "slug": "update-firefox-latest-release",
+      "title": "Update Firefox to the latest release",
+      "url": "https://support.mozilla.org/en-US/kb/update-firefox-latest-release",
+      "html_size": 7808,
+      "text_size": 2507
+    },
+    {
+      "slug": "change-firefox-behavior-when-open-file",
+      "title": "Manage file types and download actions in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/change-firefox-behavior-when-open-file",
+      "html_size": 18729,
+      "text_size": 9906
+    },
+    {
+      "slug": "restore-bookmarks-from-backup-or-move-them",
+      "title": "Restore bookmarks from backup or move them to another computer",
+      "url": "https://support.mozilla.org/en-US/kb/restore-bookmarks-from-backup-or-move-them",
+      "html_size": 8412,
+      "text_size": 3927
+    },
+    {
+      "slug": "bookmarks-firefox",
+      "title": "Bookmarks in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/bookmarks-firefox",
+      "html_size": 21116,
+      "text_size": 9161
+    },
+    {
+      "slug": "how-print-web-pages-firefox",
+      "title": "How to print web pages in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox",
+      "html_size": 3794,
+      "text_size": 1802
+    },
+    {
+      "slug": "warning-unresponsive-script",
+      "title": "Warning Unresponsive script - What it means and how to fix it",
+      "url": "https://support.mozilla.org/en-US/kb/warning-unresponsive-script",
+      "html_size": 7270,
+      "text_size": 3264
+    },
+    {
+      "slug": "firefox-cant-load-websites-other-browsers-can",
+      "title": "Firefox can't load websites but other browsers can",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-cant-load-websites-other-browsers-can",
+      "html_size": 11927,
+      "text_size": 5854
+    },
+    {
+      "slug": "how-clear-firefox-cache",
+      "title": "How to clear the Firefox cache",
+      "url": "https://support.mozilla.org/en-US/kb/how-clear-firefox-cache",
+      "html_size": 8245,
+      "text_size": 2506
+    },
+    {
+      "slug": "firefox-doesnt-save-web-form-entries",
+      "title": "Firefox doesn't save web form entries",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-doesnt-save-web-form-entries",
+      "html_size": 4800,
+      "text_size": 2725
+    },
+    {
+      "slug": "make-firefox-your-default-browser",
+      "title": "Make Firefox your default browser",
+      "url": "https://support.mozilla.org/en-US/kb/make-firefox-your-default-browser",
+      "html_size": 9588,
+      "text_size": 3430
+    },
+    {
+      "slug": "how-do-i-use-firefox-spell-checker",
+      "title": "How do I use the Firefox spell checker?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-use-firefox-spell-checker",
+      "html_size": 10915,
+      "text_size": 3849
+    },
+    {
+      "slug": "websites-dont-load-troubleshoot-and-fix-errors",
+      "title": "Websites don't load - troubleshoot and fix error messages",
+      "url": "https://support.mozilla.org/en-US/kb/websites-dont-load-troubleshoot-and-fix-errors",
+      "html_size": 16885,
+      "text_size": 8807
+    },
+    {
+      "slug": "customize-firefox-controls-buttons-and-toolbars",
+      "title": "Customize Firefox controls, buttons and toolbars",
+      "url": "https://support.mozilla.org/en-US/kb/customize-firefox-controls-buttons-and-toolbars",
+      "html_size": 12506,
+      "text_size": 4758
+    },
+    {
+      "slug": "view-pdf-files-firefox-or-choose-another-viewer",
+      "title": "View and edit PDF files using Firefox’s built-in viewer",
+      "url": "https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-or-choose-another-viewer",
+      "html_size": 21544,
+      "text_size": 7107
+    },
+    {
+      "slug": "fix-problems-facebook-games-chat-and-more",
+      "title": "Fix problems with Facebook games, chat and more",
+      "url": "https://support.mozilla.org/en-US/kb/fix-problems-facebook-games-chat-and-more",
+      "html_size": 9773,
+      "text_size": 4137
+    },
+    {
+      "slug": "setting-firefox-default-browser-does-not-work",
+      "title": "Setting Firefox as the default browser does not work - What to do",
+      "url": "https://support.mozilla.org/en-US/kb/setting-firefox-default-browser-does-not-work",
+      "html_size": 12315,
+      "text_size": 4834
+    },
+    {
+      "slug": "profile-manager-create-remove-switch-firefox-profiles",
+      "title": "Profile Manager - Create, remove or switch Firefox profiles",
+      "url": "https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles",
+      "html_size": 24894,
+      "text_size": 10256
+    },
+    {
+      "slug": "use-themes-change-look-of-firefox",
+      "title": "Use themes to change the look of Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/use-themes-change-look-of-firefox",
+      "html_size": 12103,
+      "text_size": 3416
+    },
+    {
+      "slug": "firefox-wont-start-find-solutions",
+      "title": "Firefox won't start - find solutions",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-wont-start-find-solutions",
+      "html_size": 13437,
+      "text_size": 7176
+    },
+    {
+      "slug": "recover-lost-or-missing-bookmarks",
+      "title": "Recover lost or missing Bookmarks",
+      "url": "https://support.mozilla.org/en-US/kb/recover-lost-or-missing-bookmarks",
+      "html_size": 12103,
+      "text_size": 5781
+    },
+    {
+      "slug": "where-find-and-manage-downloaded-files-firefox",
+      "title": "Where to find and manage downloaded files in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/where-find-and-manage-downloaded-files-firefox",
+      "html_size": 20620,
+      "text_size": 8324
+    },
+    {
+      "slug": "mouse-shortcuts-perform-common-tasks",
+      "title": "Use mouse shortcuts to perform common tasks in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/mouse-shortcuts-perform-common-tasks",
+      "html_size": 23443,
+      "text_size": 10061
+    },
+    {
+      "slug": "tabs-organize-websites-single-window",
+      "title": "Use tabs to organize lots of websites in a single window",
+      "url": "https://support.mozilla.org/en-US/kb/tabs-organize-websites-single-window",
+      "html_size": 16104,
+      "text_size": 6231
+    },
+    {
+      "slug": "font-size-and-zoom-increase-size-of-web-pages",
+      "title": "Font size and zoom - increase the size of web pages",
+      "url": "https://support.mozilla.org/en-US/kb/font-size-and-zoom-increase-size-of-web-pages",
+      "html_size": 7772,
+      "text_size": 3152
+    },
+    {
+      "slug": "audio-and-video-firefox",
+      "title": "Audio and video files in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/audio-and-video-firefox",
+      "html_size": 16372,
+      "text_size": 6830
+    },
+    {
+      "slug": "tab-preferences-and-settings",
+      "title": "Tab preferences and settings",
+      "url": "https://support.mozilla.org/en-US/kb/tab-preferences-and-settings",
+      "html_size": 8846,
+      "text_size": 3645
+    },
+    {
+      "slug": "fix-login-issues-on-websites-require-passwords",
+      "title": "Fix login issues on websites that require a username and password",
+      "url": "https://support.mozilla.org/en-US/kb/fix-login-issues-on-websites-require-passwords",
+      "html_size": 10806,
+      "text_size": 4125
+    },
+    {
+      "slug": "search-contents-current-page-text-or-links",
+      "title": "How to search the contents of the current page for text or links",
+      "url": "https://support.mozilla.org/en-US/kb/search-contents-current-page-text-or-links",
+      "html_size": 7575,
+      "text_size": 4012
+    },
+    {
+      "slug": "use-troubleshooting-information-page-fix-firefox",
+      "title": "Use the Troubleshooting Information page to help fix Firefox issues",
+      "url": "https://support.mozilla.org/en-US/kb/use-troubleshooting-information-page-fix-firefox",
+      "html_size": 23253,
+      "text_size": 13090
+    },
+    {
+      "slug": "keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "title": "Keyboard shortcuts - Perform common Firefox tasks quickly",
+      "url": "https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly",
+      "html_size": 49518,
+      "text_size": 11762
+    },
+    {
+      "slug": "get-started-firefox-overview-main-features",
+      "title": "Get started with Firefox - An overview of the main features",
+      "url": "https://support.mozilla.org/en-US/kb/get-started-firefox-overview-main-features",
+      "html_size": 11150,
+      "text_size": 3999
+    },
+    {
+      "slug": "firefox-does-not-work-common-fixes",
+      "title": "Firefox does not work - Common fixes to get you back up and running",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-does-not-work-common-fixes",
+      "html_size": 3687,
+      "text_size": 1946
+    },
+    {
+      "slug": "quick-fixes-if-your-firefox-slows-down",
+      "title": "Quick fixes if your Firefox slows down",
+      "url": "https://support.mozilla.org/en-US/kb/quick-fixes-if-your-firefox-slows-down",
+      "html_size": 6995,
+      "text_size": 3514
+    },
+    {
+      "slug": "fix-bookmarks-and-history-will-not-be-functional",
+      "title": "Fix \"The bookmarks and history system will not be functional\" error message",
+      "url": "https://support.mozilla.org/en-US/kb/fix-bookmarks-and-history-will-not-be-functional",
+      "html_size": 8412,
+      "text_size": 4141
+    },
+    {
+      "slug": "javascript-settings-for-interactive-web-pages",
+      "title": "JavaScript settings and preferences for interactive web pages",
+      "url": "https://support.mozilla.org/en-US/kb/javascript-settings-for-interactive-web-pages",
+      "html_size": 5214,
+      "text_size": 2686
+    },
+    {
+      "slug": "how-do-i-restore-my-tabs-last-time",
+      "title": "How do I restore my tabs from last time?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-restore-my-tabs-last-time",
+      "html_size": 4248,
+      "text_size": 1398
+    },
+    {
+      "slug": "private-browsing-use-firefox-without-history",
+      "title": "Private Browsing - Use Firefox without saving history",
+      "url": "https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history",
+      "html_size": 10166,
+      "text_size": 4528
+    },
+    {
+      "slug": "firefox-already-running-not-responding",
+      "title": "\"Firefox is already running but is not responding\" error - How to fix",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-already-running-not-responding",
+      "html_size": 11179,
+      "text_size": 4710
+    },
+    {
+      "slug": "clear-recent-searches-search-bar",
+      "title": "Clear recent searches from the Search bar",
+      "url": "https://support.mozilla.org/en-US/kb/clear-recent-searches-search-bar",
+      "html_size": 4714,
+      "text_size": 1520
+    },
+    {
+      "slug": "restore-menu-bar-firefox",
+      "title": "Restore the Menu bar in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/restore-menu-bar-firefox",
+      "html_size": 6447,
+      "text_size": 2111
+    },
+    {
+      "slug": "fix-problems-connecting-websites-after-updating",
+      "title": "Fix problems connecting to websites after updating Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/fix-problems-connecting-websites-after-updating",
+      "html_size": 2322,
+      "text_size": 1523
+    },
+    {
+      "slug": "configure-firewalls-so-firefox-can-access-internet",
+      "title": "Configure firewalls so that Firefox can access the Internet",
+      "url": "https://support.mozilla.org/en-US/kb/configure-firewalls-so-firefox-can-access-internet",
+      "html_size": 2924,
+      "text_size": 1789
+    },
+    {
+      "slug": "profiles-where-firefox-stores-user-data",
+      "title": "Profiles - Where Firefox stores your bookmarks, passwords and other user data",
+      "url": "https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data",
+      "html_size": 18808,
+      "text_size": 9529
+    },
+    {
+      "slug": "pinned-tabs-keep-favorite-websites-open",
+      "title": "Pinned Tabs - keep favorite websites open and just a click away",
+      "url": "https://support.mozilla.org/en-US/kb/pinned-tabs-keep-favorite-websites-open",
+      "html_size": 4707,
+      "text_size": 2230
+    },
+    {
+      "slug": "how-to-use-for",
+      "title": "How to use \"For\" tags",
+      "url": "https://support.mozilla.org/en-US/kb/how-to-use-for",
+      "html_size": 16894,
+      "text_size": 9156
+    },
+    {
+      "slug": "how-do-i-set-sync-my-computer",
+      "title": "How do I set up Sync on my computer?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-set-sync-my-computer",
+      "html_size": 3732,
+      "text_size": 1463
+    },
+    {
+      "slug": "how-do-i-turn-do-not-track-feature",
+      "title": "How do I turn on the Do Not Track feature?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-turn-do-not-track-feature",
+      "html_size": 5583,
+      "text_size": 2868
+    },
+    {
+      "slug": "upgrade-graphics-drivers-use-hardware-acceleration",
+      "title": "Upgrade your graphics drivers to use hardware acceleration and WebGL",
+      "url": "https://support.mozilla.org/en-US/kb/upgrade-graphics-drivers-use-hardware-acceleration",
+      "html_size": 14887,
+      "text_size": 7133
+    },
+    {
+      "slug": "disable-firefox-sync-lost-phone-or-tablet",
+      "title": "Disable Firefox Sync on a lost phone or tablet",
+      "url": "https://support.mozilla.org/en-US/kb/disable-firefox-sync-lost-phone-or-tablet",
+      "html_size": 1682,
+      "text_size": 1080
+    },
+    {
+      "slug": "how-do-i-choose-what-information-sync-firefox",
+      "title": "How do I choose what information to sync on Firefox?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-choose-what-information-sync-firefox",
+      "html_size": 10495,
+      "text_size": 4109
+    },
+    {
+      "slug": "ive-lost-my-firefox-sync-account-information",
+      "title": "I've lost my Firefox Sync account information - What to do",
+      "url": "https://support.mozilla.org/en-US/kb/ive-lost-my-firefox-sync-account-information",
+      "html_size": 4193,
+      "text_size": 2114
+    },
+    {
+      "slug": "refresh-firefox-reset-add-ons-and-settings",
+      "title": "Refresh Firefox - reset add-ons and settings",
+      "url": "https://support.mozilla.org/en-US/kb/refresh-firefox-reset-add-ons-and-settings",
+      "html_size": 5509,
+      "text_size": 2598
+    },
+    {
+      "slug": "how-make-firefox-and-websites-go-full-screen",
+      "title": "Use Firefox in Full Screen mode",
+      "url": "https://support.mozilla.org/en-US/kb/how-make-firefox-and-websites-go-full-screen",
+      "html_size": 3283,
+      "text_size": 1080
+    },
+    {
+      "slug": "how-do-i-create-screenshot-my-problem",
+      "title": "How do I create a screenshot of my problem?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-create-screenshot-my-problem",
+      "html_size": 12488,
+      "text_size": 5632
+    },
+    {
+      "slug": "remove-toolbar-has-taken-over-your-firefox-search",
+      "title": "Remove a toolbar that has taken over your Firefox search or home page",
+      "url": "https://support.mozilla.org/en-US/kb/remove-toolbar-has-taken-over-your-firefox-search",
+      "html_size": 5939,
+      "text_size": 3388
+    },
+    {
+      "slug": "how-do-i-share-firefox-between-people-on-computer",
+      "title": "How do I share Firefox between people on a computer?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-share-firefox-between-people-on-computer",
+      "html_size": 6695,
+      "text_size": 2734
+    },
+    {
+      "slug": "what-mozilla-maintenance-service",
+      "title": "What is the Mozilla Maintenance Service?",
+      "url": "https://support.mozilla.org/en-US/kb/what-mozilla-maintenance-service",
+      "html_size": 4876,
+      "text_size": 2178
+    },
+    {
+      "slug": "customize-items-on-firefox-new-tab-page",
+      "title": "Customize items on your Firefox New Tab page",
+      "url": "https://support.mozilla.org/en-US/kb/customize-items-on-firefox-new-tab-page",
+      "html_size": 34278,
+      "text_size": 11183
+    },
+    {
+      "slug": "where-are-my-logins-stored",
+      "title": "Where are my logins stored?",
+      "url": "https://support.mozilla.org/en-US/kb/where-are-my-logins-stored",
+      "html_size": 8766,
+      "text_size": 5581
+    },
+    {
+      "slug": "how-stay-safe-web",
+      "title": "How to stay safe on the web",
+      "url": "https://support.mozilla.org/en-US/kb/how-stay-safe-web",
+      "html_size": 7342,
+      "text_size": 3674
+    },
+    {
+      "slug": "mixed-content-blocking-firefox",
+      "title": "Mixed content blocking in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox",
+      "html_size": 9353,
+      "text_size": 4064
+    },
+    {
+      "slug": "how-does-phishing-and-malware-protection-work",
+      "title": "How does built-in Phishing and Malware Protection work?",
+      "url": "https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work",
+      "html_size": 14072,
+      "text_size": 8186
+    },
+    {
+      "slug": "secure-website-certificate",
+      "title": "Secure website certificate",
+      "url": "https://support.mozilla.org/en-US/kb/secure-website-certificate",
+      "html_size": 11309,
+      "text_size": 5908
+    },
+    {
+      "slug": "about-new-tab-page",
+      "title": "New Tab page in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/about-new-tab-page",
+      "html_size": 7409,
+      "text_size": 2585
+    },
+    {
+      "slug": "why-open-badges",
+      "title": "Why Open Badges?",
+      "url": "https://support.mozilla.org/en-US/kb/why-open-badges",
+      "html_size": 1897,
+      "text_size": 1562
+    },
+    {
+      "slug": "mozillas-open-badges-project",
+      "title": "What is Mozilla's Open Badges project?",
+      "url": "https://support.mozilla.org/en-US/kb/mozillas-open-badges-project",
+      "html_size": 519,
+      "text_size": 475
+    },
+    {
+      "slug": "how-reset-default-user-agent-firefox",
+      "title": "How to reset the default user agent on Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/how-reset-default-user-agent-firefox",
+      "html_size": 8997,
+      "text_size": 4719
+    },
+    {
+      "slug": "use-firefox-sidebar-access-bookmarks-history-synced",
+      "title": "Use the Firefox Sidebar to access bookmarks, history and synced tabs",
+      "url": "https://support.mozilla.org/en-US/kb/use-firefox-sidebar-access-bookmarks-history-synced",
+      "html_size": 3157,
+      "text_size": 1199
+    },
+    {
+      "slug": "im-having-problems-confirming-my-firefox-account",
+      "title": "I'm having problems confirming my Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/im-having-problems-confirming-my-firefox-account",
+      "html_size": 5198,
+      "text_size": 3165
+    },
+    {
+      "slug": "use-firefox-another-language",
+      "title": "Use Firefox in another language",
+      "url": "https://support.mozilla.org/en-US/kb/use-firefox-another-language",
+      "html_size": 5205,
+      "text_size": 2277
+    },
+    {
+      "slug": "where-go-developer-support",
+      "title": "Where to go for developer support",
+      "url": "https://support.mozilla.org/en-US/kb/where-go-developer-support",
+      "html_size": 933,
+      "text_size": 565
+    },
+    {
+      "slug": "access-mozilla-services-firefox-account",
+      "title": "Access Mozilla services with a Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/access-mozilla-services-firefox-account",
+      "html_size": 5196,
+      "text_size": 3082
+    },
+    {
+      "slug": "frequently-asked-questions",
+      "title": "Frequently Asked Questions",
+      "url": "https://support.mozilla.org/en-US/kb/frequently-asked-questions",
+      "html_size": 2579,
+      "text_size": 1681
+    },
+    {
+      "slug": "forget-button-quickly-delete-your-browsing-history",
+      "title": "Forget button - quickly delete your browsing history on Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/forget-button-quickly-delete-your-browsing-history",
+      "html_size": 3248,
+      "text_size": 1208
+    },
+    {
+      "slug": "firefox-crashes-asking-support",
+      "title": "Firefox crashes - asking for support",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-crashes-asking-support",
+      "html_size": 4362,
+      "text_size": 2353
+    },
+    {
+      "slug": "get-help-firefox-developer-edition",
+      "title": "Get help with Firefox Developer Edition",
+      "url": "https://support.mozilla.org/en-US/kb/get-help-firefox-developer-edition",
+      "html_size": 3007,
+      "text_size": 886
+    },
+    {
+      "slug": "enable-drm",
+      "title": "Watch DRM content on Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/enable-drm",
+      "html_size": 9786,
+      "text_size": 4976
+    },
+    {
+      "slug": "firefox-reader-view-clutter-free-web-pages",
+      "title": "Firefox Reader View for clutter-free web pages",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-reader-view-clutter-free-web-pages",
+      "html_size": 9472,
+      "text_size": 2271
+    },
+    {
+      "slug": "open-h264-plugin-firefox",
+      "title": "Why is there an OpenH264 plugin in Firefox?",
+      "url": "https://support.mozilla.org/en-US/kb/open-h264-plugin-firefox",
+      "html_size": 1173,
+      "text_size": 603
+    },
+    {
+      "slug": "what-search-hijacking",
+      "title": "What is search hijacking?",
+      "url": "https://support.mozilla.org/en-US/kb/what-search-hijacking",
+      "html_size": 8689,
+      "text_size": 4884
+    },
+    {
+      "slug": "add-on-signing-in-firefox",
+      "title": "Add-on signing in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/add-on-signing-in-firefox",
+      "html_size": 6590,
+      "text_size": 3852
+    },
+    {
+      "slug": "avoid-and-report-mozilla-tech-support-scams",
+      "title": "Avoid and report Mozilla tech support scams",
+      "url": "https://support.mozilla.org/en-US/kb/avoid-and-report-mozilla-tech-support-scams",
+      "html_size": 3146,
+      "text_size": 1916
+    },
+    {
+      "slug": "rate-your-firefox-experience-heartbeat",
+      "title": "Rate your Firefox experience, surveys and out of date messages (Heartbeat)",
+      "url": "https://support.mozilla.org/en-US/kb/rate-your-firefox-experience-heartbeat",
+      "html_size": 4292,
+      "text_size": 2151
+    },
+    {
+      "slug": "add-or-remove-search-engine-firefox",
+      "title": "Add or remove a search engine in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/add-or-remove-search-engine-firefox",
+      "html_size": 17771,
+      "text_size": 6201
+    },
+    {
+      "slug": "about-config-editor-firefox",
+      "title": "Configuration Editor for Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/about-config-editor-firefox",
+      "html_size": 10117,
+      "text_size": 3417
+    },
+    {
+      "slug": "how-change-your-default-browser-firefox-windows",
+      "title": "Make Firefox your default browser on Windows",
+      "url": "https://support.mozilla.org/en-US/kb/how-change-your-default-browser-firefox-windows",
+      "html_size": 6615,
+      "text_size": 3009
+    },
+    {
+      "slug": "search-suggestions-firefox",
+      "title": "Search suggestions in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/search-suggestions-firefox",
+      "html_size": 12410,
+      "text_size": 4651
+    },
+    {
+      "slug": "change-your-default-search-settings-firefox",
+      "title": "Change your default search settings in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/change-your-default-search-settings-firefox",
+      "html_size": 16547,
+      "text_size": 6549
+    },
+    {
+      "slug": "mute-sound-firefox-tabs",
+      "title": "Mute sound in Firefox tabs",
+      "url": "https://support.mozilla.org/en-US/kb/mute-sound-firefox-tabs",
+      "html_size": 1869,
+      "text_size": 639
+    },
+    {
+      "slug": "site-information-panel",
+      "title": "Site Information panel",
+      "url": "https://support.mozilla.org/en-US/kb/site-information-panel",
+      "html_size": 2863,
+      "text_size": 1441
+    },
+    {
+      "slug": "insecure-password-warning-firefox",
+      "title": "Insecure connection password warning in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/insecure-password-warning-firefox",
+      "html_size": 3417,
+      "text_size": 1925
+    },
+    {
+      "slug": "im-having-problems-my-firefox-account",
+      "title": "I'm having problems with my Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/im-having-problems-my-firefox-account",
+      "html_size": 9657,
+      "text_size": 4805
+    },
+    {
+      "slug": "push-notifications-firefox",
+      "title": "Web Push notifications in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/push-notifications-firefox",
+      "html_size": 13774,
+      "text_size": 7301
+    },
+    {
+      "slug": "what-does-your-connection-is-not-secure-mean",
+      "title": "What do the security warning codes mean?",
+      "url": "https://support.mozilla.org/en-US/kb/what-does-your-connection-is-not-secure-mean",
+      "html_size": 14472,
+      "text_size": 7932
+    },
+    {
+      "slug": "fxa-managing-devices",
+      "title": "Manage the devices linked to your Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/fxa-managing-devices",
+      "html_size": 3444,
+      "text_size": 1449
+    },
+    {
+      "slug": "accessibility-and-ppt",
+      "title": "Accessibility not available during multi-process support",
+      "url": "https://support.mozilla.org/en-US/kb/accessibility-and-ppt",
+      "html_size": 1505,
+      "text_size": 1144
+    },
+    {
+      "slug": "error-codes-secure-websites",
+      "title": "Troubleshoot security error codes on secure websites",
+      "url": "https://support.mozilla.org/en-US/kb/error-codes-secure-websites",
+      "html_size": 10807,
+      "text_size": 5279
+    },
+    {
+      "slug": "how-do-i-tell-if-32-bit-or-64-bit",
+      "title": "How do I tell if I have the 32-bit or 64-bit Firefox?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-tell-if-32-bit-or-64-bit",
+      "html_size": 5156,
+      "text_size": 2298
+    },
+    {
+      "slug": "access-your-add-ons-firefox-accounts",
+      "title": "Access your add-ons with a Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/access-your-add-ons-firefox-accounts",
+      "html_size": 5603,
+      "text_size": 2944
+    },
+    {
+      "slug": "view-synced-tabs-other-devices",
+      "title": "View synced tabs from other devices",
+      "url": "https://support.mozilla.org/en-US/kb/view-synced-tabs-other-devices",
+      "html_size": 1115,
+      "text_size": 591
+    },
+    {
+      "slug": "change-your-firefox-accounts-password",
+      "title": "Change your Mozilla account password",
+      "url": "https://support.mozilla.org/en-US/kb/change-your-firefox-accounts-password",
+      "html_size": 2651,
+      "text_size": 919
+    },
+    {
+      "slug": "suspicious-activity-my-firefox-account",
+      "title": "Suspicious activity on my Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/suspicious-activity-my-firefox-account",
+      "html_size": 2836,
+      "text_size": 1804
+    },
+    {
+      "slug": "troubleshoot-time-errors-secure-websites",
+      "title": "Troubleshoot time-related errors on secure websites",
+      "url": "https://support.mozilla.org/en-US/kb/troubleshoot-time-errors-secure-websites",
+      "html_size": 11048,
+      "text_size": 4300
+    },
+    {
+      "slug": "re-enable-multi-process-disabled-windows-utilities",
+      "title": "Re-enable multi-process support disabled by Windows utilities",
+      "url": "https://support.mozilla.org/en-US/kb/re-enable-multi-process-disabled-windows-utilities",
+      "html_size": 1415,
+      "text_size": 823
+    },
+    {
+      "slug": "containers",
+      "title": "Multi-Account Containers",
+      "url": "https://support.mozilla.org/en-US/kb/containers",
+      "html_size": 20722,
+      "text_size": 8776
+    },
+    {
+      "slug": "i-found-fake-firefox-update",
+      "title": "I found a fake Firefox update",
+      "url": "https://support.mozilla.org/en-US/kb/i-found-fake-firefox-update",
+      "html_size": 6161,
+      "text_size": 2953
+    },
+    {
+      "slug": "screenshare-safety",
+      "title": "Share browser windows or your screen with sites you trust",
+      "url": "https://support.mozilla.org/en-US/kb/screenshare-safety",
+      "html_size": 2664,
+      "text_size": 1930
+    },
+    {
+      "slug": "using-primary-password-sync",
+      "title": "Use a Primary Password with Sync",
+      "url": "https://support.mozilla.org/en-US/kb/using-primary-password-sync",
+      "html_size": 2517,
+      "text_size": 1898
+    },
+    {
+      "slug": "accounts-blocked",
+      "title": "My sign in was blocked for security reasons on Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/accounts-blocked",
+      "html_size": 2478,
+      "text_size": 1455
+    },
+    {
+      "slug": "npapi-plugins",
+      "title": "Why do Java, Silverlight, Adobe Acrobat and other plugins no longer work?",
+      "url": "https://support.mozilla.org/en-US/kb/npapi-plugins",
+      "html_size": 3277,
+      "text_size": 2306
+    },
+    {
+      "slug": "end-support-windows-xp-and-vista",
+      "title": "Firefox has ended support for Windows XP and Vista",
+      "url": "https://support.mozilla.org/en-US/kb/end-support-windows-xp-and-vista",
+      "html_size": 2936,
+      "text_size": 1951
+    },
+    {
+      "slug": "performance-settings",
+      "title": "Firefox's performance settings",
+      "url": "https://support.mozilla.org/en-US/kb/performance-settings",
+      "html_size": 3068,
+      "text_size": 1590
+    },
+    {
+      "slug": "view-mobile-bookmarks-your-computer",
+      "title": "View mobile bookmarks on your computer",
+      "url": "https://support.mozilla.org/en-US/kb/view-mobile-bookmarks-your-computer",
+      "html_size": 748,
+      "text_size": 312
+    },
+    {
+      "slug": "how-do-i-delete-my-firefox-account",
+      "title": "How do I delete my Mozilla account?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-delete-my-firefox-account",
+      "html_size": 1365,
+      "text_size": 894
+    },
+    {
+      "slug": "storage",
+      "title": "Manage local site storage settings",
+      "url": "https://support.mozilla.org/en-US/kb/storage",
+      "html_size": 6505,
+      "text_size": 2367
+    },
+    {
+      "slug": "64-bit-firefox-crashes-citrixs-xenapp-vm",
+      "title": "64-bit Firefox crashes with Citrix's XenApp VM",
+      "url": "https://support.mozilla.org/en-US/kb/64-bit-firefox-crashes-citrixs-xenapp-vm",
+      "html_size": 1081,
+      "text_size": 577
+    },
+    {
+      "slug": "take-screenshots-firefox",
+      "title": "Take screenshots in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/take-screenshots-firefox",
+      "html_size": 13871,
+      "text_size": 6379
+    },
+    {
+      "slug": "how-update-add-ons",
+      "title": "How to update add-ons",
+      "url": "https://support.mozilla.org/en-US/kb/how-update-add-ons",
+      "html_size": 5408,
+      "text_size": 2506
+    },
+    {
+      "slug": "built-themes-firefox-alternative-complete-themes",
+      "title": "Built-in themes in Firefox - alternative to complete themes",
+      "url": "https://support.mozilla.org/en-US/kb/built-themes-firefox-alternative-complete-themes",
+      "html_size": 1418,
+      "text_size": 448
+    },
+    {
+      "slug": "shield",
+      "title": "About Studies",
+      "url": "https://support.mozilla.org/en-US/kb/shield",
+      "html_size": 5080,
+      "text_size": 1943
+    },
+    {
+      "slug": "automatically-fill-your-address-web-forms",
+      "title": "Automatically fill in your address on web forms",
+      "url": "https://support.mozilla.org/en-US/kb/automatically-fill-your-address-web-forms",
+      "html_size": 5205,
+      "text_size": 2295
+    },
+    {
+      "slug": "i-cant-play-audio-remote-desktop-connection",
+      "title": "I can’t play audio on a Remote Desktop Connection",
+      "url": "https://support.mozilla.org/en-US/kb/i-cant-play-audio-remote-desktop-connection",
+      "html_size": 2101,
+      "text_size": 965
+    },
+    {
+      "slug": "connection-settings-firefox",
+      "title": "Connection settings in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/connection-settings-firefox",
+      "html_size": 4330,
+      "text_size": 2290
+    },
+    {
+      "slug": "add-search-bar-firefox-toolbar",
+      "title": "Add the Search bar to your Firefox toolbar",
+      "url": "https://support.mozilla.org/en-US/kb/add-search-bar-firefox-toolbar",
+      "html_size": 4670,
+      "text_size": 1320
+    },
+    {
+      "slug": "microcode-update",
+      "title": "Updating processor microcode",
+      "url": "https://support.mozilla.org/en-US/kb/microcode-update",
+      "html_size": 3938,
+      "text_size": 3491
+    },
+    {
+      "slug": "broadwell-u-microcode",
+      "title": "Crash on Broadwell-U with old microcode",
+      "url": "https://support.mozilla.org/en-US/kb/broadwell-u-microcode",
+      "html_size": 731,
+      "text_size": 570
+    },
+    {
+      "slug": "can-i-use-my-screen-reader-new-firefox",
+      "title": "Can I use my screen reader with the new Firefox?",
+      "url": "https://support.mozilla.org/en-US/kb/can-i-use-my-screen-reader-new-firefox",
+      "html_size": 2251,
+      "text_size": 1542
+    },
+    {
+      "slug": "switching-chrome-firefox",
+      "title": "Switch from Chrome to Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/switching-chrome-firefox",
+      "html_size": 6495,
+      "text_size": 1927
+    },
+    {
+      "slug": "switch-to-firefox-extended-support-release-esr",
+      "title": "Switch to Firefox Extended Support Release (ESR) for personal use",
+      "url": "https://support.mozilla.org/en-US/kb/switch-to-firefox-extended-support-release-esr",
+      "html_size": 1207,
+      "text_size": 709
+    },
+    {
+      "slug": "extension-changed-my-new-tab-page",
+      "title": "An extension changed my New Tab page or home page",
+      "url": "https://support.mozilla.org/en-US/kb/extension-changed-my-new-tab-page",
+      "html_size": 4205,
+      "text_size": 1284
+    },
+    {
+      "slug": "print-simplified-clutter-free-pages-firefox",
+      "title": "Print simplified, clutter-free pages in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/print-simplified-clutter-free-pages-firefox",
+      "html_size": 4065,
+      "text_size": 1201
+    },
+    {
+      "slug": "utf-8-only-file-paths",
+      "title": "File system paths on Linux are always treated as UTF-8",
+      "url": "https://support.mozilla.org/en-US/kb/utf-8-only-file-paths",
+      "html_size": 793,
+      "text_size": 607
+    },
+    {
+      "slug": "does-firefox-share-my-location-websites",
+      "title": "Does Firefox share my location with websites?",
+      "url": "https://support.mozilla.org/en-US/kb/does-firefox-share-my-location-websites",
+      "html_size": 11124,
+      "text_size": 5592
+    },
+    {
+      "slug": "tips-assessing-safety-extension",
+      "title": "Tips for assessing the safety of an extension",
+      "url": "https://support.mozilla.org/en-US/kb/tips-assessing-safety-extension",
+      "html_size": 4833,
+      "text_size": 3274
+    },
+    {
+      "slug": "permission-request-messages-firefox-extensions",
+      "title": "About permission request messages for Firefox extensions",
+      "url": "https://support.mozilla.org/en-US/kb/permission-request-messages-firefox-extensions",
+      "html_size": 32004,
+      "text_size": 19444
+    },
+    {
+      "slug": "videos-dont-have-sound-citrix",
+      "title": "Videos don't have sound on Citrix",
+      "url": "https://support.mozilla.org/en-US/kb/videos-dont-have-sound-citrix",
+      "html_size": 2193,
+      "text_size": 983
+    },
+    {
+      "slug": "how-add-translate-feature-firefox",
+      "title": "How to add the translate add-on to Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/how-add-translate-feature-firefox",
+      "html_size": 2471,
+      "text_size": 1713
+    },
+    {
+      "slug": "firefox-protection-against-fingerprinting",
+      "title": "Firefox's protection against fingerprinting",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-protection-against-fingerprinting",
+      "html_size": 12057,
+      "text_size": 7040
+    },
+    {
+      "slug": "privacy-web-authentication",
+      "title": "Protect privacy while using Web Authentication",
+      "url": "https://support.mozilla.org/en-US/kb/privacy-web-authentication",
+      "html_size": 1632,
+      "text_size": 1031
+    },
+    {
+      "slug": "facebook-container-isnt-working",
+      "title": "Facebook Container isn't working",
+      "url": "https://support.mozilla.org/en-US/kb/facebook-container-isnt-working",
+      "html_size": 4124,
+      "text_size": 2326
+    },
+    {
+      "slug": "how-facebook-container-different-multi-account-con",
+      "title": "How is Facebook Container different from Multi-account Containers?",
+      "url": "https://support.mozilla.org/en-US/kb/how-facebook-container-different-multi-account-con",
+      "html_size": 1738,
+      "text_size": 1390
+    },
+    {
+      "slug": "firefox-4k-ultra-high-definition-youtube-videos",
+      "title": "Playing 4K (Ultra-High Definition) YouTube videos in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-4k-ultra-high-definition-youtube-videos",
+      "html_size": 3189,
+      "text_size": 2038
+    },
+    {
+      "slug": "secure-firefox-account-two-step-authentication",
+      "title": "Set up two-factor authentication on your Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/secure-firefox-account-two-step-authentication",
+      "html_size": 14079,
+      "text_size": 5864
+    },
+    {
+      "slug": "access-hidden-tabs-firefox",
+      "title": "Access hidden tabs in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/access-hidden-tabs-firefox",
+      "html_size": 2581,
+      "text_size": 681
+    },
+    {
+      "slug": "reporting-extensions-and-themes-abuse",
+      "title": "Report extensions and themes for abuse",
+      "url": "https://support.mozilla.org/en-US/kb/reporting-extensions-and-themes-abuse",
+      "html_size": 10366,
+      "text_size": 6432
+    },
+    {
+      "slug": "reset-your-firefox-account-password-recovery-keys",
+      "title": "Reset your Mozilla account password with Recovery Keys",
+      "url": "https://support.mozilla.org/en-US/kb/reset-your-firefox-account-password-recovery-keys",
+      "html_size": 7211,
+      "text_size": 3232
+    },
+    {
+      "slug": "firefox-starts-automatically-when-i-restart-window",
+      "title": "Firefox starts automatically when I restart Windows",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-starts-automatically-when-i-restart-window",
+      "html_size": 1880,
+      "text_size": 926
+    },
+    {
+      "slug": "block-autoplay",
+      "title": "Allow or block media autoplay in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/block-autoplay",
+      "html_size": 7737,
+      "text_size": 3026
+    },
+    {
+      "slug": "feed-reader-replacements-firefox",
+      "title": "Feed reader replacements for Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/feed-reader-replacements-firefox",
+      "html_size": 3436,
+      "text_size": 2035
+    },
+    {
+      "slug": "remove-synced-device-firefox-accounts",
+      "title": "Remove a synced device from your Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/remove-synced-device-firefox-accounts",
+      "html_size": 1075,
+      "text_size": 732
+    },
+    {
+      "slug": "report-breakage-due-blocking",
+      "title": "How do I report a broken site in Firefox desktop?",
+      "url": "https://support.mozilla.org/en-US/kb/report-breakage-due-blocking",
+      "html_size": 14219,
+      "text_size": 7673
+    },
+    {
+      "slug": "recommendations-firefox",
+      "title": "Recommendations from Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/recommendations-firefox",
+      "html_size": 11410,
+      "text_size": 5613
+    },
+    {
+      "slug": "how-use-collections-addonsmozillaorg",
+      "title": "How to use collections on addons.mozilla.org",
+      "url": "https://support.mozilla.org/en-US/kb/how-use-collections-addonsmozillaorg",
+      "html_size": 6468,
+      "text_size": 2171
+    },
+    {
+      "slug": "how-do-you-use-google-firebase-firefox",
+      "title": "How do you use Google Firebase in Firefox?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-you-use-google-firebase-firefox",
+      "html_size": 3752,
+      "text_size": 2423
+    },
+    {
+      "slug": "live-bookmarks-migration",
+      "title": "What happened to my Live Bookmarks?",
+      "url": "https://support.mozilla.org/en-US/kb/live-bookmarks-migration",
+      "html_size": 881,
+      "text_size": 643
+    },
+    {
+      "slug": "personalized-extension-recommendations",
+      "title": "Personalized extension recommendations",
+      "url": "https://support.mozilla.org/en-US/kb/personalized-extension-recommendations",
+      "html_size": 6929,
+      "text_size": 3650
+    },
+    {
+      "slug": "common-myths-about-private-browsing",
+      "title": "Common Myths about Private Browsing",
+      "url": "https://support.mozilla.org/en-US/kb/common-myths-about-private-browsing",
+      "html_size": 3472,
+      "text_size": 2122
+    },
+    {
+      "slug": "windows-s-mode-wont-let-me-install-firefox",
+      "title": "Windows in S mode won't let me install Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/windows-s-mode-wont-let-me-install-firefox",
+      "html_size": 1151,
+      "text_size": 648
+    },
+    {
+      "slug": "assign-shortcuts-search-engines",
+      "title": "Assign shortcuts to search engines",
+      "url": "https://support.mozilla.org/en-US/kb/assign-shortcuts-search-engines",
+      "html_size": 3202,
+      "text_size": 1567
+    },
+    {
+      "slug": "choose-display-languages-multilingual-web-pages",
+      "title": "Choose display languages for multilingual web pages",
+      "url": "https://support.mozilla.org/en-US/kb/choose-display-languages-multilingual-web-pages",
+      "html_size": 3067,
+      "text_size": 1325
+    },
+    {
+      "slug": "what-if-im-locked-out-two-step-authentication",
+      "title": "What if I'm locked out of Two-Step Authentication?",
+      "url": "https://support.mozilla.org/en-US/kb/what-if-im-locked-out-two-step-authentication",
+      "html_size": 8426,
+      "text_size": 5398
+    },
+    {
+      "slug": "third-party-trackers",
+      "title": "Third-party trackers",
+      "url": "https://support.mozilla.org/en-US/kb/third-party-trackers",
+      "html_size": 7981,
+      "text_size": 5666
+    },
+    {
+      "slug": "extensions-private-browsing",
+      "title": "Extensions in Private Browsing",
+      "url": "https://support.mozilla.org/en-US/kb/extensions-private-browsing",
+      "html_size": 5162,
+      "text_size": 2372
+    },
+    {
+      "slug": "disable-high-contrast-mode-firefox",
+      "title": "Disable high contrast mode in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/disable-high-contrast-mode-firefox",
+      "html_size": 1941,
+      "text_size": 543
+    },
+    {
+      "slug": "dedicated-profiles-firefox-installation",
+      "title": "Dedicated profiles per Firefox installation",
+      "url": "https://support.mozilla.org/en-US/kb/dedicated-profiles-firefox-installation",
+      "html_size": 6598,
+      "text_size": 3570
+    },
+    {
+      "slug": "task-manager-tabs-or-extensions-are-slowing-firefox",
+      "title": "Task Manager - see whether tabs or extensions are slowing down Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/task-manager-tabs-or-extensions-are-slowing-firefox",
+      "html_size": 9241,
+      "text_size": 4192
+    },
+    {
+      "slug": "search-open-tabs-firefox",
+      "title": "Search open tabs in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/search-open-tabs-firefox",
+      "html_size": 2936,
+      "text_size": 616
+    },
+    {
+      "slug": "manage-extension-shortcuts-firefox",
+      "title": "Manage extension shortcuts in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox",
+      "html_size": 1609,
+      "text_size": 335
+    },
+    {
+      "slug": "how-do-i-know-status-my-sync",
+      "title": "How do I know the status of my sync?",
+      "url": "https://support.mozilla.org/en-US/kb/how-do-i-know-status-my-sync",
+      "html_size": 7534,
+      "text_size": 3286
+    },
+    {
+      "slug": "windows-administrator-launcher-process-error-fix",
+      "title": "Drag and Drop errors with Firefox Launcher Process enabled and Windows UAC disabled - How to Fix",
+      "url": "https://support.mozilla.org/en-US/kb/windows-administrator-launcher-process-error-fix",
+      "html_size": 5286,
+      "text_size": 3158
+    },
+    {
+      "slug": "review-installed-extensions",
+      "title": "Review installed extensions",
+      "url": "https://support.mozilla.org/en-US/kb/review-installed-extensions",
+      "html_size": 6858,
+      "text_size": 3653
+    },
+    {
+      "slug": "understanding-risks-unlisted-extensions",
+      "title": "Understanding the risks of installing self-hosted extensions",
+      "url": "https://support.mozilla.org/en-US/kb/understanding-risks-unlisted-extensions",
+      "html_size": 2800,
+      "text_size": 2341
+    },
+    {
+      "slug": "access-toolbar-functions-using-keyboard",
+      "title": "Access toolbar functions using the keyboard",
+      "url": "https://support.mozilla.org/en-US/kb/access-toolbar-functions-using-keyboard",
+      "html_size": 3393,
+      "text_size": 1793
+    },
+    {
+      "slug": "recommended-extensions-program",
+      "title": "Recommended Extensions program",
+      "url": "https://support.mozilla.org/en-US/kb/recommended-extensions-program",
+      "html_size": 7123,
+      "text_size": 4261
+    },
+    {
+      "slug": "how-manage-your-camera-and-microphone-permissions",
+      "title": "How to manage your camera and microphone permissions with Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/how-manage-your-camera-and-microphone-permissions",
+      "html_size": 11325,
+      "text_size": 4725
+    },
+    {
+      "slug": "send-tab-firefox-desktop-other-devices",
+      "title": "Send Tab from Firefox desktop to other devices",
+      "url": "https://support.mozilla.org/en-US/kb/send-tab-firefox-desktop-other-devices",
+      "html_size": 4508,
+      "text_size": 1979
+    },
+    {
+      "slug": "how-firefox-securely-saves-passwords",
+      "title": "How Firefox securely saves passwords",
+      "url": "https://support.mozilla.org/en-US/kb/how-firefox-securely-saves-passwords",
+      "html_size": 2558,
+      "text_size": 1554
+    },
+    {
+      "slug": "sync-firefox-desktop",
+      "title": "How to perform Sync on Firefox desktop",
+      "url": "https://support.mozilla.org/en-US/kb/sync-firefox-desktop",
+      "html_size": 5241,
+      "text_size": 1847
+    },
+    {
+      "slug": "manage-your-logins-firefox-password-manager",
+      "title": "Manage your logins with the Firefox Password Manager",
+      "url": "https://support.mozilla.org/en-US/kb/manage-your-logins-firefox-password-manager",
+      "html_size": 1021,
+      "text_size": 394
+    },
+    {
+      "slug": "edit-or-delete-login-firefox-password-manager",
+      "title": "Edit or delete a login with the Firefox Password Manager",
+      "url": "https://support.mozilla.org/en-US/kb/edit-or-delete-login-firefox-password-manager",
+      "html_size": 4911,
+      "text_size": 1173
+    },
+    {
+      "slug": "add-login-firefox-password-manager",
+      "title": "Add a login with the Firefox Password Manager",
+      "url": "https://support.mozilla.org/en-US/kb/add-login-firefox-password-manager",
+      "html_size": 4914,
+      "text_size": 1174
+    },
+    {
+      "slug": "how-disable-enterprise-roots-preference",
+      "title": "How to disable the Enterprise Roots preference",
+      "url": "https://support.mozilla.org/en-US/kb/how-disable-enterprise-roots-preference",
+      "html_size": 3914,
+      "text_size": 2103
+    },
+    {
+      "slug": "facebook-container-prevent-facebook-tracking",
+      "title": "Facebook Container - Prevent Facebook from tracking you on other websites",
+      "url": "https://support.mozilla.org/en-US/kb/facebook-container-prevent-facebook-tracking",
+      "html_size": 8895,
+      "text_size": 5452
+    },
+    {
+      "slug": "firefox-keeps-asking-me-primary-password",
+      "title": "Firefox keeps asking me for Primary Password",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-keeps-asking-me-primary-password",
+      "html_size": 4427,
+      "text_size": 1566
+    },
+    {
+      "slug": "recover-user-data-missing-after-firefox-update",
+      "title": "Recover user data missing after Firefox update",
+      "url": "https://support.mozilla.org/en-US/kb/recover-user-data-missing-after-firefox-update",
+      "html_size": 3195,
+      "text_size": 1510
+    },
+    {
+      "slug": "sync-custom-preferences",
+      "title": "Sync custom preferences",
+      "url": "https://support.mozilla.org/en-US/kb/sync-custom-preferences",
+      "html_size": 4274,
+      "text_size": 3040
+    },
+    {
+      "slug": "firefox-subprocessor-list",
+      "title": "Firefox service providers and partners",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-subprocessor-list",
+      "html_size": 8613,
+      "text_size": 4630
+    },
+    {
+      "slug": "firefox-dns-over-https",
+      "title": "Firefox DNS over HTTPS",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-dns-over-https",
+      "html_size": 7413,
+      "text_size": 4810
+    },
+    {
+      "slug": "open-firefox-tab-windows-volume-mixer",
+      "title": "Why is each open Firefox tab showing up in the Windows volume mixer?",
+      "url": "https://support.mozilla.org/en-US/kb/open-firefox-tab-windows-volume-mixer",
+      "html_size": 1971,
+      "text_size": 812
+    },
+    {
+      "slug": "turn-picture-picture-mode",
+      "title": "Turn picture-in-picture mode controls on and off",
+      "url": "https://support.mozilla.org/en-US/kb/turn-picture-picture-mode",
+      "html_size": 1773,
+      "text_size": 769
+    },
+    {
+      "slug": "certificate-cannot-be-trusted-warning-kazakhstan",
+      "title": "\"Certificate cannot be trusted\" warning in Kazakhstan",
+      "url": "https://support.mozilla.org/en-US/kb/certificate-cannot-be-trusted-warning-kazakhstan",
+      "html_size": 4013,
+      "text_size": 2294
+    },
+    {
+      "slug": "how-firefox-sync-keeps-your-data-safe-even-if-tls-fails",
+      "title": "How Firefox Sync keeps your data safe even if TLS fails",
+      "url": "https://support.mozilla.org/en-US/kb/how-firefox-sync-keeps-your-data-safe-even-if-tls-fails",
+      "html_size": 1859,
+      "text_size": 1569
+    },
+    {
+      "slug": "autofill-logins-firefox",
+      "title": "Autofill logins on Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/autofill-logins-firefox",
+      "html_size": 17309,
+      "text_size": 4261
+    },
+    {
+      "slug": "configuring-networks-disable-dns-over-https",
+      "title": "Configure networks to disable DNS over HTTPS",
+      "url": "https://support.mozilla.org/en-US/kb/configuring-networks-disable-dns-over-https",
+      "html_size": 3173,
+      "text_size": 2821
+    },
+    {
+      "slug": "enhanced-tracking-protection-firefox-desktop",
+      "title": "Enhanced Tracking Protection in Firefox for desktop",
+      "url": "https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop",
+      "html_size": 26473,
+      "text_size": 10694
+    },
+    {
+      "slug": "firefox-password-manager-alerts-breached-websites",
+      "title": "Firefox Password Manager - Alerts for breached websites",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-password-manager-alerts-breached-websites",
+      "html_size": 4199,
+      "text_size": 1585
+    },
+    {
+      "slug": "unable-download-files-windows-10-parental-controls",
+      "title": "Unable to download files in Windows 10 when Parental Controls are on",
+      "url": "https://support.mozilla.org/en-US/kb/unable-download-files-windows-10-parental-controls",
+      "html_size": 956,
+      "text_size": 501
+    },
+    {
+      "slug": "browsing-history-firefox",
+      "title": "Browsing history in Firefox - View the websites you have visited",
+      "url": "https://support.mozilla.org/en-US/kb/browsing-history-firefox",
+      "html_size": 4094,
+      "text_size": 2064
+    },
+    {
+      "slug": "lightbeam-extension-firefox-no-longer-supported",
+      "title": "Lightbeam extension for Firefox is no longer supported",
+      "url": "https://support.mozilla.org/en-US/kb/lightbeam-extension-firefox-no-longer-supported",
+      "html_size": 1787,
+      "text_size": 1093
+    },
+    {
+      "slug": "disable-firefox-sync",
+      "title": "Disable Firefox Sync",
+      "url": "https://support.mozilla.org/en-US/kb/disable-firefox-sync",
+      "html_size": 3604,
+      "text_size": 1513
+    },
+    {
+      "slug": "about-picture-picture-firefox",
+      "title": "About Picture-in-Picture in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/about-picture-picture-firefox",
+      "html_size": 13845,
+      "text_size": 6620
+    },
+    {
+      "slug": "my-privacy-settings-were-changed-custom-standard",
+      "title": "My privacy settings were changed from Custom to Standard",
+      "url": "https://support.mozilla.org/en-US/kb/my-privacy-settings-were-changed-custom-standard",
+      "html_size": 1019,
+      "text_size": 586
+    },
+    {
+      "slug": "webxr-permission-info-page",
+      "title": "WebXR Permission Info Page",
+      "url": "https://support.mozilla.org/en-US/kb/webxr-permission-info-page",
+      "html_size": 10437,
+      "text_size": 7168
+    },
+    {
+      "slug": "importing-safari-data-firefox",
+      "title": "Importing Safari data into Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/importing-safari-data-firefox",
+      "html_size": 4504,
+      "text_size": 1216
+    },
+    {
+      "slug": "how-generate-secure-password-firefox",
+      "title": "Generate a secure password in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/how-generate-secure-password-firefox",
+      "html_size": 1584,
+      "text_size": 963
+    },
+    {
+      "slug": "how-pin-and-unpin-firefox-taskbar-windows-10-and-windows-11",
+      "title": "How to pin and unpin Firefox from the taskbar on Windows 10 and Windows 11",
+      "url": "https://support.mozilla.org/en-US/kb/how-pin-and-unpin-firefox-taskbar-windows-10-and-windows-11",
+      "html_size": 4315,
+      "text_size": 1239
+    },
+    {
+      "slug": "firefox-password-authentification-prompt",
+      "title": "Secure Firefox passwords with device sign-in",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-password-authentification-prompt",
+      "html_size": 5129,
+      "text_size": 2580
+    },
+    {
+      "slug": "xframe-neterror-page",
+      "title": "Fix error “Website will not allow Firefox to display the page.”",
+      "url": "https://support.mozilla.org/en-US/kb/xframe-neterror-page",
+      "html_size": 3685,
+      "text_size": 2545
+    },
+    {
+      "slug": "compatibility-exploit-protection-windows",
+      "title": "Compatibility with Exploit protection on Windows",
+      "url": "https://support.mozilla.org/en-US/kb/compatibility-exploit-protection-windows",
+      "html_size": 1933,
+      "text_size": 1259
+    },
+    {
+      "slug": "run-firefox-chromeos",
+      "title": "Run Firefox on ChromeOS",
+      "url": "https://support.mozilla.org/en-US/kb/run-firefox-chromeos",
+      "html_size": 2024,
+      "text_size": 1447
+    },
+    {
+      "slug": "firefox-mac-osx-users-esr",
+      "title": "Firefox Mac OS X 10.9, 10.10 and 10.11 users move to Extended Support Release",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-mac-osx-users-esr",
+      "html_size": 1957,
+      "text_size": 1521
+    },
+    {
+      "slug": "credit-card-autofill",
+      "title": "Automatically fill in credit card and payment method data on Web forms",
+      "url": "https://support.mozilla.org/en-US/kb/credit-card-autofill",
+      "html_size": 11902,
+      "text_size": 5219
+    },
+    {
+      "slug": "tab-context-menu",
+      "title": "Tab context menu",
+      "url": "https://support.mozilla.org/en-US/kb/tab-context-menu",
+      "html_size": 5805,
+      "text_size": 2492
+    },
+    {
+      "slug": "export-login-data-firefox",
+      "title": "Export login data from Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/export-login-data-firefox",
+      "html_size": 5844,
+      "text_size": 1669
+    },
+    {
+      "slug": "what-happened-firefox-send",
+      "title": "What happened to Firefox Send?",
+      "url": "https://support.mozilla.org/en-US/kb/what-happened-firefox-send",
+      "html_size": 1123,
+      "text_size": 780
+    },
+    {
+      "slug": "https-only-prefs",
+      "title": "HTTPS-Only Mode in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/https-only-prefs",
+      "html_size": 11205,
+      "text_size": 4455
+    },
+    {
+      "slug": "primary-password-replacing-master-password",
+      "title": "Primary Password is replacing Master Password",
+      "url": "https://support.mozilla.org/en-US/kb/primary-password-replacing-master-password",
+      "html_size": 943,
+      "text_size": 835
+    },
+    {
+      "slug": "telemetry-collection-windows-default-browser-trend",
+      "title": "Telemetry collection - Windows default browser trends",
+      "url": "https://support.mozilla.org/en-US/kb/telemetry-collection-windows-default-browser-trend",
+      "html_size": 3369,
+      "text_size": 1865
+    },
+    {
+      "slug": "import-login-data-file",
+      "title": "Import login and password data from a file",
+      "url": "https://support.mozilla.org/en-US/kb/import-login-data-file",
+      "html_size": 4289,
+      "text_size": 1158
+    },
+    {
+      "slug": "delete-sync-data-firefox-signing-out-firefox-account",
+      "title": "Delete sync data from Firefox by signing out of your Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/delete-sync-data-firefox-signing-out-firefox-account",
+      "html_size": 2647,
+      "text_size": 1418
+    },
+    {
+      "slug": "control-audio-or-video-playback-your-keyboard",
+      "title": "Control audio or video playback with your keyboard",
+      "url": "https://support.mozilla.org/en-US/kb/control-audio-or-video-playback-your-keyboard",
+      "html_size": 5665,
+      "text_size": 2874
+    },
+    {
+      "slug": "windows-10-warns-me-use-microsoft-verified-app",
+      "title": "Windows 10 warns me to use a \"Microsoft-verified\" app",
+      "url": "https://support.mozilla.org/en-US/kb/windows-10-warns-me-use-microsoft-verified-app",
+      "html_size": 3263,
+      "text_size": 984
+    },
+    {
+      "slug": "add-on-badges",
+      "title": "About Add-on Badges",
+      "url": "https://support.mozilla.org/en-US/kb/add-on-badges",
+      "html_size": 4259,
+      "text_size": 1605
+    },
+    {
+      "slug": "sponsor-privacy",
+      "title": "Sponsors on the home page and New Tab page",
+      "url": "https://support.mozilla.org/en-US/kb/sponsor-privacy",
+      "html_size": 14887,
+      "text_size": 6044
+    },
+    {
+      "slug": "troubleshoot-issues-related-to-add-ons",
+      "title": "Troubleshoot issues related to add-ons",
+      "url": "https://support.mozilla.org/en-US/kb/troubleshoot-issues-related-to-add-ons",
+      "html_size": 6111,
+      "text_size": 3104
+    },
+    {
+      "slug": "end-support-adobe-flash",
+      "title": "End of support for Adobe Flash",
+      "url": "https://support.mozilla.org/en-US/kb/end-support-adobe-flash",
+      "html_size": 1522,
+      "text_size": 1062
+    },
+    {
+      "slug": "manage-optional-permissions-extensions",
+      "title": "Manage optional permissions for Firefox extensions",
+      "url": "https://support.mozilla.org/en-US/kb/manage-optional-permissions-extensions",
+      "html_size": 3872,
+      "text_size": 1025
+    },
+    {
+      "slug": "remove-other-bookmarks-folder-from-bookmarks-toolbar",
+      "title": "Remove the Other Bookmarks folder from the Bookmarks Toolbar",
+      "url": "https://support.mozilla.org/en-US/kb/remove-other-bookmarks-folder-from-bookmarks-toolbar",
+      "html_size": 1354,
+      "text_size": 677
+    },
+    {
+      "slug": "mozilla-voice-server-proxy-retiring",
+      "title": "Mozilla Voice Server Proxy Retiring",
+      "url": "https://support.mozilla.org/en-US/kb/mozilla-voice-server-proxy-retiring",
+      "html_size": 4809,
+      "text_size": 2289
+    },
+    {
+      "slug": "captive-portal",
+      "title": "Captive portal detection",
+      "url": "https://support.mozilla.org/en-US/kb/captive-portal",
+      "html_size": 2519,
+      "text_size": 1449
+    },
+    {
+      "slug": "smartblock-enhanced-tracking-protection",
+      "title": "SmartBlock for Enhanced Tracking Protection",
+      "url": "https://support.mozilla.org/en-US/kb/smartblock-enhanced-tracking-protection",
+      "html_size": 5593,
+      "text_size": 2454
+    },
+    {
+      "slug": "compact-mode-workaround-firefox",
+      "title": "Compact mode workaround in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/compact-mode-workaround-firefox",
+      "html_size": 2993,
+      "text_size": 1082
+    },
+    {
+      "slug": "how-fix-error-when-trying-open-telegram-or-slack",
+      "title": "How to fix an error when trying to open Telegram or Slack on Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/how-fix-error-when-trying-open-telegram-or-slack",
+      "html_size": 1027,
+      "text_size": 587
+    },
+    {
+      "slug": "text-encoding-no-longer-available-firefox-menu",
+      "title": "Text Encoding no longer available in the Firefox menu panel",
+      "url": "https://support.mozilla.org/en-US/kb/text-encoding-no-longer-available-firefox-menu",
+      "html_size": 3374,
+      "text_size": 1344
+    },
+    {
+      "slug": "site-permissions-panel",
+      "title": "Site Permissions panel",
+      "url": "https://support.mozilla.org/en-US/kb/site-permissions-panel",
+      "html_size": 2398,
+      "text_size": 868
+    },
+    {
+      "slug": "solutions-can-not-create-temp-folder-archive-error",
+      "title": "Solutions for \"Can not create temp folder archive\" error when installing Firefox (Windows 10)",
+      "url": "https://support.mozilla.org/en-US/kb/solutions-can-not-create-temp-folder-archive-error",
+      "html_size": 3873,
+      "text_size": 2200
+    },
+    {
+      "slug": "enable-background-updates-firefox-windows",
+      "title": "Enable background updates on Firefox for Windows when Firefox is not running",
+      "url": "https://support.mozilla.org/en-US/kb/enable-background-updates-firefox-windows",
+      "html_size": 4016,
+      "text_size": 2076
+    },
+    {
+      "slug": "identify-problems-third-party-modules-firefox-windows",
+      "title": "Identify problems caused by third-party modules in Firefox for Windows",
+      "url": "https://support.mozilla.org/en-US/kb/identify-problems-third-party-modules-firefox-windows",
+      "html_size": 8629,
+      "text_size": 4299
+    },
+    {
+      "slug": "windows-sso",
+      "title": "How to enable Windows SSO login in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/windows-sso",
+      "html_size": 3131,
+      "text_size": 1020
+    },
+    {
+      "slug": "firefox-suggest",
+      "title": "How to customize Firefox Suggest settings",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-suggest",
+      "html_size": 14870,
+      "text_size": 7821
+    },
+    {
+      "slug": "how-configure-close-tab-warnings-firefox",
+      "title": "How to configure Close Tab warnings in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/how-configure-close-tab-warnings-firefox",
+      "html_size": 8247,
+      "text_size": 3284
+    },
+    {
+      "slug": "how-share-urls-firefox-macos",
+      "title": "How to share URLs on Firefox for macOS",
+      "url": "https://support.mozilla.org/en-US/kb/how-share-urls-firefox-macos",
+      "html_size": 1111,
+      "text_size": 595
+    },
+    {
+      "slug": "how-restore-browsing-session-backup",
+      "title": "How to restore a browsing session from backup",
+      "url": "https://support.mozilla.org/en-US/kb/how-restore-browsing-session-backup",
+      "html_size": 9776,
+      "text_size": 4435
+    },
+    {
+      "slug": "firefox-advanced-customization-and-configuration",
+      "title": "Firefox advanced customization and configuration options",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-advanced-customization-and-configuration",
+      "html_size": 3274,
+      "text_size": 1973
+    },
+    {
+      "slug": "unload-inactive-tabs-save-system-memory-firefox",
+      "title": "Unload inactive tabs to save system memory in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/unload-inactive-tabs-save-system-memory-firefox",
+      "html_size": 3107,
+      "text_size": 1554
+    },
+    {
+      "slug": "personalize-firefox-colorways",
+      "title": "Personalize Firefox with colorways",
+      "url": "https://support.mozilla.org/en-US/kb/personalize-firefox-colorways",
+      "html_size": 2253,
+      "text_size": 1151
+    },
+    {
+      "slug": "download-firefox-windows-microsoft-store",
+      "title": "Download Firefox on Windows from the Microsoft Store",
+      "url": "https://support.mozilla.org/en-US/kb/download-firefox-windows-microsoft-store",
+      "html_size": 2757,
+      "text_size": 1495
+    },
+    {
+      "slug": "firefox-suggest-faq",
+      "title": "Firefox Suggest FAQ",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-suggest-faq",
+      "html_size": 10324,
+      "text_size": 5080
+    },
+    {
+      "slug": "manage-downloads-preferences-using-downloads-menu",
+      "title": "How file downloads are handled in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/manage-downloads-preferences-using-downloads-menu",
+      "html_size": 14160,
+      "text_size": 7314
+    },
+    {
+      "slug": "search-engine-removal",
+      "title": "My default search engine changed after updating Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/search-engine-removal",
+      "html_size": 4189,
+      "text_size": 1689
+    },
+    {
+      "slug": "total-cookie-protection-and-website-breakage-faq",
+      "title": "Total Cookie Protection and website breakage FAQ",
+      "url": "https://support.mozilla.org/en-US/kb/total-cookie-protection-and-website-breakage-faq",
+      "html_size": 15600,
+      "text_size": 7855
+    },
+    {
+      "slug": "difficulties-opening-or-using-website-firefox-100",
+      "title": "Difficulties opening or using a website in Firefox 100",
+      "url": "https://support.mozilla.org/en-US/kb/difficulties-opening-or-using-website-firefox-100",
+      "html_size": 2255,
+      "text_size": 1011
+    },
+    {
+      "slug": "introducing-total-cookie-protection-standard-mode",
+      "title": "Introducing Total Cookie Protection in Standard Mode",
+      "url": "https://support.mozilla.org/en-US/kb/introducing-total-cookie-protection-standard-mode",
+      "html_size": 4721,
+      "text_size": 2408
+    },
+    {
+      "slug": "change-website-appearance-settings-firefox",
+      "title": "Change website appearance settings in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/change-website-appearance-settings-firefox",
+      "html_size": 7061,
+      "text_size": 3928
+    },
+    {
+      "slug": "what-mozilla-connect",
+      "title": "What is Mozilla Connect?",
+      "url": "https://support.mozilla.org/en-US/kb/what-mozilla-connect",
+      "html_size": 3116,
+      "text_size": 2187
+    },
+    {
+      "slug": "view-articles-recommended-pocket-firefox-new-tab-homepage",
+      "title": "View articles recommended by Pocket on your Firefox New Tab and homepage",
+      "url": "https://support.mozilla.org/en-US/kb/view-articles-recommended-pocket-firefox-new-tab-homepage",
+      "html_size": 3512,
+      "text_size": 1673
+    },
+    {
+      "slug": "how-set-tab-pickup-firefox-view",
+      "title": "Firefox View - Access pages from open tabs, recently closed tabs, tabs from other devices and browsing history",
+      "url": "https://support.mozilla.org/en-US/kb/how-set-tab-pickup-firefox-view",
+      "html_size": 13792,
+      "text_size": 4740
+    },
+    {
+      "slug": "firefox-translations-add-on",
+      "title": "Firefox Translations Add-on",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-translations-add-on",
+      "html_size": 4370,
+      "text_size": 2855
+    },
+    {
+      "slug": "text-recognition",
+      "title": "Copy text from images on Firefox for MacOS",
+      "url": "https://support.mozilla.org/en-US/kb/text-recognition",
+      "html_size": 5509,
+      "text_size": 2858
+    },
+    {
+      "slug": "firefox-privacy-and-security-features",
+      "title": "Firefox privacy and security features",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-privacy-and-security-features",
+      "html_size": 7003,
+      "text_size": 3658
+    },
+    {
+      "slug": "recommended-firefox-privacy-and-security-settings-families",
+      "title": "Recommended Firefox privacy and security settings for families",
+      "url": "https://support.mozilla.org/en-US/kb/recommended-firefox-privacy-and-security-settings-families",
+      "html_size": 7886,
+      "text_size": 3809
+    },
+    {
+      "slug": "recommended-firefox-extensions-families-and-students",
+      "title": "Recommended Firefox extensions for families and students",
+      "url": "https://support.mozilla.org/en-US/kb/recommended-firefox-extensions-families-and-students",
+      "html_size": 4038,
+      "text_size": 1956
+    },
+    {
+      "slug": "disable-password-saving-firefox",
+      "title": "Disable password saving in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/disable-password-saving-firefox",
+      "html_size": 7729,
+      "text_size": 2610
+    },
+    {
+      "slug": "disable-credit-card-syncing-across-devices",
+      "title": "Disable credit card and payment method syncing across devices",
+      "url": "https://support.mozilla.org/en-US/kb/disable-credit-card-syncing-across-devices",
+      "html_size": 3282,
+      "text_size": 1266
+    },
+    {
+      "slug": "block-deceptive-content-and-dangerous-downloads-firefox",
+      "title": "Block deceptive content and dangerous downloads in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/block-deceptive-content-and-dangerous-downloads-firefox",
+      "html_size": 2794,
+      "text_size": 1535
+    },
+    {
+      "slug": "quick-actions-firefox-search-bar",
+      "title": "Quick actions in the Firefox search bar",
+      "url": "https://support.mozilla.org/en-US/kb/quick-actions-firefox-search-bar",
+      "html_size": 3027,
+      "text_size": 664
+    },
+    {
+      "slug": "firefox-update-notifications-windows",
+      "title": "Firefox update notifications on Windows",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-update-notifications-windows",
+      "html_size": 1033,
+      "text_size": 467
+    },
+    {
+      "slug": "firefox-hangs-when-copying-suggested-actions-windows-11",
+      "title": "Firefox hangs when copying with Suggested Actions enabled on Windows 11 - What to do",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-hangs-when-copying-suggested-actions-windows-11",
+      "html_size": 2049,
+      "text_size": 1118
+    },
+    {
+      "slug": "site-permission-add-ons",
+      "title": "Site Permission Add-ons",
+      "url": "https://support.mozilla.org/en-US/kb/site-permission-add-ons",
+      "html_size": 3207,
+      "text_size": 2179
+    },
+    {
+      "slug": "cookie-banner-reduction",
+      "title": "Block cookie banners on Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/cookie-banner-reduction",
+      "html_size": 8302,
+      "text_size": 6089
+    },
+    {
+      "slug": "extensions-button",
+      "title": "Manage your extensions using the extensions button in the toolbar",
+      "url": "https://support.mozilla.org/en-US/kb/extensions-button",
+      "html_size": 13831,
+      "text_size": 5721
+    },
+    {
+      "slug": "x-mouse-button-control-firefox-110",
+      "title": "X-Mouse Button Control in Firefox 110",
+      "url": "https://support.mozilla.org/en-US/kb/x-mouse-button-control-firefox-110",
+      "html_size": 1975,
+      "text_size": 1488
+    },
+    {
+      "slug": "how-use-firefox-containers",
+      "title": "How to use Firefox containers",
+      "url": "https://support.mozilla.org/en-US/kb/how-use-firefox-containers",
+      "html_size": 7194,
+      "text_size": 2772
+    },
+    {
+      "slug": "relay-integration",
+      "title": "Add Firefox Relay to the Firefox password manager",
+      "url": "https://support.mozilla.org/en-US/kb/relay-integration",
+      "html_size": 13484,
+      "text_size": 7076
+    },
+    {
+      "slug": "why-do-i-get-harmful-download-message-when-downloading-firefox-windows",
+      "title": "Why do I get a harmful download message when downloading Firefox on Windows?",
+      "url": "https://support.mozilla.org/en-US/kb/why-do-i-get-harmful-download-message-when-downloading-firefox-windows",
+      "html_size": 1073,
+      "text_size": 597
+    },
+    {
+      "slug": "recommendations-firefox-new-tab",
+      "title": "Recommended stories on the Firefox New Tab page - FAQ",
+      "url": "https://support.mozilla.org/en-US/kb/recommendations-firefox-new-tab",
+      "html_size": 15823,
+      "text_size": 7287
+    },
+    {
+      "slug": "website-translation",
+      "title": "Firefox Translation",
+      "url": "https://support.mozilla.org/en-US/kb/website-translation",
+      "html_size": 18071,
+      "text_size": 6122
+    },
+    {
+      "slug": "switching-devices",
+      "title": "Back up and transfer your Firefox data to a new device",
+      "url": "https://support.mozilla.org/en-US/kb/switching-devices",
+      "html_size": 4025,
+      "text_size": 2008
+    },
+    {
+      "slug": "addons-restricted-domains",
+      "title": "Why aren’t my add-ons working on some websites?",
+      "url": "https://support.mozilla.org/en-US/kb/addons-restricted-domains",
+      "html_size": 2508,
+      "text_size": 1622
+    },
+    {
+      "slug": "dns-over-https",
+      "title": "Configure DNS over HTTPS protection levels in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/dns-over-https",
+      "html_size": 8571,
+      "text_size": 4172
+    },
+    {
+      "slug": "quarantined-domains",
+      "title": "Why are some add-ons not allowed on sites restricted by Mozilla?",
+      "url": "https://support.mozilla.org/en-US/kb/quarantined-domains",
+      "html_size": 7497,
+      "text_size": 3592
+    },
+    {
+      "slug": "firefox-users-macos-1012-1013-1014-moving-to-extended-support",
+      "title": "Firefox users on macOS 10.12, 10.13 and 10.14 moving to Extended Support Release",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-users-macos-1012-1013-1014-moving-to-extended-support",
+      "html_size": 2818,
+      "text_size": 1947
+    },
+    {
+      "slug": "firefox-users-windows-7-8-and-81-moving-extended-support",
+      "title": "Firefox users on Windows 7, 8 and 8.1 moving to Extended Support Release",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-users-windows-7-8-and-81-moving-extended-support",
+      "html_size": 2901,
+      "text_size": 1956
+    },
+    {
+      "slug": "how-reset-your-password-without-account-recovery-keys-access-data",
+      "title": "How to reset your password without Account Recovery Keys and regain access to your data",
+      "url": "https://support.mozilla.org/en-US/kb/how-reset-your-password-without-account-recovery-keys-access-data",
+      "html_size": 4733,
+      "text_size": 2768
+    },
+    {
+      "slug": "get-your-local-weather-forecast-firefox-address-bar",
+      "title": "Get your local weather forecast from the Firefox address bar",
+      "url": "https://support.mozilla.org/en-US/kb/get-your-local-weather-forecast-firefox-address-bar",
+      "html_size": 4460,
+      "text_size": 2856
+    },
+    {
+      "slug": "global-privacy-control",
+      "title": "Global Privacy Control",
+      "url": "https://support.mozilla.org/en-US/kb/global-privacy-control",
+      "html_size": 1712,
+      "text_size": 958
+    },
+    {
+      "slug": "review-checker-review-quality",
+      "title": "Shop online with more confidence using Firefox Review Checker",
+      "url": "https://support.mozilla.org/en-US/kb/review-checker-review-quality",
+      "html_size": 12536,
+      "text_size": 6011
+    },
+    {
+      "slug": "understand-encrypted-client-hello",
+      "title": "Understand Encrypted Client Hello (ECH)",
+      "url": "https://support.mozilla.org/en-US/kb/understand-encrypted-client-hello",
+      "html_size": 5801,
+      "text_size": 3878
+    },
+    {
+      "slug": "faq-encrypted-client-hello",
+      "title": "Encrypted Client Hello (ECH) - Frequently asked questions",
+      "url": "https://support.mozilla.org/en-US/kb/faq-encrypted-client-hello",
+      "html_size": 9496,
+      "text_size": 5354
+    },
+    {
+      "slug": "why-cant-i-use-firefox-sync-my-google-or-apple-id",
+      "title": "Why can’t I use Firefox sync with my Google or Apple ID?",
+      "url": "https://support.mozilla.org/en-US/kb/why-cant-i-use-firefox-sync-my-google-or-apple-id",
+      "html_size": 1135,
+      "text_size": 794
+    },
+    {
+      "slug": "unlink-google-or-apple-id-your-account",
+      "title": "Unlink your Google or Apple ID from your Mozilla account",
+      "url": "https://support.mozilla.org/en-US/kb/unlink-google-or-apple-id-your-account",
+      "html_size": 3176,
+      "text_size": 1413
+    },
+    {
+      "slug": "sign-in-accounts-using-3rd-party-auth",
+      "title": "Sign in to a Mozilla account using 3rd-party authentication",
+      "url": "https://support.mozilla.org/en-US/kb/sign-in-accounts-using-3rd-party-auth",
+      "html_size": 2580,
+      "text_size": 1758
+    },
+    {
+      "slug": "use-google-trending-search-firefox-address-bar",
+      "title": "Use Google Trending Search in the Firefox address bar",
+      "url": "https://support.mozilla.org/en-US/kb/use-google-trending-search-firefox-address-bar",
+      "html_size": 7103,
+      "text_size": 3551
+    },
+    {
+      "slug": "open-firefox-automatically-when-you-start-computer",
+      "title": "Open Firefox automatically when you start your computer",
+      "url": "https://support.mozilla.org/en-US/kb/open-firefox-automatically-when-you-start-computer",
+      "html_size": 3774,
+      "text_size": 1159
+    },
+    {
+      "slug": "automatically-trust-third-party-certificates",
+      "title": "Automatically trust third-party root certificates",
+      "url": "https://support.mozilla.org/en-US/kb/automatically-trust-third-party-certificates",
+      "html_size": 3131,
+      "text_size": 2239
+    },
+    {
+      "slug": "sync",
+      "title": "Sync Firefox data",
+      "url": "https://support.mozilla.org/en-US/kb/sync",
+      "html_size": 9811,
+      "text_size": 6728
+    },
+    {
+      "slug": "use-eyedropper-tool-firefox",
+      "title": "Use the Eyedropper tool in Firefox to sample colors",
+      "url": "https://support.mozilla.org/en-US/kb/use-eyedropper-tool-firefox",
+      "html_size": 2165,
+      "text_size": 986
+    },
+    {
+      "slug": "data-loss-prevention",
+      "title": "Data Loss Prevention",
+      "url": "https://support.mozilla.org/en-US/kb/data-loss-prevention",
+      "html_size": 3668,
+      "text_size": 2046
+    },
+    {
+      "slug": "privacy-preserving-attribution",
+      "title": "Privacy-Preserving Attribution",
+      "url": "https://support.mozilla.org/en-US/kb/privacy-preserving-attribution",
+      "html_size": 7754,
+      "text_size": 4632
+    },
+    {
+      "slug": "tab-overview-menu",
+      "title": "Tab overview menu",
+      "url": "https://support.mozilla.org/en-US/kb/tab-overview-menu",
+      "html_size": 6171,
+      "text_size": 2532
+    },
+    {
+      "slug": "pdf-alt-text",
+      "title": "Add alt text to images in your PDFs using Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/pdf-alt-text",
+      "html_size": 23712,
+      "text_size": 11844
+    },
+    {
+      "slug": "root-certificate-expiration",
+      "title": "Update Firefox to prevent add-ons issues from root certificate expiration",
+      "url": "https://support.mozilla.org/en-US/kb/root-certificate-expiration",
+      "html_size": 10985,
+      "text_size": 6458
+    },
+    {
+      "slug": "firefox-suggest-fakespot",
+      "title": "Fakespot results in Firefox Suggest",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-suggest-fakespot",
+      "html_size": 11112,
+      "text_size": 5378
+    },
+    {
+      "slug": "choose-your-preferred-pdf-viewer-firefox",
+      "title": "Choose your preferred PDF viewer in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/choose-your-preferred-pdf-viewer-firefox",
+      "html_size": 10882,
+      "text_size": 4180
+    },
+    {
+      "slug": "back-your-firefox-installation-folder",
+      "title": "Back up your Firefox installation folder",
+      "url": "https://support.mozilla.org/en-US/kb/back-your-firefox-installation-folder",
+      "html_size": 4020,
+      "text_size": 2343
+    },
+    {
+      "slug": "resolve-installation-error-windows",
+      "title": "Resolve “The installation seems to be incomplete/corrupt” error in Firefox on Windows",
+      "url": "https://support.mozilla.org/en-US/kb/resolve-installation-error-windows",
+      "html_size": 5243,
+      "text_size": 3252
+    },
+    {
+      "slug": "firefox-labs-explore-experimental-features-firefox",
+      "title": "Firefox Labs - Explore experimental features in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-labs-explore-experimental-features-firefox",
+      "html_size": 3373,
+      "text_size": 1719
+    },
+    {
+      "slug": "profile-management",
+      "title": "Manage Firefox profiles",
+      "url": "https://support.mozilla.org/en-US/kb/profile-management",
+      "html_size": 15213,
+      "text_size": 6958
+    },
+    {
+      "slug": "how-review-checker-preserves-user-privacy",
+      "title": "How Review Checker preserves user privacy",
+      "url": "https://support.mozilla.org/en-US/kb/how-review-checker-preserves-user-privacy",
+      "html_size": 4471,
+      "text_size": 2802
+    },
+    {
+      "slug": "integrate-firefox-relay-firefox-password-manager",
+      "title": "Integrate Firefox Relay into the Firefox Password Manager",
+      "url": "https://support.mozilla.org/en-US/kb/integrate-firefox-relay-firefox-password-manager",
+      "html_size": 3754,
+      "text_size": 1640
+    },
+    {
+      "slug": "firefox-blocked-macos-15-sequoia-firewall-what-you",
+      "title": "Firefox blocked by macOS 15 Sequoia firewall - What you need to know",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-blocked-macos-15-sequoia-firewall-what-you",
+      "html_size": 2472,
+      "text_size": 2041
+    },
+    {
+      "slug": "ai-chatbot",
+      "title": "Access AI chatbots in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/ai-chatbot",
+      "html_size": 22448,
+      "text_size": 10573
+    },
+    {
+      "slug": "resist-fingerprinting",
+      "title": "Resist Fingerprinting",
+      "url": "https://support.mozilla.org/en-US/kb/resist-fingerprinting",
+      "html_size": 9091,
+      "text_size": 7017
+    },
+    {
+      "slug": "usage-ping-settings",
+      "title": "Manage daily usage ping data collection settings in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/usage-ping-settings",
+      "html_size": 7770,
+      "text_size": 3704
+    },
+    {
+      "slug": "screen-sharing-warning-macos-15-sequoia",
+      "title": "Address screen sharing issues with Firefox on macOS 15 Sequoia",
+      "url": "https://support.mozilla.org/en-US/kb/screen-sharing-warning-macos-15-sequoia",
+      "html_size": 1489,
+      "text_size": 932
+    },
+    {
+      "slug": "firefox-macos-session-resume-feature",
+      "title": "Firefox macOS session resume feature",
+      "url": "https://support.mozilla.org/en-US/kb/firefox-macos-session-resume-feature",
+      "html_size": 1026,
+      "text_size": 802
+    },
+    {
+      "slug": "get-started-mozilla-vpn-extension",
+      "title": "Get started with the Mozilla VPN extension",
+      "url": "https://support.mozilla.org/en-US/kb/get-started-mozilla-vpn-extension",
+      "html_size": 8730,
+      "text_size": 3467
+    },
+    {
+      "slug": "disable-vpn-protection-specific-website",
+      "title": "Disable Mozilla VPN protection for a specific website",
+      "url": "https://support.mozilla.org/en-US/kb/disable-vpn-protection-specific-website",
+      "html_size": 4400,
+      "text_size": 1769
+    },
+    {
+      "slug": "change-your-location-specific-website",
+      "title": "Change your location for a specific website",
+      "url": "https://support.mozilla.org/en-US/kb/change-your-location-specific-website",
+      "html_size": 6576,
+      "text_size": 3096
+    },
+    {
+      "slug": "how-will-dns-work-when-using-vpn-extension",
+      "title": "How will DNS work when using the VPN extension?",
+      "url": "https://support.mozilla.org/en-US/kb/how-will-dns-work-when-using-vpn-extension",
+      "html_size": 1751,
+      "text_size": 1295
+    },
+    {
+      "slug": "program-your-computer-interferes-mozilla-vpn-exten",
+      "title": "A program on your computer interferes with the Mozilla VPN extension",
+      "url": "https://support.mozilla.org/en-US/kb/program-your-computer-interferes-mozilla-vpn-exten",
+      "html_size": 2873,
+      "text_size": 1775
+    },
+    {
+      "slug": "if-another-extension-interferes-mozilla-vpn",
+      "title": "What to do if another extension interferes with the Mozilla VPN extension",
+      "url": "https://support.mozilla.org/en-US/kb/if-another-extension-interferes-mozilla-vpn",
+      "html_size": 5333,
+      "text_size": 2691
+    },
+    {
+      "slug": "manage-vpn-extension-preferences",
+      "title": "Manage the Mozilla VPN extension preferences",
+      "url": "https://support.mozilla.org/en-US/kb/manage-vpn-extension-preferences",
+      "html_size": 3467,
+      "text_size": 863
+    },
+    {
+      "slug": "technical-and-interaction-data",
+      "title": "Manage technical and interaction data collection settings in Firefox",
+      "url": "https://support.mozilla.org/en-US/kb/technical-and-interaction-data",
+      "html_size": 8764,
+      "text_size": 3719
+    },
+    {
+      "slug": "marketing-data",
+      "title": "Manage marketing data settings in Firefox for Desktop",
+      "url": "https://support.mozilla.org/en-US/kb/marketing-data",
+      "html_size": 6955,
+      "text_size": 3441
+    },
+    {
+      "slug": "crash-report",
+      "title": "Crash reports in Firefox for Desktop",
+      "url": "https://support.mozilla.org/en-US/kb/crash-report",
+      "html_size": 7275,
+      "text_size": 4731
+    },
+    {
+      "slug": "https-upgrades",
+      "title": "Firefox connection upgrades - HTTP to HTTPS",
+      "url": "https://support.mozilla.org/en-US/kb/https-upgrades",
+      "html_size": 6152,
+      "text_size": 4085
+    },
+    {
+      "slug": "https-first",
+      "title": "HTTPS-First upgrades to secure connections",
+      "url": "https://support.mozilla.org/en-US/kb/https-first",
+      "html_size": 2523,
+      "text_size": 1948
+    },
+    {
+      "slug": "linux-security-warning",
+      "title": "Firefox security features warning on Linux",
+      "url": "https://support.mozilla.org/en-US/kb/linux-security-warning",
+      "html_size": 1885,
+      "text_size": 1376
+    },
+    {
+      "slug": "ohttp-explained",
+      "title": "Oblivious HTTP (OHTTP) explained",
+      "url": "https://support.mozilla.org/en-US/kb/ohttp-explained",
+      "html_size": 6705,
+      "text_size": 4470
+    },
+    {
+      "slug": "use-sidebar-access-tools-and-vertical-tabs",
+      "title": "Use the sidebar to access tools and vertical tabs",
+      "url": "https://support.mozilla.org/en-US/kb/use-sidebar-access-tools-and-vertical-tabs",
+      "html_size": 13806,
+      "text_size": 4494
+    },
+    {
+      "slug": "manage-firefox-data-collection-privacy-settings",
+      "title": "Manage Firefox data collection and privacy settings",
+      "url": "https://support.mozilla.org/en-US/kb/manage-firefox-data-collection-privacy-settings",
+      "html_size": 11997,
+      "text_size": 5526
+    },
+    {
+      "slug": "tab-groups",
+      "title": "Tab groups",
+      "url": "https://support.mozilla.org/en-US/kb/tab-groups",
+      "html_size": 6763,
+      "text_size": 3032
+    },
+    {
+      "slug": "how-it-works-firefox-weather",
+      "title": "How it works - Firefox Weather",
+      "url": "https://support.mozilla.org/en-US/kb/how-it-works-firefox-weather",
+      "html_size": 1830,
+      "text_size": 1446
+    },
+    {
+      "slug": "orbit-frequently-asked-questions",
+      "title": "Orbit Frequently Asked Questions",
+      "url": "https://support.mozilla.org/en-US/kb/orbit-frequently-asked-questions",
+      "html_size": 6814,
+      "text_size": 4411
+    }
+  ]
+}

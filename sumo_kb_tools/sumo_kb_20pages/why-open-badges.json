@@ -1,0 +1,21 @@
+{
+  "slug": "why-open-badges",
+  "title": "Why Open Badges?",
+  "summary": "What are Open Badges? What differentiates open badges from other digital badges?",
+  "url": "https://support.mozilla.org/en-US/kb/why-open-badges",
+  "html": "<p>A digital badge is an online representation of a skill you’ve earned. <a href=\"http://openbadges.org\">Open Badges</a> take that concept one step further, and allows you to verify your skills, interests and achievements through credible organizations and attaches that information to the badge image file, hard-coding the metadata for future access and review. \n</p><p>Because the system is based on an <a href=\"http://www.openbadges.org/faq/#obi\">open standard</a>, earners can combine multiple  badges from different issuers to tell the complete story of their achievements — both online and off. Badges can be displayed wherever earners want them on the web, and share them for employment, education or lifelong learning.\n</p><p><strong>Open Badges are:</strong>\n</p>\n<ul><li> <strong>Free and open:</strong> Mozilla Open Badges is not proprietary.  It’s free software and an open technical standard any organization can  use to create, issue and verify digital badges. \n</li><li> <strong>Transferable:</strong> Collect badges from multiple sources,  online and off, into a single backpack. Then display your skills and  achievements on social networking profiles, job sites, websites and  more. \n</li><li> <strong>Stackable:</strong> Whether they’re issued by one organization or  many, badges can build upon each other and be stacked to tell the full  story of your skills and achievements. \n</li><li> <strong>Evidence-based:</strong> Open Badges are information-rich. Each  badge has important metadata which is hard-coded into the badge image  file itself that links back to the issuer, criteria and verifying  evidence. \n</li></ul>\n<p><strong>Open Badges make it easy to:</strong>\n</p>\n<ul><li> Get recognition for the things you learn; \n</li><li> Give recognition for the things you teach; \n</li><li> Verify skills; and \n</li><li> Display your verified badges across the web.\n</li></ul>",
+  "text": "A digital badge is an online representation of a skill you’ve earned. Open Badges take that concept one step further, and allows you to verify your skills, interests and achievements through credible organizations and attaches that information to the badge image file, hard-coding the metadata for future access and review. Because the system is based on an open standard , earners can combine multiple badges from different issuers to tell the complete story of their achievements — both online and off. Badges can be displayed wherever earners want them on the web, and share them for employment, education or lifelong learning. Open Badges are: Free and open: Mozilla Open Badges is not proprietary. It’s free software and an open technical standard any organization can use to create, issue and verify digital badges. Transferable: Collect badges from multiple sources, online and off, into a single backpack. Then display your skills and achievements on social networking profiles, job sites, websites and more. Stackable: Whether they’re issued by one organization or many, badges can build upon each other and be stacked to tell the full story of your skills and achievements. Evidence-based: Open Badges are information-rich. Each badge has important metadata which is hard-coded into the badge image file itself that links back to the issuer, criteria and verifying evidence. Open Badges make it easy to: Get recognition for the things you learn; Give recognition for the things you teach; Verify skills; and Display your verified badges across the web.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "browse"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1897,
+    "text_bytes": 1562,
+    "word_count": 247,
+    "downloaded_at": "2025-08-26T10:35:55.898951"
+  }
+}

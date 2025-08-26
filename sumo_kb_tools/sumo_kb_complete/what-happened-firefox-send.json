@@ -1,0 +1,22 @@
+{
+  "slug": "what-happened-firefox-send",
+  "title": "What happened to Firefox Send?",
+  "summary": "Firefox Send has been discontinued as of September 17th, 2020. Thank you for trying Firefox Send in the past.",
+  "url": "https://support.mozilla.org/en-US/kb/what-happened-firefox-send",
+  "html": "<p>Firefox Send has been discontinued as of September 17th, 2020. You will no longer be able to upload or receive files. We’d like to thank all of you who tried Firefox Send.\n</p><p>We <a href=\"https://blog.mozilla.org/blog/2019/03/12/introducing-firefox-send-providing-free-file-transfers-while-keeping-your-personal-information-private/\">started Firefox Send</a> as a way for you to share files safely and easily from any browser. Unfortunately, some abusive users were beginning to use Firefox Send to ship malware and conduct phishing attacks. When this problem was reported, we stopped the service. Please see the <a href=\"https://blog.mozilla.org/blog/2020/09/17/update-on-firefox-send-and-firefox-notes/\">Mozilla Blog</a> for more details on why this service was discontinued.\n</p>\n<h1 id=\"w_what-happened-to-the-files-ive-sent-in-the-past\">What happened to the files I’ve sent in the past?</h1>\n<p>All files sent to Firefox Send have been securely wiped from our server. If you’ve shared files from your computer or device, the original files have not been moved, altered or deleted in any way by Firefox Send.\n</p>",
+  "text": "Firefox Send has been discontinued as of September 17th, 2020. You will no longer be able to upload or receive files. We’d like to thank all of you who tried Firefox Send. We started Firefox Send as a way for you to share files safely and easily from any browser. Unfortunately, some abusive users were beginning to use Firefox Send to ship malware and conduct phishing attacks. When this problem was reported, we stopped the service. Please see the Mozilla Blog for more details on why this service was discontinued. What happened to the files I’ve sent in the past? All files sent to Firefox Send have been securely wiped from our server. If you’ve shared files from your computer or device, the original files have not been moved, altered or deleted in any way by Firefox Send.",
+  "products": [
+    "firefox",
+    "firefox-send"
+  ],
+  "topics": [
+    "share-content"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1123,
+    "text_bytes": 780,
+    "word_count": 138,
+    "downloaded_at": "2025-08-26T10:53:25.967937"
+  }
+}

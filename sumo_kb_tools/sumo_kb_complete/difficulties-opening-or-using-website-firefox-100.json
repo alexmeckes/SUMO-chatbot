@@ -1,0 +1,23 @@
+{
+  "slug": "difficulties-opening-or-using-website-firefox-100",
+  "title": "Difficulties opening or using a website in Firefox 100",
+  "summary": "A potential temporary solution if a web page is not opening correctly in Firefox 100.",
+  "url": "https://support.mozilla.org/en-US/kb/difficulties-opening-or-using-website-firefox-100",
+  "html": "<p>You may find that some webpages do not work correctly in <a href=\"/en-US/kb/find-what-version-firefox-you-are-using\">Firefox version</a> 100. This is due to the website not updating to accommodate version numbers with three characters.\n</p><p>If this impacts a website that you use often, there is a temporary workaround:\n</p><div class=\"warning\"><strong>Warning:</strong> These instructions are for experienced Firefox users. Changing settings in the <a href=\"/en-US/kb/about-config-editor-firefox\">Configuration Editor</a> (<em>about:config</em>) can have serious effects on your browser’s stability, security and performance.\n<br><strong>Only proceed if you are comfortable with advanced settings and understand the potential impacts</strong>.</div>\n<p></p>\n<ol><li> Type <strong>about:config</strong> in the <a href=\"/en-US/kb/search-firefox-address-bar\">address bar</a> and press <span class=\"for\" data-for=\"win,linux\"><span class=\"key\">Enter</span></span><span class=\"for\" data-for=\"mac\"><span class=\"key\">Return</span></span>.<br>A warning page may appear. Click <span class=\"button\">Accept the Risk and Continue</span> to go to the <em>about:config</em> page.\n\n</li><li> Search for the <span class=\"pref\">network.http.useragent.forceVersion</span> preference.\n</li><li> Select the <img alt=\"Fx71aboutconfig-EditButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2019-10-29-08-54-56-1f86ca.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> button next to the preference and set its value to <span class=\"pref\">99</span>.\n</li><li> Select <img alt=\"Fx71aboutconfig-Checkmark\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2019-11-04-06-45-04-f67b18.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> to save the change.\n</li><li> Restart Firefox.\n</li></ol>\n<p>To help Mozilla identify the websites where this issue is occurring, it would be appreciated if you could complete <a href=\"https://webcompat.com/issues/new\">this form</a>.\n</p>",
+  "text": "You may find that some webpages do not work correctly in Firefox version 100. This is due to the website not updating to accommodate version numbers with three characters. If this impacts a website that you use often, there is a temporary workaround: Warning: These instructions are for experienced Firefox users. Changing settings in the Configuration Editor ( about:config ) can have serious effects on your browser’s stability, security and performance. Only proceed if you are comfortable with advanced settings and understand the potential impacts . Type about:config in the address bar and press Enter Return . A warning page may appear. Click Accept the Risk and Continue to go to the about:config page. Search for the network.http.useragent.forceVersion preference. Select the button next to the preference and set its value to 99 . Select to save the change. Restart Firefox. To help Mozilla identify the websites where this issue is occurring, it would be appreciated if you could complete this form .",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "crashing-and-slow-performance",
+    "performance-and-connectivity",
+    "site-breakages"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2255,
+    "text_bytes": 1011,
+    "word_count": 162,
+    "downloaded_at": "2025-08-26T10:54:53.829542"
+  }
+}

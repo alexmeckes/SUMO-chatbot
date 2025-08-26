@@ -1,0 +1,22 @@
+{
+  "slug": "manage-extension-shortcuts-firefox",
+  "title": "Manage extension shortcuts in Firefox",
+  "summary": "Manage your add-on shortcuts through the Manage Preferences menu in about:addons.",
+  "url": "https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox",
+  "html": "<p>You can now change your extensions' keyboard shortcuts on the add-ons page.\n</p>\n<ol><li>Click the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">, click <span class=\"for\" data-for=\"not fx140\"><span class=\"menu\">Add-ons and themes</span></span><span class=\"for\" data-for=\"fx140\"><span class=\"menu\">Extensions and themes</span></span> and select <span class=\"menu\">Extensions</span>.\n\n</li><li>Click the <em>Tools for all add-ons</em> cogwheel.\n<dl><dt><span class=\"for\" data-for=\"not fx140\"><img alt=\"manage extensions\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2019-02-21-18-47-38-921651.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"></span><span class=\"for\" data-for=\"fx140\"><img alt=\"manageyourextensions\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2025-06-16-08-11-50-e86d4a.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"></span>\n</dt></dl>\n</li><li>Click <span class=\"menu\">Manage Extension Shortcuts</span> in the menu.\n</li><li>You will see the shortcut options (if available) for your installed add-ons.\n</li></ol>",
+  "text": "You can now change your extensions' keyboard shortcuts on the add-ons page. Click the menu button , click Add-ons and themes Extensions and themes and select Extensions . Click the Tools for all add-ons cogwheel. Click Manage Extension Shortcuts in the menu. You will see the shortcut options (if available) for your installed add-ons.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "add-ons-extensions-and-themes",
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1609,
+    "text_bytes": 335,
+    "word_count": 54,
+    "downloaded_at": "2025-08-26T10:47:22.611858"
+  }
+}

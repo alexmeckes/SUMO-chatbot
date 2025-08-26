@@ -1,0 +1,23 @@
+{
+  "slug": "where-go-developer-support",
+  "title": "Where to go for developer support",
+  "summary": "Have questions about web development or Firefox Developer Edition? MDN Web Docs has many resources you'll need to build a better web. Learn more.",
+  "url": "https://support.mozilla.org/en-US/kb/where-go-developer-support",
+  "html": "<p>The following pages are a good place to start if you're a developer and need help:\n</p>\n<ul><li> <a href=\"/en-US/kb/get-help-firefox-developer-edition\">Get help with Firefox Developer Edition</a>\n</li><li> Explore <a href=\"https://firefox-source-docs.mozilla.org/devtools-user/index.html\">Firefox DevTools User Docs</a>.\n</li><li> Explore <a href=\"https://developer.mozilla.org\">MDN Web Docs</a>. You'll find tutorials, tools and sample code for all skill levels. Here are just a few of the topics you'll find on MDN:\n<ol><li> Open Web technologies:\n<ul><li> HTML\n</li><li> CSS\n</li><li> JavaScript\n</li><li> Document Object Model (DOM)\n</li><li> Web APIs\n</li><li> Graphics (SVG, WebGL, WebVR, WebXR)\n</li><li> Media (audio, video, streaming, WebRTC)\n</li></ul>\n</li><li> The Mozilla platform:\n<ul><li> Firefox test channels (Nightly, Developer Edition and Beta)\n</li><li> Firefox Developer Tools\n</li></ul>\n</li></ol>\n</li></ul>",
+  "text": "The following pages are a good place to start if you're a developer and need help: Get help with Firefox Developer Edition Explore Firefox DevTools User Docs . Explore MDN Web Docs . You'll find tutorials, tools and sample code for all skill levels. Here are just a few of the topics you'll find on MDN: Open Web technologies: HTML CSS JavaScript Document Object Model (DOM) Web APIs Graphics (SVG, WebGL, WebVR, WebXR) Media (audio, video, streaming, WebRTC) The Mozilla platform: Firefox test channels (Nightly, Developer Edition and Beta) Firefox Developer Tools",
+  "products": [
+    "firefox",
+    "mobile"
+  ],
+  "topics": [
+    "browse",
+    "performance-and-connectivity"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 933,
+    "text_bytes": 565,
+    "word_count": 92,
+    "downloaded_at": "2025-08-26T10:36:09.158891"
+  }
+}

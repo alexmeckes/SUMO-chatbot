@@ -1,0 +1,22 @@
+{
+  "slug": "firefox-update-notifications-windows",
+  "title": "Firefox update notifications on Windows",
+  "summary": "Learn about update notifications on Windows that let you know when a brand-new Firefox version is available, even if Firefox is closed.",
+  "url": "https://support.mozilla.org/en-US/kb/firefox-update-notifications-windows",
+  "html": "<div class=\"note\"><strong>Note:</strong> Users on Windows 10 and above with an <a href=\"/en-US/kb/enable-background-updates-firefox-windows\">automatic update installed while Firefox is not running</a> will see a <a href=\"https://learn.microsoft.com/windows/apps/design/shell/tiles-and-notifications/adaptive-interactive-toasts\">Windows app notification</a> (also known as a <em>toast</em> notification) if they haven’t opened Firefox in 28 days.</div>\n<p>Update notifications are part of a Firefox study that collects information to help Mozilla make more informed decisions about future updates. They are designed to let you know when a brand-new Firefox version is available, even when Firefox is closed.\n</p><p><img alt=\"Firefox update notification\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2022-10-25-12-56-49-3f3749.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</p>",
+  "text": "Note: Users on Windows 10 and above with an automatic update installed while Firefox is not running will see a Windows app notification (also known as a toast notification) if they haven’t opened Firefox in 28 days. Update notifications are part of a Firefox study that collects information to help Mozilla make more informed decisions about future updates. They are designed to let you know when a brand-new Firefox version is available, even when Firefox is closed.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "installation-and-updates",
+    "update"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1033,
+    "text_bytes": 467,
+    "word_count": 77,
+    "downloaded_at": "2025-08-26T10:55:31.816400"
+  }
+}

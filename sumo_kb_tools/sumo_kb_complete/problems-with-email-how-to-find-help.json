@@ -1,0 +1,22 @@
+{
+  "slug": "problems-with-email-how-to-find-help",
+  "title": "Problems with email and how to find help",
+  "summary": "Find out the right direction to get help using webmail in Firefox and links to support pages for popular web-based email services.",
+  "url": "https://support.mozilla.org/en-US/kb/problems-with-email-how-to-find-help",
+  "html": "<p>Are you experiencing an issue with your email service? This article will show you how to find help.\n</p>\n<div id=\"toc\"><h2>Table of Contents</h2><ul><li class=\"toclevel-1\"><a href=\"#w_youre-getting-your-emails-through-webmail\"><span class=\"tocnumber\">1</span> <span class=\"toctext\">You're getting your emails through webmail</span></a></li><li class=\"toclevel-1\"><a href=\"#w_thunderbird\"><span class=\"tocnumber\">2</span> <span class=\"toctext\">Thunderbird</span></a></li></ul></div>\n<h1 id=\"w_youre-getting-your-emails-through-webmail\">You're getting your emails through webmail</h1>\n<p>Most email providers offer a web-based service, which allows users to log in to their account using a web browser like Firefox in order to send and receive email. Questions about the functionality, features or the interface of your webmail service might not be specific to the web browser you're using though. \n</p><p>Your webmail provider will likely provide a support section on its website which answers the most frequent questions and offers a way to report technical problems.\n</p><p>Here you can find help for some popular webmail services:\n</p>\n<ul><li> <strong>Gmail/Google Mail:</strong> <a href=\"https://support.google.com/mail/\">https://support.google.com/mail/</a> \n</li><li> <strong>Yahoo Mail:</strong> <a href=\"http://help.yahoo.com/kb/index?page=product&amp;y=PROD_MAIL_ML\">http://help.yahoo.com/kb/index?page=product&amp;y=PROD_MAIL_ML</a>\n</li><li> <strong>Outlook/Hotmail:</strong> <a href=\"http://go.microsoft.com/fwlink/p/?LinkId=260870\">http://go.microsoft.com/fwlink/p/?LinkId=260870</a>\n</li></ul>\n<p>If you're having a particular problem with your webmail only while using Firefox but not in other browsers, see <a href=\"/en-US/kb/websites-look-wrong-or-appear-differently\">Websites look wrong or appear differently than they should</a> for common solutions.\n</p>\n<h1 id=\"w_thunderbird\">Thunderbird</h1>\n<p>If you are using Mozilla's Thunderbird email application and are looking for help, head over <a href=\"/products/thunderbird\">here</a> to the dedicated support section for Thunderbird.\n</p>",
+  "text": "Are you experiencing an issue with your email service? This article will show you how to find help. Table of Contents 1 You're getting your emails through webmail 2 Thunderbird You're getting your emails through webmail Most email providers offer a web-based service, which allows users to log in to their account using a web browser like Firefox in order to send and receive email. Questions about the functionality, features or the interface of your webmail service might not be specific to the web browser you're using though. Your webmail provider will likely provide a support section on its website which answers the most frequent questions and offers a way to report technical problems. Here you can find help for some popular webmail services: Gmail/Google Mail: https://support.google.com/mail/ Yahoo Mail: http://help.yahoo.com/kb/index?page=product&y=PROD_MAIL_ML Outlook/Hotmail: http://go.microsoft.com/fwlink/p/?LinkId=260870 If you're having a particular problem with your webmail only while using Firefox but not in other browsers, see Websites look wrong or appear differently than they should for common solutions. Thunderbird If you are using Mozilla's Thunderbird email application and are looking for help, head over here to the dedicated support section for Thunderbird.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "performance-and-connectivity",
+    "site-breakages"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2109,
+    "text_bytes": 1292,
+    "word_count": 187,
+    "downloaded_at": "2025-08-26T11:03:35.394543"
+  }
+}

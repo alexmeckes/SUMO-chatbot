@@ -1,0 +1,85 @@
+{
+  "locale": "en-US",
+  "total_documents": 5,
+  "total_chunks": 10,
+  "download_date": "2025-08-26T12:12:04.149848",
+  "documents": [
+    {
+      "slug": "fix-problems-images-not-show",
+      "title": "Fix problems that cause images to not show",
+      "url": "https://support.mozilla.org/en-US/kb/fix-problems-images-not-show",
+      "products": [
+        "firefox"
+      ],
+      "topics": [
+        "browse",
+        "images-and-documents"
+      ],
+      "summary": "If you are experiencing difficulty downloading or viewing images in Firefox, follow the troubleshooting instructions in this article.",
+      "chunk_count": 2,
+      "word_count": 665
+    },
+    {
+      "slug": "how-save-web-page",
+      "title": "How to save a web page",
+      "url": "https://support.mozilla.org/en-US/kb/how-save-web-page",
+      "products": [
+        "firefox"
+      ],
+      "topics": [
+        "browse",
+        "download-and-save",
+        "save-content"
+      ],
+      "summary": "Firefox allows you to save a web page to your computer so that you can do things like read it when you're not connected to the Internet. Here's how.",
+      "chunk_count": 1,
+      "word_count": 384
+    },
+    {
+      "slug": "how-search-from-address-bar",
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "url": "https://support.mozilla.org/en-US/kb/how-search-from-address-bar",
+      "products": [
+        "firefox"
+      ],
+      "topics": [
+        "customization",
+        "search",
+        "search-tag-and-share",
+        "settings"
+      ],
+      "summary": "Learn how to search a specific website directly from the Firefox address bar.",
+      "chunk_count": 2,
+      "word_count": 540
+    },
+    {
+      "slug": "fix-common-audio-and-video-issues",
+      "title": "Fix common audio and video issues",
+      "url": "https://support.mozilla.org/en-US/kb/fix-common-audio-and-video-issues",
+      "products": [
+        "firefox"
+      ],
+      "topics": [
+        "audio-and-video",
+        "browse"
+      ],
+      "summary": "This article will help you solve audio and video problems on web pages.",
+      "chunk_count": 3,
+      "word_count": 939
+    },
+    {
+      "slug": "custom-installation-firefox-on-windows",
+      "title": "Custom installation of Firefox on Windows",
+      "url": "https://support.mozilla.org/en-US/kb/custom-installation-firefox-on-windows",
+      "products": [
+        "firefox"
+      ],
+      "topics": [
+        "installation-and-updates"
+      ],
+      "summary": "The custom setup option in the Firefox full, offline installer lets you choose the program folder location and shortcuts. Learn more.",
+      "chunk_count": 2,
+      "word_count": 664
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "mozillas-open-badges-project",
+  "title": "What is Mozilla's Open Badges project?",
+  "summary": "Why Mozilla is involved in Open Badges.",
+  "url": "https://support.mozilla.org/en-US/kb/mozillas-open-badges-project",
+  "html": "<p>Learning today happens everywhere, not just in the classroom. But it's often difficult to get recognition for skills and achievements that happen outside of school. Mozilla's <a href=\"http://openbadges.org\">Open Badges</a> project is working to solve that problem, making it easy for anyone to issue, earn and display badges across the web through a shared technical infrastructure. The result: helping people of all ages gain and display 21st century skills and unlock new career and educational opportunities.\n</p>",
+  "text": "Learning today happens everywhere, not just in the classroom. But it's often difficult to get recognition for skills and achievements that happen outside of school. Mozilla's Open Badges project is working to solve that problem, making it easy for anyone to issue, earn and display badges across the web through a shared technical infrastructure. The result: helping people of all ages gain and display 21st century skills and unlock new career and educational opportunities.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "browse"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 519,
+    "text_bytes": 475,
+    "word_count": 74,
+    "downloaded_at": "2025-08-26T10:35:58.098729"
+  }
+}

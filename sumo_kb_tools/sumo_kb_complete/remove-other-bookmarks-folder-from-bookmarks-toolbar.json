@@ -1,0 +1,21 @@
+{
+  "slug": "remove-other-bookmarks-folder-from-bookmarks-toolbar",
+  "title": "Remove the Other Bookmarks folder from the Bookmarks Toolbar",
+  "summary": "How to remove the Other Bookmarks folder from the Bookmarks Toolbar in Firefox",
+  "url": "https://support.mozilla.org/en-US/kb/remove-other-bookmarks-folder-from-bookmarks-toolbar",
+  "html": "<p>\n</p><p>Your bookmarks Library contains a folder called \"<em>Other Bookmarks</em>\". (To learn more, see the <a href=\"/en-US/kb/bookmarks-firefox\">Bookmarks in Firefox</a> article.) An <em>Other Bookmarks</em> folder will appear at the end of the <a href=\"/en-US/kb/bookmarks-toolbar-display-favorite-websites\">Bookmarks toolbar</a> if the \"<em>Other Bookmarks</em>\" folder in your Library contains any bookmarks. This is done to make it easier to find bookmarks stored in this folder.\n</p><p>If you'd like to remove the <em>Other Bookmarks</em> folder from the Bookmarks toolbar, use these instructions:\n</p>\n<ol><li><span class=\"for\" data-for=\"win,linux\">Right-click</span><span class=\"for\" data-for=\"mac\">Hold down the <span class=\"key\">Control</span> key while you click</span>\n on a blank spot in the Bookmarks toolbar (or on the <em>Other Bookmarks</em> folder icon) to open the context menu.\n<dl><dt><img alt=\"Fx85BookmarksToolbarContextMenu\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-01-10-03-00-28-3109a8.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n</li><li>Click on the <span class=\"menu\">Show Other Bookmarks</span> menu item to remove the check mark.\n</li></ol>",
+  "text": "Your bookmarks Library contains a folder called \" Other Bookmarks \". (To learn more, see the Bookmarks in Firefox article.) An Other Bookmarks folder will appear at the end of the Bookmarks toolbar if the \" Other Bookmarks \" folder in your Library contains any bookmarks. This is done to make it easier to find bookmarks stored in this folder. If you'd like to remove the Other Bookmarks folder from the Bookmarks toolbar, use these instructions: Right-click Hold down the Control key while you click on a blank spot in the Bookmarks toolbar (or on the Other Bookmarks folder icon) to open the context menu. Click on the Show Other Bookmarks menu item to remove the check mark.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1354,
+    "text_bytes": 677,
+    "word_count": 118,
+    "downloaded_at": "2025-08-26T10:53:57.828295"
+  }
+}

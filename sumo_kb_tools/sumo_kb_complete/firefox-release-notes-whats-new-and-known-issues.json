@@ -1,0 +1,24 @@
+{
+  "slug": "firefox-release-notes-whats-new-and-known-issues",
+  "title": "Firefox release notes - What's new and known issues",
+  "summary": "Links to Firefox release notes for Desktop, Android and iOS.",
+  "url": "https://support.mozilla.org/en-US/kb/firefox-release-notes-whats-new-and-known-issues",
+  "html": "<p>For a summary of new features, fixes and known issues in the latest versions of Firefox, see:\n</p>\n<ul><li><a href=\"https://www.mozilla.org/firefox/notes\">Firefox release notes</a>\n</li><li><a href=\"https://www.mozilla.org/firefox/android/notes\">Firefox for Android release notes</a>\n</li><li><a href=\"https://www.mozilla.org/firefox/ios/notes\">Firefox for iOS release notes</a>\n</li></ul>\n<p>See also:\n</p>\n<ul><li><a href=\"/en-US/kb/where-find-release-notes-firefox-enterprise\">Where to find release notes for Firefox for Enterprise</a>\n</li></ul>",
+  "text": "For a summary of new features, fixes and known issues in the latest versions of Firefox, see: Firefox release notes Firefox for Android release notes Firefox for iOS release notes See also: Where to find release notes for Firefox for Enterprise",
+  "products": [
+    "firefox",
+    "mobile",
+    "ios"
+  ],
+  "topics": [
+    "installation-and-updates",
+    "update"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 552,
+    "text_bytes": 244,
+    "word_count": 41,
+    "downloaded_at": "2025-08-26T11:03:58.793409"
+  }
+}

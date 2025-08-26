@@ -1,0 +1,21 @@
+{
+  "slug": "firefox-starts-automatically-when-i-restart-window",
+  "title": "Firefox starts automatically when I restart Windows",
+  "summary": "If Firefox was open when Windows shut down, Firefox may reopen automatically the next time you start Windows. You can disable this feature.",
+  "url": "https://support.mozilla.org/en-US/kb/firefox-starts-automatically-when-i-restart-window",
+  "html": "<p></p><div class=\"for\" data-for=\"not win\"><div class=\"warning\">This article only applies to Firefox on Windows.</div></div>\n<p></p><p>If you leave Firefox open when Windows shuts down, Firefox may automatically re-open with your previously opened tabs the next time you start Windows. Here's how to disable the feature.\n</p>\n<h1 id=\"w_prevent-firefox-from-starting-automatically\">Prevent Firefox from starting automatically</h1>\n<p></p><div class=\"warning\"><strong>Warning:</strong> These instructions are for experienced Firefox users. Changing settings in the <a href=\"/en-US/kb/about-config-editor-firefox\">Configuration Editor</a> (<em>about:config</em>) can have serious effects on your browser’s stability, security and performance.\n<br><strong>Only proceed if you are comfortable with advanced settings and understand the potential impacts</strong>.</div>\n<p></p>\n<ol><li> Type <strong>about:config</strong> in the <a href=\"/en-US/kb/search-firefox-address-bar\">address bar</a> and press <span class=\"for\" data-for=\"win,linux\"><span class=\"key\">Enter</span></span><span class=\"for\" data-for=\"mac\"><span class=\"key\">Return</span></span>.<br>A warning page may appear. Click <span class=\"button\">Accept the Risk and Continue</span> to go to the <em>about:config</em> page.\n\n</li><li> Search for <span class=\"pref\">toolkit.winRegisterApplicationRestart</span>.\n</li><li>Click the <em>Toggle</em> <img alt=\"Fx71aboutconfig-ToggleButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2019-10-29-08-56-36-b0ab10.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> button next to it, to set its value to <span class=\"pref\">false</span>.\n</li></ol>\n<p>There's no need to restart Firefox; the changes take effect immediately.\n</p>",
+  "text": "This article only applies to Firefox on Windows. If you leave Firefox open when Windows shuts down, Firefox may automatically re-open with your previously opened tabs the next time you start Windows. Here's how to disable the feature. Prevent Firefox from starting automatically Warning: These instructions are for experienced Firefox users. Changing settings in the Configuration Editor ( about:config ) can have serious effects on your browser’s stability, security and performance. Only proceed if you are comfortable with advanced settings and understand the potential impacts . Type about:config in the address bar and press Enter Return . A warning page may appear. Click Accept the Risk and Continue to go to the about:config page. Search for toolkit.winRegisterApplicationRestart . Click the Toggle button next to it, to set its value to false . There's no need to restart Firefox; the changes take effect immediately.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1880,
+    "text_bytes": 926,
+    "word_count": 143,
+    "downloaded_at": "2025-08-26T10:46:33.285256"
+  }
+}

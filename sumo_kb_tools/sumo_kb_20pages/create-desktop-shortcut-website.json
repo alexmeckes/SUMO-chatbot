@@ -1,0 +1,22 @@
+{
+  "slug": "create-desktop-shortcut-website",
+  "title": "Create a desktop shortcut to a website",
+  "summary": "Learn how to easily make a shortcut on your desktop that will open Firefox and take you to a favorite website.",
+  "url": "https://support.mozilla.org/en-US/kb/create-desktop-shortcut-website",
+  "html": "<p>You can use Firefox to create a shortcut on your computer's desktop to a page you've visited:\n</p>\n<ol><li> Resize the Firefox window so you can see both your computer's desktop and the Firefox window on the same screen.\n</li><li> Click the padlock icon on the left of the address bar (where the URL is shown).\n<dl><dt><span class=\"for\" data-for=\"not fx138\"><img alt=\"Fx89AddressBarPadlock\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-06-04-29-55-5507f4.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"></span><span class=\"for\" data-for=\"fx138\"><img alt=\"Fx138AddressBarPadlock\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2025-05-19-15-16-20-bc8e53.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"></span>\n</dt></dl>\n</li><li> While still holding the mouse button down, move the pointer to the desktop, then release the mouse button. The shortcut will be created.\n<dl><dt><img alt=\"shortcut desktop 57\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2017-10-22-19-32-30-c0954f.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n</li></ol>\n<div class=\"for\" data-for=\"win\"><div class=\"note\"><strong>Note:</strong> If drag and drop doesn't work in Firefox, see the article <a href=\"/en-US/kb/windows-administrator-launcher-process-error-fix\">Drag and Drop errors with Firefox Launcher Process enabled and Windows UAC disabled - How to Fix</a>.</div></div>\n<p>You can also drag and drop items to the desktop from the Bookmarks menu and the Library window to create shortcuts.\n</p><p>If you open the shortcut you made, your <strong>default browser</strong> will open, and display the page for which you made the shortcut. If you want to make Firefox your default browser, see <a href=\"/en-US/kb/make-firefox-your-default-browser\">Make Firefox your default browser</a>.\n</p><p>In addition, there may be third-party Firefox extensions that can help you. For more information on searching for and installing extensions, see <a href=\"/en-US/kb/find-and-install-add-ons-add-features-to-firefox\">Find and install add-ons to add features to Firefox</a>.\n\n</p>",
+  "text": "You can use Firefox to create a shortcut on your computer's desktop to a page you've visited: Resize the Firefox window so you can see both your computer's desktop and the Firefox window on the same screen. Click the padlock icon on the left of the address bar (where the URL is shown). While still holding the mouse button down, move the pointer to the desktop, then release the mouse button. The shortcut will be created. Note: If drag and drop doesn't work in Firefox, see the article Drag and Drop errors with Firefox Launcher Process enabled and Windows UAC disabled - How to Fix . You can also drag and drop items to the desktop from the Bookmarks menu and the Library window to create shortcuts. If you open the shortcut you made, your default browser will open, and display the page for which you made the shortcut. If you want to make Firefox your default browser, see Make Firefox your default browser . In addition, there may be third-party Firefox extensions that can help you. For more information on searching for and installing extensions, see Find and install add-ons to add features to Firefox .",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "bookmarks",
+    "browse"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2531,
+    "text_bytes": 1112,
+    "word_count": 197,
+    "downloaded_at": "2025-08-26T09:04:11.094760"
+  }
+}

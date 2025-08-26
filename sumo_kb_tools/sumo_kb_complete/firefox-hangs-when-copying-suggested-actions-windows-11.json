@@ -1,0 +1,22 @@
+{
+  "slug": "firefox-hangs-when-copying-suggested-actions-windows-11",
+  "title": "Firefox hangs when copying with Suggested Actions enabled on Windows 11 - What to do",
+  "summary": "Firefox can freeze or stop responding when copying, with the Suggested Actions feature enabled on Windows 11. Learn how to fix the problem.",
+  "url": "https://support.mozilla.org/en-US/kb/firefox-hangs-when-copying-suggested-actions-windows-11",
+  "html": "<div class=\"note\"><strong>Note:</strong> This article applies to users running Firefox on <strong>Windows 11, version 22H2</strong>. <a href=\"/en-US/kb/find-what-version-firefox-you-are-using\">Firefox version</a> 106.0.3 fixes this issue (see the <a href=\"https://www.mozilla.org/firefox/106.0.3/releasenotes/\">106.0.3 release notes</a> for more information). Please <a href=\"/en-US/kb/update-firefox-latest-release\">update Firefox to the latest release</a>. If you still have problems copying content, follow the steps below to disable Suggested Actions.</div>\n<p>Microsoft introduced a new feature called <a href=\"https://support.microsoft.com/en-us/windows/use-suggested-actions-on-your-pc-486c0527-3395-4b40-b304-f1e3cbe2f404\">Suggested Actions</a> on Windows 11, version 22H2. This new clipboard feature is enabled by default and can cause Firefox to hang when performing certain copy actions, such as right-clicking and selecting <em>Copy Link</em>.\n</p>\n<h2 id=\"w_how-can-i-fix-the-problem\">How can I fix the problem?</h2>\n<p>We recommend that Firefox users on Windows 11, version 22H2, disable <em>Suggested Actions</em> temporarily to avoid this issue.\n</p><p><strong>These are the steps you need to follow:</strong>\n</p>\n<ol><li>Press the Windows key <span class=\"key\"><img alt=\"Windows Key\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2011-09-20-08-33-13-ff63c4.jpg\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"></span> on your keyboard or open the <strong>Start</strong> menu and type <strong>Clipboard</strong> in the search field.\n</li><li>Press the <span class=\"key\">Enter</span> key or select <strong>Clipboard Settings</strong> from the results. This will take you to the system Clipboard settings.\n</li><li>Toggle the switch next to <strong>Suggested Actions</strong> to turn it off.\n</li></ol>\n<p>After Suggested Actions has been disabled, Firefox should run as expected.\n</p>",
+  "text": "Note: This article applies to users running Firefox on Windows 11, version 22H2 . Firefox version 106.0.3 fixes this issue (see the 106.0.3 release notes for more information). Please update Firefox to the latest release . If you still have problems copying content, follow the steps below to disable Suggested Actions. Microsoft introduced a new feature called Suggested Actions on Windows 11, version 22H2. This new clipboard feature is enabled by default and can cause Firefox to hang when performing certain copy actions, such as right-clicking and selecting Copy Link . How can I fix the problem? We recommend that Firefox users on Windows 11, version 22H2, disable Suggested Actions temporarily to avoid this issue. These are the steps you need to follow: Press the Windows key on your keyboard or open the Start menu and type Clipboard in the search field. Press the Enter key or select Clipboard Settings from the results. This will take you to the system Clipboard settings. Toggle the switch next to Suggested Actions to turn it off. After Suggested Actions has been disabled, Firefox should run as expected.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "crashing-and-slow-performance",
+    "performance-and-connectivity"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2049,
+    "text_bytes": 1118,
+    "word_count": 184,
+    "downloaded_at": "2025-08-26T10:55:34.007779"
+  }
+}

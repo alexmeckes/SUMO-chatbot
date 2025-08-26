@@ -1,0 +1,21 @@
+{
+  "slug": "personalize-firefox-colorways",
+  "title": "Personalize Firefox with colorways",
+  "summary": "Personalize your browsing experience with Colorways themes for Firefox, created in partnership with an industry color specialist.",
+  "url": "https://support.mozilla.org/en-US/kb/personalize-firefox-colorways",
+  "html": "<p>Colorways are a set of dynamic themes designed in collaboration with color specialists to enhance your Firefox browsing experience. They offer a unique way to personalize your browser, reflecting your style and mood with bespoke color schemes. Whether you're looking to boost your productivity with calming hues or brighten your day with vibrant colors, colorways provides a wide range of options to suit your preferences.\n</p><p><img alt=\"Colorways homepage\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2024-04-11-08-52-40-b5e7d9.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> \n</p><p>You can access your saved and active colorways in the Themes panel (simply click on <span class=\"menu\">Add-ons and themes</span> from the Firefox menu <img alt=\"IG main menu\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2024-04-08-05-37-01-6bf1c5.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> at the top right corner of your screen). \n</p>\n<div class=\"note\"><strong>Note:</strong> direct access to colorways via <a href=\"/en-US/kb/how-set-tab-pickup-firefox-view\">Firefox View</a> ended on January 16, 2023.</div>\n<h1 id=\"w_cant-find-your-previously-installed-colorway\">Can’t find your previously installed colorway?</h1>\n<p>Firefox recently made some backend updates to colorways to streamline maintenance. Most users were automatically migrated to the updated themes. In case you notice your favorite theme is missing, don't worry. Simply head over to the <a href=\"https://addons.mozilla.org/en-US/firefox/collections/4757633/colorways/\">add-ons website</a>, where you can reinstall your colorway by following the installation steps from there.\n</p>\n<h1 id=\"w_related-content\">Related content</h1>\n<ul><li><a href=\"/en-US/kb/use-themes-change-look-of-firefox\">Use themes to change the look of Firefox</a>\n</li><li><a href=\"/en-US/kb/customize-items-on-firefox-new-tab-page#w_wallpapers\">Customize items on your Firefox New Tab page</a>\n</li></ul>",
+  "text": "Colorways are a set of dynamic themes designed in collaboration with color specialists to enhance your Firefox browsing experience. They offer a unique way to personalize your browser, reflecting your style and mood with bespoke color schemes. Whether you're looking to boost your productivity with calming hues or brighten your day with vibrant colors, colorways provides a wide range of options to suit your preferences. You can access your saved and active colorways in the Themes panel (simply click on Add-ons and themes from the Firefox menu at the top right corner of your screen). Note: direct access to colorways via Firefox View ended on January 16, 2023. Can’t find your previously installed colorway? Firefox recently made some backend updates to colorways to streamline maintenance. Most users were automatically migrated to the updated themes. In case you notice your favorite theme is missing, don't worry. Simply head over to the add-ons website , where you can reinstall your colorway by following the installation steps from there. Related content Use themes to change the look of Firefox Customize items on your Firefox New Tab page",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2253,
+    "text_bytes": 1151,
+    "word_count": 184,
+    "downloaded_at": "2025-08-26T10:54:40.376787"
+  }
+}

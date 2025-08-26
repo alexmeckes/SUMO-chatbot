@@ -1,0 +1,21 @@
+{
+  "slug": "access-hidden-tabs-firefox",
+  "title": "Access hidden tabs in Firefox",
+  "summary": "Firefox lets you know when there are tabs hidden in the background so you can access them easily.",
+  "url": "https://support.mozilla.org/en-US/kb/access-hidden-tabs-firefox",
+  "html": "<div class=\"for\" data-for=\"not fx61\"><div class=\"warning\">Please <a href=\"/en-US/kb/update-firefox-latest-release\">update your version of Firefox</a> for the latest features and security updates.</div></div>\n<p></p>\n<h1 id=\"w_how-do-i-know-if-i-have-hidden-tabs\">How do I know if I have hidden tabs?</h1>\n<p>When you hide a tab for the first time using an extension, Firefox will alert you. From here, you can keep the tab hidden or unhide it and disable the extension.\n</p><p>Clicking <img alt=\"hidden tabs icon 61\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2018-06-06-07-29-47-40a658.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> will also show you what tabs you have hidden.\n</p>\n<h1 id=\"w_how-do-i-access-my-hidden-tabs\">How do I access my hidden tabs?</h1>\n<p>Access your hidden tabs by clicking the <img alt=\"hidden tabs icon 61\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2018-06-06-07-29-47-40a658.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> icon on the toolbar. \n</p>\n<dl><dt><img alt=\"hidden tabs 61\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2018-06-06-12-52-50-7ec254.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n<h1 id=\"w_how-do-i-find-a-hidden-tab-that-is-playing-audio\">How do I find a hidden tab that is playing audio?</h1>\n<p>When a hidden tab is playing sound, the speaker icon will show up on the hidden tab icon <img alt=\"hidden tab audio 61\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2018-06-06-12-49-40-908077.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">. If you click on the icon, the audio indicator will also show which hidden tab from the list is playing audio.\n</p>\n<dl><dt><img alt=\"hidden tab audio list 61\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2018-06-06-12-51-11-56ab49.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>",
+  "text": "Please update your version of Firefox for the latest features and security updates. How do I know if I have hidden tabs? When you hide a tab for the first time using an extension, Firefox will alert you. From here, you can keep the tab hidden or unhide it and disable the extension. Clicking will also show you what tabs you have hidden. How do I access my hidden tabs? Access your hidden tabs by clicking the icon on the toolbar. How do I find a hidden tab that is playing audio? When a hidden tab is playing sound, the speaker icon will show up on the hidden tab icon . If you click on the icon, the audio indicator will also show which hidden tab from the list is playing audio.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2581,
+    "text_bytes": 681,
+    "word_count": 132,
+    "downloaded_at": "2025-08-26T10:46:26.543137"
+  }
+}

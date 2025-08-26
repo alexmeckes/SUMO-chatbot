@@ -1,0 +1,44 @@
+[
+  {
+    "chunk_id": "5dcd5dfd1f54_chunk_0",
+    "doc_id": "5dcd5dfd1f54",
+    "chunk_index": 0,
+    "text": "Smart keywords are an easy way to search specific websites from the Firefox address bar. Instead of going to the targeted website and navigating to their search, you can start your site-specific search from any site using the address bar. For example, suppose you search The Internet Movie Database (IMDB) regularly. You can define a smart keyword such as imdb ; then you can search IMDB for information. For example, to search William Shatner, you would enter imdb William Shatner in the address bar. Add a smart keyword for search Visit the website that has the search you want to use and click on the search field. Right-click Hold down the Control key while you click to open the Context Menu . Select Add a Keyword for this Search… The Add Bookmark dialog box appears. You can edit the bookmark name, select the bookmark folder to contain the smart keyword, and enter the keyword that will be used for the search (for example imdb ). To use this created smart bookmark, type the keyword and the search string in the address bar and press Enter Return . Note: Starting in Firefox version 140, the Smart Keywords feature has been replaced with custom search engines. To learn more, see Add custom search engines in Firefox . In earlier versions of Firefox, you could use Smart keywords to search for site-specific content from the address bar, instead of going to the targeted website to use their search. Starting in Firefox version 140, this feature has been replaced with custom search engines. (To learn more, see Add custom search engines in Firefox .) Firefox has a Unified Search button with the icon of your default search engine, which appears when you start typing a search term in the address bar of any website. When you click on this button, it opens a drop-down menu where you can choose a different search engine to perform your search. Add a custom search engine from the search field of a supported website You can right-click on the search field of a supported website and select Add Search Engine from the context menu. For example, suppose you search The Internet Movie Database (IMDB) regularly. You can add it as a custom search engine, and it will appear in the Unified Search button's drop-down menu. Add a custom search engine in Settings You can add custom search engines from websites in Firefox, even if they’re not supported. Go to the main menu, , click Settings , and select Search in the left panel. Scroll down to Search Shortcuts and click Add . Fill in the Search engine name with a name for your custom search engine. In the URL box, copy & paste the URL of the custom search engine. For example: https://www.imdb.com/find/?q=ZZZZZZ Replace the URL’s search tag with %s . For example: https://www.imdb.com/find/?q=%s Add a Keyword (this is optional). Click Add Engine to save. Note: You can find the URL’s search tag by performing a unique search",
+    "citation": {
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "url": "https://support.mozilla.org/en-US/kb/how-search-from-address-bar",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "customization, search, search-tag-and-share, settings"
+    },
+    "metadata": {
+      "chunk_words": 500,
+      "total_chunks": 2,
+      "slug": "how-search-from-address-bar",
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "position": "beginning"
+    }
+  },
+  {
+    "chunk_id": "5dcd5dfd1f54_chunk_1",
+    "doc_id": "5dcd5dfd1f54",
+    "chunk_index": 1,
+    "text": "[Continued from How to search IMDB, Wikipedia and more from the address bar] from websites in Firefox, even if they’re not supported. Go to the main menu, , click Settings , and select Search in the left panel. Scroll down to Search Shortcuts and click Add . Fill in the Search engine name with a name for your custom search engine. In the URL box, copy & paste the URL of the custom search engine. For example: https://www.imdb.com/find/?q=ZZZZZZ Replace the URL’s search tag with %s . For example: https://www.imdb.com/find/?q=%s Add a Keyword (this is optional). Click Add Engine to save. Note: You can find the URL’s search tag by performing a unique search with an easy-to-spot word, such as “ZZZZZZ”. The “ZZZZZZ” in the URL is that URL’s search tag. For example, if you search for tangled on IMBD, the link is going to look like this: https://www.imdb.com/find/?q=tangled Replace tangled with %s .",
+    "citation": {
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "url": "https://support.mozilla.org/en-US/kb/how-search-from-address-bar",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "customization, search, search-tag-and-share, settings"
+    },
+    "metadata": {
+      "chunk_words": 140,
+      "total_chunks": 2,
+      "slug": "how-search-from-address-bar",
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "position": "end"
+    }
+  }
+]

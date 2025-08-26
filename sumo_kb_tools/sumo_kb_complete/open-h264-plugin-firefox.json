@@ -1,0 +1,21 @@
+{
+  "slug": "open-h264-plugin-firefox",
+  "title": "Why is there an OpenH264 plugin in Firefox?",
+  "summary": "Firefox comes with the OpenH264 add-on to support WebRTC or video communication.",
+  "url": "https://support.mozilla.org/en-US/kb/open-h264-plugin-firefox",
+  "html": "<p>Many videos on the Internet use the <a href=\"https://wikipedia.org/wiki/H.264\">H.264 codec</a>. Because of licensing restrictions, Firefox cannot bundle H.264 for free, so it relies on your operating system to play them. \n</p><p>macOS and most Windows versions support this codec out of the box. <a href=\"/en-US/kb/fix-video-audio-problems-firefox-windows\">It needs to be installed manually on Windows N editions</a>. Linux may require a special package such as <strong>ubuntu-restricted-extras</strong>.\n</p><p>Even when proper codec support is not available, though, Firefox can still enable <a href=\"https://developer.mozilla.org/docs/Web/API/WebRTC_API\">WebRTC</a> streams, such as video calls, thanks to <a href=\"https://www.openh264.org/\">OpenH264</a>, an open source solution developed by Cisco. It is installed automatically for Firefox users.\n</p><p><img alt=\"OpenH264-Firefox129\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2024-08-29-10-50-19-969a42.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</p>",
+  "text": "Many videos on the Internet use the H.264 codec . Because of licensing restrictions, Firefox cannot bundle H.264 for free, so it relies on your operating system to play them. macOS and most Windows versions support this codec out of the box. It needs to be installed manually on Windows N editions . Linux may require a special package such as ubuntu-restricted-extras . Even when proper codec support is not available, though, Firefox can still enable WebRTC streams, such as video calls, thanks to OpenH264 , an open source solution developed by Cisco. It is installed automatically for Firefox users.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "add-ons-extensions-and-themes"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1173,
+    "text_bytes": 603,
+    "word_count": 100,
+    "downloaded_at": "2025-08-26T10:36:26.928480"
+  }
+}

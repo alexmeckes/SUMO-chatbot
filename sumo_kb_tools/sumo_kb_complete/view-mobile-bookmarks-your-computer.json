@@ -1,0 +1,22 @@
+{
+  "slug": "view-mobile-bookmarks-your-computer",
+  "title": "View mobile bookmarks on your computer",
+  "summary": "Firefox lets you sync your mobile bookmarks so you can access them on your desktop.",
+  "url": "https://support.mozilla.org/en-US/kb/view-mobile-bookmarks-your-computer",
+  "html": "<p>Your Mozilla account lets you <a href=\"/en-US/kb/how-do-i-set-sync-my-computer\">sync</a> pages you've bookmarked on your phone to your computer. Here's how to view your mobile bookmarks on your laptop or desktop computer:\n</p>\n<ol><li>Click the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> to open the menu panel.\n\n</li><li>Click <span class=\"menu\">Bookmarks</span>. Your mobile bookmarks will appear under <em>Recent Bookmarks</em> in the <em>Bookmarks</em> panel.\n</li></ol>",
+  "text": "Your Mozilla account lets you sync pages you've bookmarked on your phone to your computer. Here's how to view your mobile bookmarks on your laptop or desktop computer: Click the menu button to open the menu panel. Click Bookmarks . Your mobile bookmarks will appear under Recent Bookmarks in the Bookmarks panel.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "bookmarks",
+    "browse"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 748,
+    "text_bytes": 312,
+    "word_count": 52,
+    "downloaded_at": "2025-08-26T10:37:49.138730"
+  }
+}

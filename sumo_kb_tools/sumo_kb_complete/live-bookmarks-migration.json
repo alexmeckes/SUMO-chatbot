@@ -1,0 +1,21 @@
+{
+  "slug": "live-bookmarks-migration",
+  "title": "What happened to my Live Bookmarks?",
+  "summary": "Firefox no longer supports built-in Live Bookmarks, but we’ve made it easy to continue using your feeds.",
+  "url": "https://support.mozilla.org/en-US/kb/live-bookmarks-migration",
+  "html": "<p>As of Firefox version 64, Firefox no longer supports built-in Live Bookmarks but we’ve made it easy to continue using your feeds by performing the following:\n</p>\n<ul><li>Your existing Live Bookmarks have been exported into an <a href=\"https://wikipedia.org/wiki/OPML\">OPML file</a> on your desktop, called <span class=\"filepath\">Firefox feeds backup.opml</span>.  You can import this file in another feed reader such as a Firefox add-on or a separate feed reader program or web service.\n</li><li>Your Live Bookmarks have been turned into regular bookmarks that point to the feed’s origin pages. \n</li></ul>\n<div class=\"note\">For suggestions on other feed readers and more information, see <a href=\"/en-US/kb/feed-reader-replacements-firefox\">Feed reader replacements for Firefox</a>.</div>\n<p>Share this article: <a href=\"https://mzl.la/338y2Nf\">https://mzl.la/338y2Nf</a>\n</p>",
+  "text": "As of Firefox version 64, Firefox no longer supports built-in Live Bookmarks but we’ve made it easy to continue using your feeds by performing the following: Your existing Live Bookmarks have been exported into an OPML file on your desktop, called Firefox feeds backup.opml . You can import this file in another feed reader such as a Firefox add-on or a separate feed reader program or web service. Your Live Bookmarks have been turned into regular bookmarks that point to the feed’s origin pages. For suggestions on other feed readers and more information, see Feed reader replacements for Firefox . Share this article: https://mzl.la/338y2Nf",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "bookmarks"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 881,
+    "text_bytes": 643,
+    "word_count": 104,
+    "downloaded_at": "2025-08-26T10:46:50.854089"
+  }
+}

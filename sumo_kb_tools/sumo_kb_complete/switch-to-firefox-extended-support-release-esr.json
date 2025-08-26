@@ -1,0 +1,21 @@
+{
+  "slug": "switch-to-firefox-extended-support-release-esr",
+  "title": "Switch to Firefox Extended Support Release (ESR) for personal use",
+  "summary": "How to switch to Firefox ESR as a workaround for issues with the newest version of Firefox.",
+  "url": "https://support.mozilla.org/en-US/kb/switch-to-firefox-extended-support-release-esr",
+  "html": "<p><a href=\"https://www.mozilla.org/firefox/enterprise/\">Firefox Extended Support Release (ESR)</a> is an official version of Firefox developed for large organizations like universities and businesses that need to set up and maintain Firefox on a large scale (see <a href=\"/en-US/kb/firefox-esr-release-cycle\">Firefox ESR release cycle</a> for more information). Firefox ESR does not come with the latest features, but it has the latest security and stability fixes.\n</p>\n<div class=\"warning\">Firefox includes downgrade protection to prevent corruption of <a href=\"/en-US/kb/profiles-where-firefox-stores-user-data\">user profile data</a>. You'll be prompted to create a new Firefox profile if you previously used a higher <a href=\"/en-US/kb/find-what-version-firefox-you-are-using\">version of Firefox</a> (read <a href=\"/en-US/kb/dedicated-profiles-firefox-installation#w_what-happens-to-my-profile-if-i-downgrade-to-a-previous-version-of-firefox\">this article section</a> to learn more).</div>\n<p>You can download <strong>Firefox Extended Support Release</strong> for your operating system and language from the <a href=\"https://www.mozilla.org/firefox/all/desktop-esr/\">Firefox ESR download page</a>.\n</p>",
+  "text": "Firefox Extended Support Release (ESR) is an official version of Firefox developed for large organizations like universities and businesses that need to set up and maintain Firefox on a large scale (see Firefox ESR release cycle for more information). Firefox ESR does not come with the latest features, but it has the latest security and stability fixes. Firefox includes downgrade protection to prevent corruption of user profile data . You'll be prompted to create a new Firefox profile if you previously used a higher version of Firefox (read this article section to learn more). You can download Firefox Extended Support Release for your operating system and language from the Firefox ESR download page .",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "installation-and-updates"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1207,
+    "text_bytes": 709,
+    "word_count": 114,
+    "downloaded_at": "2025-08-26T10:38:27.239781"
+  }
+}

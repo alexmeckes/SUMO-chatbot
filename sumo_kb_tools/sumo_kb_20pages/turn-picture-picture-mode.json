@@ -1,0 +1,21 @@
+{
+  "slug": "turn-picture-picture-mode",
+  "title": "Turn picture-in-picture mode controls on and off",
+  "summary": "How to hide the picture-in-picture controls",
+  "url": "https://support.mozilla.org/en-US/kb/turn-picture-picture-mode",
+  "html": "<p>The <a href=\"/en-US/kb/about-picture-picture-firefox\">Picture-in-picture feature</a> allows you to pop videos out of their webpages and watch them in floating windows while you work in other tabs. \n</p><p></p><p>\nIf you don’t want to see the controls while hovering, you can hide that option in Firefox. (Note: You can still turn on picture-in-picture view by right-clicking a video.) Or you can use this to re-enable the control when you want to use it again.\n</p>\n<ol><li><span class=\"for\" data-for=\"mac\">In the Menu bar at the top of the screen, click <span class=\"menu\">Firefox</span> and then select <span class=\"menu\">Preferences</span> or <span class=\"menu\">Settings</span>, depending on your macOS version.</span><span class=\"for\" data-for=\"win,linux\">Click the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> and select <span class=\"menu\">Settings</span>.</span>\n\n</li><li> In the <span class=\"menu\">General</span> panel, scroll down to the <em>Browsing</em> section.\n</li><li>Clear the check mark for <strong>Enable picture-in-picture video controls</strong>.\n<dl><dt><img alt=\"Fx111settings-UncheckPIP\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2023-03-21-02-09-13-3e65c3.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\">\n</dt></dl>\n</li></ol>\n<p>If you later want to re-enable the controls, simply add back the check mark.\n</p>\n<p></p>",
+  "text": "The Picture-in-picture feature allows you to pop videos out of their webpages and watch them in floating windows while you work in other tabs. If you don’t want to see the controls while hovering, you can hide that option in Firefox. (Note: You can still turn on picture-in-picture view by right-clicking a video.) Or you can use this to re-enable the control when you want to use it again. In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . In the General panel, scroll down to the Browsing section. Clear the check mark for Enable picture-in-picture video controls . If you later want to re-enable the controls, simply add back the check mark.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "settings"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1773,
+    "text_bytes": 769,
+    "word_count": 135,
+    "downloaded_at": "2025-08-26T10:51:46.906005"
+  }
+}

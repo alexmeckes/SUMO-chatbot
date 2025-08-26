@@ -1,0 +1,21 @@
+{
+  "slug": "how-share-urls-firefox-macos",
+  "title": "How to share URLs on Firefox for macOS",
+  "summary": "Learn how to share URLs of the websites you visit on Firefox for macOS.",
+  "url": "https://support.mozilla.org/en-US/kb/how-share-urls-firefox-macos",
+  "html": "<p>You can share a webpage using your preferred applications in Firefox for macOS.\n</p>\n<ol><li>When you visit a site you want to share, click the <span class=\"menu\">File</span> menu at the top of the screen and then click on the <span class=\"menu\">Share</span> menu item.\n</li><li>Choose the application you want to use to share the website's URL.\n<dl><dt><img alt=\"Fx92FileShare-mac\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-09-07-13-06-18-5240a1.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" width=\"400\">\n</dt></dl>\n</li></ol>\n<p>Optionally, you can right-click on the tab of the site you want to share and click the <span class=\"menu\">Share</span> menu item.\n</p><p>If you're sharing a link by email, Firefox will use your system's default email application. To learn how to configure the application you use to share links by email, visit <a href=\"/en-US/kb/change-program-used-open-email-links\">Change the program used to open email links</a>.\n</p>",
+  "text": "You can share a webpage using your preferred applications in Firefox for macOS. When you visit a site you want to share, click the File menu at the top of the screen and then click on the Share menu item. Choose the application you want to use to share the website's URL. Optionally, you can right-click on the tab of the site you want to share and click the Share menu item. If you're sharing a link by email, Firefox will use your system's default email application. To learn how to configure the application you use to share links by email, visit Change the program used to open email links .",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "sync-data"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1111,
+    "text_bytes": 595,
+    "word_count": 111,
+    "downloaded_at": "2025-08-26T10:54:31.416400"
+  }
+}

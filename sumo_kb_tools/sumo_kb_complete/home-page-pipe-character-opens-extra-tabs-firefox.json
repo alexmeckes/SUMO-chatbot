@@ -1,0 +1,24 @@
+{
+  "slug": "home-page-pipe-character-opens-extra-tabs-firefox",
+  "title": "Home page with pipe character opens extra tabs when Firefox starts",
+  "summary": "Set up Firefox to open multiple home pages replacing the pipe character (|) with %7C.",
+  "url": "https://support.mozilla.org/en-US/kb/home-page-pipe-character-opens-extra-tabs-firefox",
+  "html": "<p>Firefox sets multiple <a href=\"/en-US/kb/how-to-set-the-home-page\">home pages</a> when you separate each address with a pipe character (|) or vertical bar. This feature may lead to problems when an individual home page address contains a pipe character.\n</p><p>Here's how to fix it:\n</p><div class=\"for\" data-for=\"not fx61\">\n<ol><li> <span class=\"for\" data-for=\"mac\">In the Menu bar at the top of the screen, click <span class=\"menu\">Firefox</span> and then select <span class=\"menu\">Preferences</span> or <span class=\"menu\">Settings</span>, depending on your macOS version.</span><span class=\"for\" data-for=\"win,linux\">Click the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> and select <span class=\"menu\">Settings</span>.</span>\n\n</li><li> Select the <span class=\"menu\">General</span> panel.\n</li><li> In the <strong>Home Page</strong> text box, replace all pipes (|) with <strong>%7C</strong>.\n</li><li> Close the <span class=\"menu\">Settings</span> page. Any changes you've made will automatically be saved.\n\n</li></ol>\n</div><div class=\"for\" data-for=\"fx61\">\n<ol><li> <span class=\"for\" data-for=\"mac\">In the Menu bar at the top of the screen, click <span class=\"menu\">Firefox</span> and then select <span class=\"menu\">Preferences</span> or <span class=\"menu\">Settings</span>, depending on your macOS version.</span><span class=\"for\" data-for=\"win,linux\">Click the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> and select <span class=\"menu\">Settings</span>.</span>\n\n</li><li> Select the <span class=\"menu\">Home</span> panel.\n</li><li> In the <strong>Homepage and new windows</strong> text box for <strong>Custom URLs…</strong>, replace all pipes (|) with <strong>%7C</strong>.\n</li><li> Close the <span class=\"menu\">Settings</span> page. Any changes you've made will automatically be saved.\n\n</li></ol>\n</div>\n<div class=\"note\"><strong>Tip:</strong> If removing the pipe character doesn't solve the problem, add-ons or malware might be causing this behavior. Try <a href=\"/en-US/kb/refresh-firefox-reset-add-ons-and-settings\">refreshing Firefox</a> to remove add-ons without erasing your browsing information and bookmarks.</div>",
+  "text": "Firefox sets multiple home pages when you separate each address with a pipe character (|) or vertical bar. This feature may lead to problems when an individual home page address contains a pipe character. Here's how to fix it: In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . Select the General panel. In the Home Page text box, replace all pipes (|) with %7C . Close the Settings page. Any changes you've made will automatically be saved. In the Menu bar at the top of the screen, click Firefox and then select Preferences or Settings , depending on your macOS version. Click the menu button and select Settings . Select the Home panel. In the Homepage and new windows text box for Custom URLs… , replace all pipes (|) with %7C . Close the Settings page. Any changes you've made will automatically be saved. Tip: If removing the pipe character doesn't solve the problem, add-ons or malware might be causing this behavior. Try refreshing Firefox to remove add-ons without erasing your browsing information and bookmarks.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "browse",
+    "home-screen",
+    "performance-and-connectivity",
+    "tabs"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2670,
+    "text_bytes": 1146,
+    "word_count": 198,
+    "downloaded_at": "2025-08-26T11:03:52.360956"
+  }
+}

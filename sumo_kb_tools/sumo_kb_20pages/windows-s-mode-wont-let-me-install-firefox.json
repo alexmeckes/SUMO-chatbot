@@ -1,0 +1,21 @@
+{
+  "slug": "windows-s-mode-wont-let-me-install-firefox",
+  "title": "Windows in S mode won't let me install Firefox",
+  "summary": "You cannot install Firefox from Mozilla or from the Microsoft Store on Windows in S mode. You must first switch out of S mode. Learn more.",
+  "url": "https://support.mozilla.org/en-US/kb/windows-s-mode-wont-let-me-install-firefox",
+  "html": "<p>Windows in S mode does not allow installation of apps from outside of the Microsoft Store, so you will not be able to install Firefox from Mozilla's website. Although Firefox is available from the Microsoft Store, it does not work on Windows in S mode and installation is currently disabled. \n</p><p>To install Firefox, you must <a href=\"https://support.microsoft.com/windows/switching-out-of-s-mode-in-windows-4f56d9be-99ec-6983-119f-031bfb28a307\">switch out of Windows S mode</a>. To learn more, see the <a href=\"https://support.microsoft.com/en-us/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85\">Windows 10 and Windows 11 in S mode FAQ</a> at Microsoft Support.\n</p><p>Afterwards, visit Mozilla's <a href=\"https://www.mozilla.org/firefox/new/?utm_medium=referral&amp;utm_source=support.mozilla.org\">Firefox download page</a> or the Microsoft Store to install Firefox. For more information, see <a href=\"/en-US/kb/how-install-firefox-windows\">How to install Firefox on Windows</a> and <a href=\"/en-US/kb/download-firefox-windows-microsoft-store\">Download Firefox on Windows from the Microsoft Store</a>.\n</p>",
+  "text": "Windows in S mode does not allow installation of apps from outside of the Microsoft Store, so you will not be able to install Firefox from Mozilla's website. Although Firefox is available from the Microsoft Store, it does not work on Windows in S mode and installation is currently disabled. To install Firefox, you must switch out of Windows S mode . To learn more, see the Windows 10 and Windows 11 in S mode FAQ at Microsoft Support. Afterwards, visit Mozilla's Firefox download page or the Microsoft Store to install Firefox. For more information, see How to install Firefox on Windows and Download Firefox on Windows from the Microsoft Store .",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "installation-and-updates"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1151,
+    "text_bytes": 648,
+    "word_count": 112,
+    "downloaded_at": "2025-08-26T10:46:57.511473"
+  }
+}

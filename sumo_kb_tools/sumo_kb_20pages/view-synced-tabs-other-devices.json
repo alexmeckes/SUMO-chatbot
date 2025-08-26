@@ -1,0 +1,21 @@
+{
+  "slug": "view-synced-tabs-other-devices",
+  "title": "View synced tabs from other devices",
+  "summary": "How to open tabs across your desktop and Android devices.",
+  "url": "https://support.mozilla.org/en-US/kb/view-synced-tabs-other-devices",
+  "html": "<p>Sync lets you access open tabs across your desktop, laptop and mobile devices that use Firefox.\n</p><p>To see your synced tabs, click on the menu button <img alt=\"Fx89menuButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2021-05-15-11-18-38-e5b736.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> and then click your Mozilla account. All synced tabs will appear right under the <span class=\"menu\">Sign out…</span> menu item in the <em>Mozilla account</em> panel.\n</p><p>Additionally, you can <a href=\"/en-US/kb/use-firefox-sidebar-access-bookmarks-history-synced\">use the Firefox Sidebar to access synced tabs</a>. While viewing synced tabs in Sidebar, right clicking on device name allows you to open all tabs from a device at once.\n</p><p><br>\n</p>\n<div class=\"note\">Before you begin, set up Sync on all devices that use Firefox. See <a href=\"/en-US/kb/how-do-i-set-sync-my-computer\">How do I set up Sync on my computer?</a> for more information.</div>",
+  "text": "Sync lets you access open tabs across your desktop, laptop and mobile devices that use Firefox. To see your synced tabs, click on the menu button and then click your Mozilla account. All synced tabs will appear right under the Sign out… menu item in the Mozilla account panel. Additionally, you can use the Firefox Sidebar to access synced tabs . While viewing synced tabs in Sidebar, right clicking on device name allows you to open all tabs from a device at once. Before you begin, set up Sync on all devices that use Firefox. See How do I set up Sync on my computer? for more information.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "sync-data"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1115,
+    "text_bytes": 591,
+    "word_count": 108,
+    "downloaded_at": "2025-08-26T10:37:17.063272"
+  }
+}

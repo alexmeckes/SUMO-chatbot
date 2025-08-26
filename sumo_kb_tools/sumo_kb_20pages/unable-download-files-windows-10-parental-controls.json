@@ -1,0 +1,22 @@
+{
+  "slug": "unable-download-files-windows-10-parental-controls",
+  "title": "Unable to download files in Windows 10 when Parental Controls are on",
+  "summary": "There was a known issue in Firefox version 69 and Beta 70 that prevented you from downloading files in Windows 10 when parental controls were on.",
+  "url": "https://support.mozilla.org/en-US/kb/unable-download-files-windows-10-parental-controls",
+  "html": "<div class=\"for\" data-for=\"not win10\"><div class=\"note\">This article applies to Firefox on Windows 10.</div></div>\n<p>There was a <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1586228\">known issue</a> in <a href=\"/en-US/kb/find-what-version-firefox-you-are-using\">Firefox version</a> 69.0.2 and Firefox Beta 70.0b11+ that caused downloads to fail in <strong>Windows 10</strong> when you had parental controls or content restrictions on. \n</p><p>We have released <a href=\"https://www.mozilla.org/firefox/69.0.3/releasenotes/\">Firefox 69.0.3</a> in order to fix this problem, so if you're affected you should <a href=\"/en-US/kb/update-firefox-latest-release\">update Firefox</a> to the latest version.  Alternatively, you can work around this problem by turning off content restrictions by following the steps in <a href=\"https://support.microsoft.com/help/4027707/microsoft-account-remove-members-from-family\">this Microsoft support article</a>.\n</p>",
+  "text": "This article applies to Firefox on Windows 10. There was a known issue in Firefox version 69.0.2 and Firefox Beta 70.0b11+ that caused downloads to fail in Windows 10 when you had parental controls or content restrictions on. We have released Firefox 69.0.3 in order to fix this problem, so if you're affected you should update Firefox to the latest version. Alternatively, you can work around this problem by turning off content restrictions by following the steps in this Microsoft support article .",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "download-and-save",
+    "downloads"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 956,
+    "text_bytes": 501,
+    "word_count": 83,
+    "downloaded_at": "2025-08-26T10:52:45.963183"
+  }
+}

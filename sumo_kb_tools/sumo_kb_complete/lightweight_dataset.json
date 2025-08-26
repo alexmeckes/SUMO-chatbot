@@ -1,0 +1,113 @@
+[
+  {
+    "id": 485,
+    "slug": "fix-problems-images-not-show",
+    "title": "Fix problems that cause images to not show",
+    "summary": "If you are experiencing difficulty downloading or viewing images in Firefox, follow the troubleshooting instructions in this article.",
+    "locale": "en-US",
+    "products": [
+      "firefox"
+    ],
+    "topics": [
+      "browse",
+      "images-and-documents"
+    ],
+    "content": {
+      "text": "This article explains how to fix problems with images on websites, such as PNG, GIF, and JPG still images, as well as animated file formats such as animated GIF. If you are experiencing difficulty downloading or viewing images in Firefox, follow the troubleshooting instructions below. Table of Contents 1 Clear cookies and cache 2 Security software 3 Web accelerator software 4 Extensions 5 Settings modification 6 Some other reasons for problems with images 7 I'm still having problems! 8 Related links Clear cookies and cache Sometimes problems loading websites can be fixed by clearing the cookies and cache. Click the menu button to open the menu panel. Click History and select Clear recent history… In the Time range to clear: drop-down, select Everything . Below the drop-down menu, select both Cookies and Cache . Make sure other items you want to keep are not selected. Click Clear Now . Click the menu button to open the menu panel. Click History and select Clear recent history… In the When: drop-down, select Everything . Below the drop-down menu, select both Cookies and site data and Temporary cached files and pages . Make sure other items you want to keep are not selected. Click Clear . Security software Some Internet security software (including antivirus and anti-spyware programs, firewalls, privacy programs, and others) may identify and block certain images as web bugs or may prevent images from animating. Check the settings for your Internet security program to make sure it allows images to load. Web accelerator software If images on websites load, but don't look right (or don't look the way they do in other browsers), and you are using any sort of web accelerator software, disable it and see if images load properly. For more information, see the documentation that came with the software. Extensions Extensions are add-ons that add or modify Firefox features. See the Troubleshoot extensions, themes and hardware acceleration issues to solve common Firefox problems article for instructions on how to disable or uninstall extensions that may cause images not to load in Firefox. Settings modification You may have modified one of your Firefox preference settings which is causing images not to show. You can reset all preferences or try the following: Warning: These instructions are for experienced Firefox users. Changing settings in the Configuration Editor ( about:config ) can have serious effects on your browser’s stability, security and performance. Only proceed if you are comfortable with advanced settings and understand the potential impacts . Type about:config in the address bar and press Enter Return . A warning page may appear. Click Accept the Risk and Continue to go to the about:config page. Enter browser.display.document_color_use to the Search box. The preference's value should be set to 0 1 by default. Click the Reset button if its value is other than 0 1 . Some other reasons for problems with images The site that displays the images may be down or experiencing difficulties. To verify, try loading the site from a different computer or browser. Some pathnames to images contain backslashes (e.g. example.com\\MyImage.jpg ). In browsers other than Internet Explorer, these pathnames do not load. If you see that the image's URL contains a backslash, contact the site's webmaster about the issue. If the image area shows text or some form of gibberish, it's most likely caused by a misconfigured web server. Contact the website and tell them about the problem. I'm still having problems! If you have tried all of the solutions in this article and none of the reasons above apply, then try these solutions: Try refreshing Firefox . Use the Profile Manager to create a new Firefox profile . Follow the other steps in the Troubleshoot and diagnose Firefox problems article. Related links Websites look wrong or appear differently than they should Manage file types and download actions in Firefox Fix common audio and video issues Mixed content blocking in Firefox Based on information from Images or animations do not load (mozillaZine KB)",
+      "html_available": true
+    },
+    "citation": {
+      "title": "Fix problems that cause images to not show",
+      "url": "https://support.mozilla.org/en-US/kb/fix-problems-images-not-show",
+      "api_url": "/en-US/kb/fix-problems-images-not-show",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "browse, images-and-documents"
+    },
+    "metadata": {
+      "html_size": 8560,
+      "text_size": 4097,
+      "word_count": 665,
+      "has_images": true,
+      "has_videos": false,
+      "has_code": false,
+      "downloaded_at": "2025-08-26T08:41:54.543027"
+    }
+  },
+  {
+    "id": 489,
+    "slug": "how-save-web-page",
+    "title": "How to save a web page",
+    "summary": "Firefox allows you to save a web page to your computer so that you can do things like read it when you're not connected to the Internet. Here's how.",
+    "locale": "en-US",
+    "products": [
+      "firefox"
+    ],
+    "topics": [
+      "browse",
+      "download-and-save",
+      "save-content"
+    ],
+    "content": {
+      "text": "With Firefox, you can save a web page to your computer, enabling you to access it even when you're offline. Here's a straightforward guide on how to do it: Table of Contents 1 Saving a web page 2 Saving parts of a web page Saving a web page Click on the menu button The image \"new fx menu\" does not exist., and then click Save Page As Save Page . The Save As dialog window will open. In the dialog window, type in a name for the page you want to save and choose a location. In the Format drop-down, choose the type of file that you want to save the page as: In the Save as type drop-down, choose the type of file that you want to save the page as: At the bottom right corner of the dialog window, choose a file type from the drop-down menu Web page, complete : Save the whole web page along with pictures. This choice allows you to view it as originally shown with pictures, but it may not keep the HTML link structure of the original page. Firefox creates a new directory where the page is saved to save pictures and other files necessary to show the whole web page. Web page, HTML only : Save the original page without pictures. This choice preserves the original HTML link structure in one file. Text files : Save the original page as a text file. This choice will not preserve the original HTML link structure but will allow you to see a text version of the web page in any text editor. All files : This is equivalent to \"Web page, HTML only,\" but you may specify a file extension (e.g. \".htm\" or \".shtml\"). Click Save . A copy of the page will be saved as the type you specified in the location you chose. Saving parts of a web page To save an image : Right-click Hold down the Ctrl key while you click on the image you want to save, and then select Save Image As... from the context menu. Then select a location on your computer to save the copy of the image. To save other elements on the page, including image scripts, stylesheets, and more, use the Page Info window's Media panel .",
+      "html_available": true
+    },
+    "citation": {
+      "title": "How to save a web page",
+      "url": "https://support.mozilla.org/en-US/kb/how-save-web-page",
+      "api_url": "/en-US/kb/how-save-web-page",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "browse, download-and-save, save-content"
+    },
+    "metadata": {
+      "html_size": 4405,
+      "text_size": 1990,
+      "word_count": 384,
+      "has_images": true,
+      "has_videos": false,
+      "has_code": false,
+      "downloaded_at": "2025-08-26T08:41:55.241418"
+    }
+  },
+  {
+    "id": 490,
+    "slug": "how-search-from-address-bar",
+    "title": "How to search IMDB, Wikipedia and more from the address bar",
+    "summary": "Learn how to search a specific website directly from the Firefox address bar.",
+    "locale": "en-US",
+    "products": [
+      "firefox"
+    ],
+    "topics": [
+      "customization",
+      "search",
+      "search-tag-and-share",
+      "settings"
+    ],
+    "content": {
+      "text": "Smart keywords are an easy way to search specific websites from the Firefox address bar. Instead of going to the targeted website and navigating to their search, you can start your site-specific search from any site using the address bar. For example, suppose you search The Internet Movie Database (IMDB) regularly. You can define a smart keyword such as imdb ; then you can search IMDB for information. For example, to search William Shatner, you would enter imdb William Shatner in the address bar. Add a smart keyword for search Visit the website that has the search you want to use and click on the search field. Right-click Hold down the Control key while you click to open the Context Menu . Select Add a Keyword for this Search… The Add Bookmark dialog box appears. You can edit the bookmark name, select the bookmark folder to contain the smart keyword, and enter the keyword that will be used for the search (for example imdb ). To use this created smart bookmark, type the keyword and the search string in the address bar and press Enter Return . Note: Starting in Firefox version 140, the Smart Keywords feature has been replaced with custom search engines. To learn more, see Add custom search engines in Firefox . In earlier versions of Firefox, you could use Smart keywords to search for site-specific content from the address bar, instead of going to the targeted website to use their search. Starting in Firefox version 140, this feature has been replaced with custom search engines. (To learn more, see Add custom search engines in Firefox .) Firefox has a Unified Search button with the icon of your default search engine, which appears when you start typing a search term in the address bar of any website. When you click on this button, it opens a drop-down menu where you can choose a different search engine to perform your search. Add a custom search engine from the search field of a supported website You can right-click on the search field of a supported website and select Add Search Engine from the context menu. For example, suppose you search The Internet Movie Database (IMDB) regularly. You can add it as a custom search engine, and it will appear in the Unified Search button's drop-down menu. Add a custom search engine in Settings You can add custom search engines from websites in Firefox, even if they’re not supported. Go to the main menu, , click Settings , and select Search in the left panel. Scroll down to Search Shortcuts and click Add . Fill in the Search engine name with a name for your custom search engine. In the URL box, copy & paste the URL of the custom search engine. For example: https://www.imdb.com/find/?q=ZZZZZZ Replace the URL’s search tag with %s . For example: https://www.imdb.com/find/?q=%s Add a Keyword (this is optional). Click Add Engine to save. Note: You can find the URL’s search tag by performing a unique search with an easy-to-spot word, such as “ZZZZZZ”. The “ZZZZZZ” in the URL is that URL’s search tag. For example, if you search for tangled on IMBD, the link is going to look like this: https://www.imdb.com/find/?q=tangled Replace tangled with %s .",
+      "html_available": true
+    },
+    "citation": {
+      "title": "How to search IMDB, Wikipedia and more from the address bar",
+      "url": "https://support.mozilla.org/en-US/kb/how-search-from-address-bar",
+      "api_url": "/en-US/kb/how-search-from-address-bar",
+      "source": "Mozilla Support (SUMO)",
+      "locale": "en-US",
+      "products": "firefox",
+      "topics": "customization, search, search-tag-and-share, settings"
+    },
+    "metadata": {
+      "html_size": 7640,
+      "text_size": 3128,
+      "word_count": 540,
+      "has_images": true,
+      "has_videos": false,
+      "has_code": true,
+      "downloaded_at": "2025-08-26T08:41:55.959965"
+    }
+  }
+]

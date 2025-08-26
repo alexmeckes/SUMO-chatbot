@@ -1,0 +1,22 @@
+{
+  "slug": "videos-dont-have-sound-citrix",
+  "title": "Videos don't have sound on Citrix",
+  "summary": "How to fix audio problems when you try to watch videos while using the Citrix Server on Windows.",
+  "url": "https://support.mozilla.org/en-US/kb/videos-dont-have-sound-citrix",
+  "html": "<div class=\"for\" data-for=\"not win\"><div class=\"warning\">This article applies to Windows only.</div></div>\n<p>If you are on a Citrix Server on Windows, you may have problems with sound when you play videos on Firefox. This is due to an issue with increased security restrictions and we are working hard to resolve this.\n</p><p>In the meantime, you can reduce the sandbox security level by following these steps:\n</p><p></p><div class=\"warning\"><strong>Warning:</strong> These instructions are for experienced Firefox users. Changing settings in the <a href=\"/en-US/kb/about-config-editor-firefox\">Configuration Editor</a> (<em>about:config</em>) can have serious effects on your browser’s stability, security and performance.\n<br><strong>Only proceed if you are comfortable with advanced settings and understand the potential impacts</strong>.</div>\n<p></p>\n<ol><li> Type <strong>about:config</strong> in the <a href=\"/en-US/kb/search-firefox-address-bar\">address bar</a> and press <span class=\"for\" data-for=\"win,linux\"><span class=\"key\">Enter</span></span><span class=\"for\" data-for=\"mac\"><span class=\"key\">Return</span></span>.<br>A warning page may appear. Click <span class=\"button\">Accept the Risk and Continue</span> to go to the <em>about:config</em> page.\n\n</li><li> Search for <span class=\"pref\">security.sandbox.content.level</span>.\n</li><li> Click the <em>Edit</em> <img alt=\"Fx71aboutconfig-EditButton\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2019-10-29-08-54-56-1f86ca.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> button for the preference and set its value to <span class=\"pref\">1</span>.\n</li><li>Click on the checkmark <img alt=\"Fx71aboutconfig-Checkmark\" class=\"wiki-image frameless lazy\" data-original-src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/gallery/images/2019-11-04-06-45-04-f67b18.png\" src=\"https://assets-prod.sumo.prod.webservices.mozgcp.net/static/placeholder.688345f843bb37ed.gif\" title=\"\"> to save the change. \n</li><li> Restart Firefox on the remote device.\n</li></ol>",
+  "text": "This article applies to Windows only. If you are on a Citrix Server on Windows, you may have problems with sound when you play videos on Firefox. This is due to an issue with increased security restrictions and we are working hard to resolve this. In the meantime, you can reduce the sandbox security level by following these steps: Warning: These instructions are for experienced Firefox users. Changing settings in the Configuration Editor ( about:config ) can have serious effects on your browser’s stability, security and performance. Only proceed if you are comfortable with advanced settings and understand the potential impacts . Type about:config in the address bar and press Enter Return . A warning page may appear. Click Accept the Risk and Continue to go to the about:config page. Search for security.sandbox.content.level . Click the Edit button for the preference and set its value to 1 . Click on the checkmark to save the change. Restart Firefox on the remote device.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "audio-and-video",
+    "browse"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 2193,
+    "text_bytes": 983,
+    "word_count": 162,
+    "downloaded_at": "2025-08-26T10:38:42.745751"
+  }
+}

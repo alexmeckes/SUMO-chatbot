@@ -1,0 +1,23 @@
+{
+  "slug": "linux-security-warning",
+  "title": "Firefox security features warning on Linux",
+  "summary": "Create an AppArmor profile for Firefox on Linux.",
+  "url": "https://support.mozilla.org/en-US/kb/linux-security-warning",
+  "html": "<p>\n</p><p>You may see a warning that “some of Firefox’s security features may offer less protection on your current operating system” when you <a href=\"/en-US/kb/install-firefox-linux\">install Firefox on Linux</a>.\n</p><p>The sandbox in Firefox makes use of unprivileged user namespaces when creating new processes for enforcing more security. This can be considered a security risk, therefore some Linux distributions have started to restrict its usage and only allow it to work where there is an AppArmor profile.\n</p><p>Such profiles can only cover a limited set of installations paths, including Snap and Debian packages. They cannot however cover some other use cases, such as tarball installations as well as local development builds.\n</p><p>To create an AppArmor profile for Firefox:\n</p><p>In <code><strong>/etc/apparmor.d/</strong></code>, create a file with the name <code><strong>firefox-local</strong></code>\n</p><p>In the file, add the following:\n</p><pre><code><strong># This profile allows everything and only exists to give the</strong>\n<strong># application a name instead of having the label \"unconfined\"</strong>\n<strong>abi &lt;abi/4.0&gt;,</strong>\n<strong>include &lt;tunables/global&gt;</strong>\n<strong>profile firefox-local</strong>\n<strong>/home/&lt;USER&gt;/bin/firefox/{firefox,firefox-bin,updater}</strong>\n<strong>flags=(unconfined) {</strong>\n<strong>\tuserns,</strong>\n<strong>\t# Site-specific additions and overrides. See local/README for details.</strong>\n<strong>\tinclude if exists &lt;local/firefox&gt;</strong>\n<strong>}</strong></code>\n</pre>\n<p><br>\nReplace <code><strong>&lt;USER&gt;</strong></code> with your Linux user name. This assumes the Firefox install is at <code><strong>$HOME/bin/</strong></code>\n</p><p>Once you have saved the file, run <code><strong>sudo systemctl restart apparmor.service</strong></code> in the Linux terminal.\n</p>",
+  "text": "You may see a warning that “some of Firefox’s security features may offer less protection on your current operating system” when you install Firefox on Linux . The sandbox in Firefox makes use of unprivileged user namespaces when creating new processes for enforcing more security. This can be considered a security risk, therefore some Linux distributions have started to restrict its usage and only allow it to work where there is an AppArmor profile. Such profiles can only cover a limited set of installations paths, including Snap and Debian packages. They cannot however cover some other use cases, such as tarball installations as well as local development builds. To create an AppArmor profile for Firefox: In /etc/apparmor.d/ , create a file with the name firefox-local In the file, add the following: # This profile allows everything and only exists to give the # application a name instead of having the label \"unconfined\" abi <abi/4.0>, include <tunables/global> profile firefox-local /home/<USER>/bin/firefox/{firefox,firefox-bin,updater} flags=(unconfined) { userns, # Site-specific additions and overrides. See local/README for details. include if exists <local/firefox> } Replace <USER> with your Linux user name. This assumes the Firefox install is at $HOME/bin/ Once you have saved the file, run sudo systemctl restart apparmor.service in the Linux terminal.",
+  "products": [
+    "firefox"
+  ],
+  "topics": [
+    "installation-and-updates",
+    "privacy-and-security",
+    "security"
+  ],
+  "locale": "en-US",
+  "metadata": {
+    "html_bytes": 1885,
+    "text_bytes": 1376,
+    "word_count": 206,
+    "downloaded_at": "2025-08-26T10:59:25.545375"
+  }
+}
