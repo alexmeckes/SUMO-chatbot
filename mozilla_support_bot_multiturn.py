@@ -12,6 +12,8 @@ from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
 from any_agent import AgentConfig, AnyAgent
 import logging
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
 
 load_dotenv()
 
@@ -200,10 +202,23 @@ class MozillaSupportBotMultiTurn:
                 messages.append({"role": "user", "content": query})
                 
                 # Run agent with full conversation context
-                agent_trace = self.agent.run(messages)
+                # Create new event loop for this thread if needed
+                try:
+                    loop = asyncio.get_event_loop()
+                except RuntimeError:
+                    loop = asyncio.new_event_loop()
+                    asyncio.set_event_loop(loop)
+                
+                agent_trace = loop.run_until_complete(self.agent.run_async(messages))
             else:
                 # Simple single-turn query
-                agent_trace = self.agent.run(query)
+                try:
+                    loop = asyncio.get_event_loop()
+                except RuntimeError:
+                    loop = asyncio.new_event_loop()
+                    asyncio.set_event_loop(loop)
+                
+                agent_trace = loop.run_until_complete(self.agent.run_async(query))
             
             # Extract the response
             response_text = None
