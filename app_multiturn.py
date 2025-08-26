@@ -30,6 +30,9 @@ try:
     print(f"✅ Bot initialized with {model_name}")
 except Exception as e:
     print(f"❌ Failed to initialize bot: {e}")
+    import traceback
+    traceback.print_exc()
+    # Keep bot as None but log the full error
 
 # Store chat history for the UI (separate from bot's internal history)
 chat_history = []
