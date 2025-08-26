@@ -117,8 +117,8 @@ class MozillaSupportBotMultiTurn:
         model_args = {}
         if "gpt-5" in model_id:
             # GPT-5 specific settings
-            model_args['max_completion_tokens'] = 2000
-            # GPT-5 requires default temperature
+            model_args['max_tokens'] = 2000
+            model_args['temperature'] = 0.7  # GPT-5 default temperature
         else:
             model_args['temperature'] = 0.3
             model_args['max_tokens'] = 500
