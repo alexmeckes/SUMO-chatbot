@@ -1,4 +1,4 @@
-# Use Python 3.11 to avoid some dependency issues
+# Use Python 3.11 to avoid dependency issues
 FROM python:3.11-slim
 
 # Set working directory
@@ -10,11 +10,12 @@ RUN apt-get update && apt-get install -y \
     g++ \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first for better caching
+# Copy only requirements first for better caching
 COPY requirements.txt .
 
-# Upgrade pip and install dependencies
+# Upgrade pip and install dependencies with no cache
 RUN pip install --upgrade pip && \
+    pip cache purge && \
     pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application
@@ -23,8 +24,11 @@ COPY . .
 # Set up ChromaDB if needed
 RUN python setup_chromadb.py || true
 
+# Set environment variable for port
+ENV PORT=8080
+
 # Expose port
 EXPOSE 8080
 
 # Run the application
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "--workers", "1", "--threads", "2", "app_multiturn:app"]
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-8080} --workers 1 --threads 2 app_multiturn:app"]

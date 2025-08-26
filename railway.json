@@ -1,12 +1,11 @@
 {
   "$schema": "https://railway.app/railway.schema.json",
   "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "pip install --upgrade pip && pip install -r requirements.txt && python setup_chromadb.py"
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile"
   },
   "deploy": {
     "numReplicas": 1,
-    "startCommand": "gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 2 app_multiturn:app",
     "healthcheckPath": "/api/status",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
