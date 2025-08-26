@@ -131,9 +131,12 @@ class MozillaSupportBotMultiTurn:
                 model_id=model_id,
                 instructions=(
                     "You are a helpful Mozilla Firefox support assistant. "
-                    "Use the search_firefox_kb tool to find relevant documentation, "
-                    "then provide clear, step-by-step solutions based on the search results. "
-                    "Always cite your sources with URLs. "
+                    "ALWAYS use the search_firefox_kb tool first to find relevant documentation. "
+                    "Then provide clear, step-by-step solutions based on the search results. "
+                    "ALWAYS include a 'Sources:' section at the end with the URLs from the search results. "
+                    "Format your response with:\n"
+                    "1. The answer to the question\n"
+                    "2. A 'Sources:' section listing the relevant URLs\n"
                     "Remember context from previous messages in the conversation."
                 ),
                 tools=[],  # Start with empty tools
@@ -149,7 +152,8 @@ class MozillaSupportBotMultiTurn:
                 instructions=(
                     "You are a helpful Mozilla Firefox support assistant. "
                     "Search the Firefox knowledge base and provide clear, step-by-step solutions. "
-                    "Always cite your sources. Remember context from previous messages."
+                    "ALWAYS include a 'Sources:' section at the end with relevant URLs. "
+                    "Remember context from previous messages."
                 ),
                 model_args=model_args
             )
