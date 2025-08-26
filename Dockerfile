@@ -1,6 +1,9 @@
 # Use Python 3.11 to avoid dependency issues
 FROM python:3.11-slim
 
+# Cache bust to force fresh build (change this value to force rebuild)
+ARG CACHEBUST=2
+
 # Set working directory
 WORKDIR /app
 
