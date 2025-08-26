@@ -123,18 +123,34 @@ class MozillaSupportBotMultiTurn:
             model_args['temperature'] = 0.3
             model_args['max_tokens'] = 500
         
-        config = AgentConfig(
-            model_id=model_id,
-            instructions=(
-                "You are a helpful Mozilla Firefox support assistant. "
-                "Use the search_firefox_kb tool to find relevant documentation, "
-                "then provide clear, step-by-step solutions based on the search results. "
-                "Always cite your sources with URLs. "
-                "Remember context from previous messages in the conversation."
-            ),
-            tools=[search_firefox_kb],
-            model_args=model_args
-        )
+        # Try creating config without tools first, then add them
+        try:
+            config = AgentConfig(
+                model_id=model_id,
+                instructions=(
+                    "You are a helpful Mozilla Firefox support assistant. "
+                    "Use the search_firefox_kb tool to find relevant documentation, "
+                    "then provide clear, step-by-step solutions based on the search results. "
+                    "Always cite your sources with URLs. "
+                    "Remember context from previous messages in the conversation."
+                ),
+                tools=[],  # Start with empty tools
+                model_args=model_args
+            )
+            # Add the tool after config creation if needed
+            config.tools = [search_firefox_kb]
+        except Exception as e:
+            # If that fails, try without tools at all
+            logger.warning(f"Could not add tools to config: {e}")
+            config = AgentConfig(
+                model_id=model_id,
+                instructions=(
+                    "You are a helpful Mozilla Firefox support assistant. "
+                    "Search the Firefox knowledge base and provide clear, step-by-step solutions. "
+                    "Always cite your sources. Remember context from previous messages."
+                ),
+                model_args=model_args
+            )
         
         try:
             # Create the agent
