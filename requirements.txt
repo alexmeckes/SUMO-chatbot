@@ -10,7 +10,8 @@ gunicorn==21.2.0
 # AI/ML dependencies
 openai==1.35.3
 chromadb==0.4.15
-sentence-transformers==2.2.2
+sentence-transformers>=2.7.0
+torch>=2.0.0
 
 # Agent framework (only any-agent, not smolagents)
 any-agent==0.1.0
