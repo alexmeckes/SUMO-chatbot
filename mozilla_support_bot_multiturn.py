@@ -38,15 +38,14 @@ def search_firefox_kb(query: str) -> str:
         include=['documents', 'metadatas']
     )
     
-    # Format results
+    # Format results with markdown links
     formatted = []
     for i in range(len(results['ids'][0])):
         metadata = results['metadatas'][0][i]
         doc_text = results['documents'][0][i][:500]  # First 500 chars
         formatted.append(
-            f"**{metadata['title']}**\n"
+            f"**[{metadata['title']}]({metadata['url']})**\n"
             f"Summary: {metadata['summary']}\n"
-            f"URL: {metadata['url']}\n"
             f"Content: {doc_text}...\n"
         )
     
@@ -133,10 +132,11 @@ class MozillaSupportBotMultiTurn:
                     "You are a helpful Mozilla Firefox support assistant. "
                     "ALWAYS use the search_firefox_kb tool first to find relevant documentation. "
                     "Then provide clear, step-by-step solutions based on the search results. "
-                    "ALWAYS include a 'Sources:' section at the end with the URLs from the search results. "
+                    "ALWAYS include a 'Sources:' section at the end with clickable markdown links. "
                     "Format your response with:\n"
                     "1. The answer to the question\n"
-                    "2. A 'Sources:' section listing the relevant URLs\n"
+                    "2. A 'Sources:' section with markdown links like: [Article Title](url)\n"
+                    "Example: Sources:\n- [How to clear cache](https://support.mozilla.org/...)\n"
                     "Remember context from previous messages in the conversation."
                 ),
                 tools=[],  # Start with empty tools
