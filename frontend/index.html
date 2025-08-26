@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mozilla Support AI Assistant</title>
+    <script src="config.js"></script>
     <style>
         * {
             margin: 0;
@@ -361,28 +362,14 @@
     </div>
 
     <script>
-        // Get API URL from environment variable or use default
-        let API_BASE = 'https://your-railway-app.up.railway.app';
+        // Get API URL from config or use default
+        let API_BASE = window.CONFIG?.API_URL || 'https://your-railway-app.up.railway.app';
         let isProcessing = false;
 
-        // Fetch environment variables from Vercel
-        async function loadConfig() {
-            try {
-                const response = await fetch('/api/env');
-                const data = await response.json();
-                if (data.VITE_API_URL) {
-                    API_BASE = data.VITE_API_URL;
-                    document.getElementById('configInfo').style.display = 'none';
-                } else {
-                    document.getElementById('configInfo').style.display = 'block';
-                }
-            } catch (error) {
-                console.log('Using default API URL');
-                document.getElementById('configInfo').style.display = 'block';
-            }
-            // Initialize after config is loaded
-            getStatus();
-            setInterval(getStatus, 30000);
+        // Check if API URL is properly configured
+        if (API_BASE === 'VITE_API_URL_PLACEHOLDER' || !API_BASE) {
+            API_BASE = 'https://your-railway-app.up.railway.app';
+            document.getElementById('configInfo').style.display = 'block';
         }
 
         // Auto-resize textarea
@@ -530,8 +517,9 @@
             }
         }
 
-        // Initialize - load config first
-        loadConfig();
+        // Initialize
+        getStatus();
+        setInterval(getStatus, 30000); // Check status every 30 seconds
     </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 {
-  "buildCommand": "echo 'No build needed'",
+  "buildCommand": "sh build.sh",
   "outputDirectory": ".",
   "framework": null,
   "rewrites": [
@@ -26,10 +26,5 @@
         }
       ]
     }
-  ],
-  "functions": {
-    "api/env.js": {
-      "runtime": "@vercel/node@3"
-    }
-  }
+  ]
 }
