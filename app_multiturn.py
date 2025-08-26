@@ -26,13 +26,20 @@ model_name = os.getenv('OPENAI_MODEL', 'gpt-3.5-turbo')
 
 try:
     bot = MozillaSupportBotMultiTurn(agent_type="openai")
+    print(f"✅ Bot created, setting model to {model_name}")
     bot.set_model(model_name)
     print(f"✅ Bot initialized with {model_name}")
+    print(f"✅ Agent configured: {bot.agent is not None}")
 except Exception as e:
     print(f"❌ Failed to initialize bot: {e}")
     import traceback
     traceback.print_exc()
-    # Keep bot as None but log the full error
+    # Try to create bot without model if possible
+    try:
+        bot = MozillaSupportBotMultiTurn(agent_type="openai")
+        print(f"⚠️  Bot created but model not set due to error")
+    except:
+        bot = None
 
 # Store chat history for the UI (separate from bot's internal history)
 chat_history = []
