@@ -52,14 +52,14 @@ def search_firefox_kb(query: str) -> str:
     return "\n---\n".join(formatted)
 
 class MozillaSupportBotMultiTurn:
-    def __init__(self, persist_dir="./chroma_db", collection_name="sumo_kb", agent_type="openai"):
+    def __init__(self, persist_dir="./chroma_db", collection_name="sumo_kb", agent_type="tinyagent"):
         """
         Initialize the Mozilla Support Bot with multi-turn conversation support
         
         Args:
             persist_dir: ChromaDB persistence directory
             collection_name: Name of the ChromaDB collection
-            agent_type: Type of agent (must be "openai" for multi-turn support)
+            agent_type: Type of agent (default: "tinyagent" for better compatibility)
         """
         # Initialize ChromaDB
         self.client = chromadb.PersistentClient(path=persist_dir)
@@ -83,18 +83,17 @@ class MozillaSupportBotMultiTurn:
         global _collection
         _collection = self.collection
         
-        # Store agent type (must be openai for multi-turn)
+        # Store agent type
         self.agent_type = agent_type
-        if agent_type != "openai":
-            logger.warning("⚠️  Multi-turn conversations only supported with OpenAI agent type")
-            self.agent_type = "openai"
+        logger.info(f"Using agent type: {agent_type}")
         
         # Initialize agent
         self.agent = None
         self.current_model = None
         
-        # Conversation history - stores messages in OpenAI format
-        self.conversation_history = []
+        # Conversation history - stores previous agent traces for multi-turn
+        self.conversation_traces = []
+        self.conversation_messages = []
     
     def set_model(self, model_id: str):
         """
@@ -119,7 +118,7 @@ class MozillaSupportBotMultiTurn:
         if "gpt-5" in model_id:
             # GPT-5 specific settings
             model_args['temperature'] = 1  # GPT-5 only supports temperature=1
-            model_args['max_tokens'] = 15000  # Increased for more comprehensive responses
+            model_args['max_completion_tokens'] = 15000  # GPT-5 uses this instead of max_tokens
         else:
             model_args['temperature'] = 0.3
             model_args['max_tokens'] = 15000
@@ -169,7 +168,8 @@ class MozillaSupportBotMultiTurn:
     
     def clear_conversation(self):
         """Clear the conversation history to start fresh"""
-        self.conversation_history = []
+        self.conversation_traces = []
+        self.conversation_messages = []
         logger.info("🧹 Conversation history cleared")
     
     def generate_response(self, query: str, use_history: bool = True) -> Dict[str, Any]:
@@ -194,26 +194,31 @@ class MozillaSupportBotMultiTurn:
         
         try:
             # Prepare input based on whether we're using history
-            if use_history and self.conversation_history:
-                # Build message list for multi-turn conversation
-                messages = []
+            if use_history and self.conversation_messages:
+                # Build conversation context for TinyAgent
+                history_text = "\n".join([
+                    f"{msg['role'].capitalize()}: {msg['content']}"
+                    for msg in self.conversation_messages
+                ])
                 
-                # Add conversation history
-                for msg in self.conversation_history:
-                    messages.append(msg)
+                # Construct prompt with conversation history
+                full_prompt = f"""Previous conversation:
+{history_text}
+
+Current user message: {query}
+
+Please respond taking into account the conversation history. Always use the search_firefox_kb tool to find relevant documentation."""
                 
-                # Add current user message
-                messages.append({"role": "user", "content": query})
-                
-                # Run agent with full conversation context
-                # Create new event loop for this thread if needed
+                # Run agent with context
                 try:
                     loop = asyncio.get_event_loop()
                 except RuntimeError:
                     loop = asyncio.new_event_loop()
                     asyncio.set_event_loop(loop)
                 
-                agent_trace = loop.run_until_complete(self.agent.run_async(messages))
+                agent_trace = loop.run_until_complete(
+                    asyncio.wait_for(self.agent.run_async(full_prompt), timeout=60.0)
+                )
             else:
                 # Simple single-turn query
                 try:
@@ -274,21 +279,25 @@ class MozillaSupportBotMultiTurn:
             
             # Update conversation history if using history
             if use_history:
-                # Add user message to history
-                self.conversation_history.append({"role": "user", "content": query})
-                # Add assistant response to history
-                self.conversation_history.append({"role": "assistant", "content": response_text})
+                # Store the trace for potential use with spans_to_messages()
+                self.conversation_traces.append(agent_trace)
+                
+                # Add messages to history
+                self.conversation_messages.append({"role": "user", "content": query})
+                self.conversation_messages.append({"role": "assistant", "content": response_text})
                 
                 # Keep conversation history reasonable size (last 10 exchanges)
-                if len(self.conversation_history) > 20:
-                    self.conversation_history = self.conversation_history[-20:]
+                if len(self.conversation_messages) > 20:
+                    self.conversation_messages = self.conversation_messages[-20:]
+                if len(self.conversation_traces) > 10:
+                    self.conversation_traces = self.conversation_traces[-10:]
             
             return {
                 'query': query,
                 'response': response_text,
                 'model': self.current_model,
                 'agent_type': self.agent_type,
-                'conversation_length': len(self.conversation_history),
+                'conversation_length': len(self.conversation_messages),
                 'error': False
             }
             
@@ -313,7 +322,7 @@ class MozillaSupportBotMultiTurn:
     
     def get_conversation_history(self) -> List[Dict[str, str]]:
         """Get the current conversation history"""
-        return self.conversation_history.copy()
+        return self.conversation_messages.copy()
 
 def test_multiturn():
     """Test multi-turn conversation capability"""

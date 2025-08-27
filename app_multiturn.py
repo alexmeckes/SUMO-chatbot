@@ -25,8 +25,8 @@ bot = None
 model_name = os.getenv('OPENAI_MODEL', 'gpt-3.5-turbo')
 
 try:
-    bot = MozillaSupportBotMultiTurn(agent_type="openai")
-    print(f"✅ Bot created, setting model to {model_name}")
+    bot = MozillaSupportBotMultiTurn(agent_type="tinyagent")
+    print(f"✅ Bot created with TinyAgent, setting model to {model_name}")
     bot.set_model(model_name)
     print(f"✅ Bot initialized with {model_name}")
     print(f"✅ Agent configured: {bot.agent is not None}")
@@ -36,7 +36,7 @@ except Exception as e:
     traceback.print_exc()
     # Try to create bot without model if possible
     try:
-        bot = MozillaSupportBotMultiTurn(agent_type="openai")
+        bot = MozillaSupportBotMultiTurn(agent_type="tinyagent")
         print(f"⚠️  Bot created but model not set due to error")
     except:
         bot = None
