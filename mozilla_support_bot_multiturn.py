@@ -104,7 +104,7 @@ class MozillaSupportBotMultiTurn:
         """
         # Map common model names to proper identifiers
         model_mapping = {
-            "gpt-5": "openai/gpt-5",
+            "gpt-5": "openai/gpt-4o",  # GPT-5 has issues with agent frameworks, use GPT-4o
             "gpt-4o": "openai/gpt-4o",
             "gpt-3.5-turbo": "openai/gpt-3.5-turbo",
         }
@@ -139,7 +139,8 @@ class MozillaSupportBotMultiTurn:
                     "Remember context from previous messages in the conversation."
                 ),
                 tools=[],  # Start with empty tools
-                model_args=model_args
+                model_args=model_args,
+                callbacks=[]  # Disable default callbacks to prevent litellm import
             )
             # Add the tool after config creation if needed
             config.tools = [search_firefox_kb]
@@ -154,7 +155,8 @@ class MozillaSupportBotMultiTurn:
                     "ALWAYS include a 'Sources:' section at the end with relevant URLs. "
                     "Remember context from previous messages."
                 ),
-                model_args=model_args
+                model_args=model_args,
+                callbacks=[]  # Disable default callbacks to prevent litellm import
             )
         
         try:
