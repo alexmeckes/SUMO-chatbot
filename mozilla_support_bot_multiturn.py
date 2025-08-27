@@ -105,24 +105,23 @@ class MozillaSupportBotMultiTurn:
         """
         # Map common model names to proper identifiers
         model_mapping = {
-            "gpt-5": "openai/gpt-5",
+            "gpt-5": "openai/gpt-4o",  # Use GPT-4o as GPT-5 seems to have issues with any-agent
             "gpt-4o": "openai/gpt-4o",
             "gpt-3.5-turbo": "openai/gpt-3.5-turbo",
         }
         
         # Use mapping if available
         if model_id in model_mapping:
+            original_model = model_id
             model_id = model_mapping[model_id]
+            if original_model == "gpt-5":
+                logger.warning("GPT-5 has compatibility issues with any-agent, using GPT-4o instead")
         
         # Configure agent based on model
         model_args = {}
-        if "gpt-5" in model_id:
-            # GPT-5 specific settings
-            model_args['max_tokens'] = 2000
-            model_args['temperature'] = 1  # GPT-5 only supports temperature=1
-        else:
-            model_args['temperature'] = 0.3
-            model_args['max_tokens'] = 500
+        # Since we're using GPT-4o for GPT-5 requests, use GPT-4 settings
+        model_args['temperature'] = 0.3
+        model_args['max_tokens'] = 2000
         
         # Try creating config without tools first, then add them
         try:
@@ -224,19 +223,40 @@ class MozillaSupportBotMultiTurn:
                 
                 agent_trace = loop.run_until_complete(self.agent.run_async(query))
             
-            # Extract the response from AgentTrace - it's simply in final_output
+            # Extract the response from AgentTrace
             response_text = None
             
-            # The AgentTrace object has final_output as a direct string attribute
+            # Check final_output
             if hasattr(agent_trace, 'final_output'):
                 response_text = agent_trace.final_output
-                logger.info(f"Got final_output: {response_text[:100] if response_text else 'None or empty'}...")
+                logger.info(f"final_output type: {type(response_text)}, value: {response_text[:100] if response_text else 'None or empty'}")
             
-            # Fallback if no final_output
+            # If final_output is empty, check the last span for the actual response
+            if not response_text and hasattr(agent_trace, 'spans') and agent_trace.spans:
+                logger.info(f"final_output empty, checking {len(agent_trace.spans)} spans")
+                
+                # The last call_llm span should have the final response
+                for span in reversed(agent_trace.spans):
+                    if hasattr(span, 'name') and 'call_llm' in span.name:
+                        if hasattr(span, 'attributes') and 'gen_ai.output' in span.attributes:
+                            output = span.attributes['gen_ai.output']
+                            # Skip tool calls (they're JSON arrays)
+                            if output and not output.startswith('[') and not output.startswith('**['):
+                                response_text = output
+                                logger.info(f"Found response in span: {span.name}")
+                                break
+            
+            # Fallback
             if not response_text:
-                logger.error(f"No final_output in AgentTrace. Type: {type(agent_trace)}")
-                if hasattr(agent_trace, '__dict__'):
-                    logger.error(f"AgentTrace attributes: {agent_trace.__dict__.keys()}")
+                logger.error(f"Could not extract response. AgentTrace.final_output: {agent_trace.final_output}")
+                logger.error(f"AgentTrace type: {type(agent_trace)}")
+                
+                # Debug: print all span outputs
+                if hasattr(agent_trace, 'spans'):
+                    for i, span in enumerate(agent_trace.spans):
+                        if hasattr(span, 'attributes') and 'gen_ai.output' in span.attributes:
+                            logger.error(f"Span {i} ({span.name}): {span.attributes['gen_ai.output'][:200]}")
+                
                 response_text = "I encountered an error processing the response. Please try again."
             
             # Update conversation history if using history
