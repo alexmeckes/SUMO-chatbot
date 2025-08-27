@@ -224,55 +224,20 @@ class MozillaSupportBotMultiTurn:
                 
                 agent_trace = loop.run_until_complete(self.agent.run_async(query))
             
-            # Extract the response from AgentTrace
+            # Extract the response from AgentTrace - it's simply in final_output
             response_text = None
             
-            # Log for debugging
-            logger.info(f"Response type: {type(agent_trace)}")
-            if hasattr(agent_trace, '__dict__'):
-                logger.info(f"Response attributes: {list(agent_trace.__dict__.keys())}")
-            
-            # For OpenAI agents with any-agent, check final_output first
-            if hasattr(agent_trace, 'final_output') and agent_trace.final_output:
+            # The AgentTrace object has final_output as a direct string attribute
+            if hasattr(agent_trace, 'final_output'):
                 response_text = agent_trace.final_output
-                logger.info(f"Got final_output: {response_text[:100] if response_text else 'None'}...")
+                logger.info(f"Got final_output: {response_text[:100] if response_text else 'None or empty'}...")
             
-            # If final_output is empty, look in spans for the last assistant message
-            if not response_text and hasattr(agent_trace, 'spans') and agent_trace.spans:
-                logger.info(f"Checking {len(agent_trace.spans)} spans for response")
-                
-                # Look for the last LLM completion (not tool calls)
-                for span in reversed(agent_trace.spans):
-                    # Look for LLM completions
-                    if hasattr(span, 'name') and 'completion' in span.name.lower():
-                        if hasattr(span, 'output') and span.output:
-                            response_text = span.output
-                            logger.info(f"Found response in span.output")
-                            break
-                    
-                    # Check span attributes
-                    if hasattr(span, 'attributes') and span.attributes:
-                        # Try different attribute names
-                        for attr_name in ['gen_ai.output', 'output', 'content', 'message', 'response']:
-                            if attr_name in span.attributes:
-                                candidate = span.attributes[attr_name]
-                                # Skip tool outputs
-                                if candidate and not candidate.startswith("**[") and not candidate.startswith("Title:"):
-                                    response_text = candidate
-                                    logger.info(f"Found response in span.attributes['{attr_name}']")
-                                    break
-                    
-                    if response_text:
-                        break
-            
-            # Direct string check
-            if not response_text and isinstance(agent_trace, str):
-                response_text = agent_trace
-            
-            # Final fallback
+            # Fallback if no final_output
             if not response_text:
-                logger.error("Could not extract response from agent trace")
-                response_text = "I found relevant information but encountered an error formatting the response. Please try again."
+                logger.error(f"No final_output in AgentTrace. Type: {type(agent_trace)}")
+                if hasattr(agent_trace, '__dict__'):
+                    logger.error(f"AgentTrace attributes: {agent_trace.__dict__.keys()}")
+                response_text = "I encountered an error processing the response. Please try again."
             
             # Update conversation history if using history
             if use_history:
