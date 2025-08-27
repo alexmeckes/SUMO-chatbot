@@ -2,7 +2,7 @@
 FROM python:3.11-slim
 
 # Cache bust to force fresh build (change this value to force rebuild)
-ARG CACHEBUST=17
+ARG CACHEBUST=18
 
 # Set working directory
 WORKDIR /app

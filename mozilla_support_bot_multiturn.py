@@ -222,7 +222,10 @@ class MozillaSupportBotMultiTurn:
                     loop = asyncio.new_event_loop()
                     asyncio.set_event_loop(loop)
                 
-                agent_trace = loop.run_until_complete(self.agent.run_async(query))
+                # Run with a timeout to prevent hanging
+                agent_trace = loop.run_until_complete(
+                    asyncio.wait_for(self.agent.run_async(query), timeout=60.0)
+                )
             
             # Extract the response from AgentTrace
             response_text = None
@@ -289,6 +292,15 @@ class MozillaSupportBotMultiTurn:
                 'error': False
             }
             
+        except asyncio.TimeoutError:
+            logger.error("Agent timed out after 60 seconds")
+            return {
+                'query': query,
+                'response': "The request timed out. This might be due to GPT-5 processing. Please try again or use a different model.",
+                'model': self.current_model,
+                'agent_type': self.agent_type,
+                'error': True
+            }
         except Exception as e:
             logger.error(f"Error generating response: {e}")
             return {
