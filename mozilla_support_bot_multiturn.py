@@ -217,7 +217,7 @@ Please respond taking into account the conversation history. Always use the sear
                     asyncio.set_event_loop(loop)
                 
                 agent_trace = loop.run_until_complete(
-                    asyncio.wait_for(self.agent.run_async(full_prompt), timeout=60.0)
+                    asyncio.wait_for(self.agent.run_async(full_prompt), timeout=300.0)  # 5 minutes
                 )
             else:
                 # Simple single-turn query
@@ -227,9 +227,9 @@ Please respond taking into account the conversation history. Always use the sear
                     loop = asyncio.new_event_loop()
                     asyncio.set_event_loop(loop)
                 
-                # Run with a timeout to prevent hanging
+                # Run with a longer timeout  
                 agent_trace = loop.run_until_complete(
-                    asyncio.wait_for(self.agent.run_async(query), timeout=60.0)
+                    asyncio.wait_for(self.agent.run_async(query), timeout=300.0)  # 5 minutes
                 )
             
             # Extract the response from AgentTrace
@@ -302,10 +302,10 @@ Please respond taking into account the conversation history. Always use the sear
             }
             
         except asyncio.TimeoutError:
-            logger.error("Agent timed out after 60 seconds")
+            logger.error("Agent timed out after 5 minutes")
             return {
                 'query': query,
-                'response': "The request timed out. This might be due to GPT-5 processing. Please try again or use a different model.",
+                'response': "The request took too long to process. Please try again with a simpler query or check your connection.",
                 'model': self.current_model,
                 'agent_type': self.agent_type,
                 'error': True
