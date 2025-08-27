@@ -224,36 +224,55 @@ class MozillaSupportBotMultiTurn:
                 
                 agent_trace = loop.run_until_complete(self.agent.run_async(query))
             
-            # Extract the response - the agent_trace should be a string for OpenAI agents
+            # Extract the response from AgentTrace
             response_text = None
-            
-            # For OpenAI agents, the response should be the direct output
-            if isinstance(agent_trace, str):
-                response_text = agent_trace
-            # Check various possible attributes
-            elif hasattr(agent_trace, 'output'):
-                response_text = agent_trace.output
-            elif hasattr(agent_trace, 'final_output'):
-                response_text = agent_trace.final_output
-            elif hasattr(agent_trace, 'content'):
-                response_text = agent_trace.content
-            elif hasattr(agent_trace, 'message'):
-                response_text = agent_trace.message
-            # Try to convert to string as last resort
-            else:
-                try:
-                    response_text = str(agent_trace)
-                    # If it's the raw search results, it's wrong
-                    if response_text.startswith("**[") or response_text.startswith("Title:"):
-                        logger.warning("Got tool output instead of agent response")
-                        response_text = "I found relevant information but couldn't format the response properly. Please try again."
-                except:
-                    response_text = "Response generated but could not extract text."
             
             # Log for debugging
             logger.info(f"Response type: {type(agent_trace)}")
             if hasattr(agent_trace, '__dict__'):
                 logger.info(f"Response attributes: {list(agent_trace.__dict__.keys())}")
+            
+            # For OpenAI agents with any-agent, check final_output first
+            if hasattr(agent_trace, 'final_output') and agent_trace.final_output:
+                response_text = agent_trace.final_output
+                logger.info(f"Got final_output: {response_text[:100] if response_text else 'None'}...")
+            
+            # If final_output is empty, look in spans for the last assistant message
+            if not response_text and hasattr(agent_trace, 'spans') and agent_trace.spans:
+                logger.info(f"Checking {len(agent_trace.spans)} spans for response")
+                
+                # Look for the last LLM completion (not tool calls)
+                for span in reversed(agent_trace.spans):
+                    # Look for LLM completions
+                    if hasattr(span, 'name') and 'completion' in span.name.lower():
+                        if hasattr(span, 'output') and span.output:
+                            response_text = span.output
+                            logger.info(f"Found response in span.output")
+                            break
+                    
+                    # Check span attributes
+                    if hasattr(span, 'attributes') and span.attributes:
+                        # Try different attribute names
+                        for attr_name in ['gen_ai.output', 'output', 'content', 'message', 'response']:
+                            if attr_name in span.attributes:
+                                candidate = span.attributes[attr_name]
+                                # Skip tool outputs
+                                if candidate and not candidate.startswith("**[") and not candidate.startswith("Title:"):
+                                    response_text = candidate
+                                    logger.info(f"Found response in span.attributes['{attr_name}']")
+                                    break
+                    
+                    if response_text:
+                        break
+            
+            # Direct string check
+            if not response_text and isinstance(agent_trace, str):
+                response_text = agent_trace
+            
+            # Final fallback
+            if not response_text:
+                logger.error("Could not extract response from agent trace")
+                response_text = "I found relevant information but encountered an error formatting the response. Please try again."
             
             # Update conversation history if using history
             if use_history:
