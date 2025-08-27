@@ -139,8 +139,7 @@ class MozillaSupportBotMultiTurn:
                     "Remember context from previous messages in the conversation."
                 ),
                 tools=[],  # Start with empty tools
-                model_args=model_args,
-                callbacks=[]  # Disable default callbacks to prevent litellm import
+                model_args=model_args
             )
             # Add the tool after config creation if needed
             config.tools = [search_firefox_kb]
@@ -155,8 +154,7 @@ class MozillaSupportBotMultiTurn:
                     "ALWAYS include a 'Sources:' section at the end with relevant URLs. "
                     "Remember context from previous messages."
                 ),
-                model_args=model_args,
-                callbacks=[]  # Disable default callbacks to prevent litellm import
+                model_args=model_args
             )
         
         try:
