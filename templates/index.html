@@ -349,6 +349,91 @@
         .clear-btn:hover {
             background: white;
         }
+
+        /* Feedback styles */
+        .feedback-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .feedback-btn {
+            padding: 5px 10px;
+            border: 1px solid #e5e7eb;
+            background: white;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .feedback-btn:hover {
+            background: #f3f4f6;
+            transform: scale(1.05);
+        }
+
+        .feedback-btn.positive:hover {
+            background: #dcfce7;
+            border-color: #4ade80;
+        }
+
+        .feedback-btn.negative:hover {
+            background: #fee2e2;
+            border-color: #f87171;
+        }
+
+        .feedback-btn.selected {
+            font-weight: bold;
+        }
+
+        .feedback-btn.positive.selected {
+            background: #dcfce7;
+            border-color: #4ade80;
+        }
+
+        .feedback-btn.negative.selected {
+            background: #fee2e2;
+            border-color: #f87171;
+        }
+
+        .feedback-comment {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .feedback-comment.active {
+            display: block;
+        }
+
+        .feedback-comment textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            resize: none;
+            font-size: 13px;
+        }
+
+        .feedback-comment button {
+            margin-top: 5px;
+            padding: 5px 10px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .feedback-thank-you {
+            color: #4ade80;
+            font-size: 12px;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -417,6 +502,8 @@
     <script>
         const API_BASE = 'http://localhost:8080';
         let isProcessing = false;
+        let sessionId = null;
+        let conversationIds = new Map();  // Map message index to conversation ID
 
         // Auto-resize textarea
         const textarea = document.getElementById('messageInput');
@@ -424,6 +511,26 @@
             this.style.height = 'auto';
             this.style.height = Math.min(this.scrollHeight, 120) + 'px';
         });
+
+        // Create session on page load
+        async function createSession() {
+            try {
+                const response = await fetch(`${API_BASE}/api/session`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    sessionId = data.session_id;
+                    console.log('Session created:', sessionId);
+                }
+            } catch (error) {
+                console.error('Failed to create session:', error);
+            }
+        }
 
         async function getStatus() {
             try {
@@ -476,7 +583,10 @@
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ query: message })
+                    body: JSON.stringify({ 
+                        query: message,
+                        session_id: sessionId 
+                    })
                 });
                 
                 const data = await response.json();
@@ -487,7 +597,12 @@
                 if (data.error) {
                     addMessage('Sorry, I encountered an error: ' + data.error, 'bot');
                 } else {
-                    addMessage(data.response, 'bot', data.sources);
+                    // Store conversation ID for feedback
+                    if (data.conversation_id) {
+                        const messageIndex = document.querySelectorAll('.message.bot').length;
+                        conversationIds.set(messageIndex, data.conversation_id);
+                    }
+                    addMessage(data.response, 'bot', data.conversation_id);
                 }
             } catch (error) {
                 document.getElementById('typingIndicator').classList.remove('active');
@@ -499,7 +614,7 @@
             }
         }
 
-        function addMessage(content, type, sources = null) {
+        function addMessage(content, type, conversationId = null) {
             const container = document.getElementById('chatContainer');
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${type}`;
@@ -518,11 +633,111 @@
             timeDiv.textContent = new Date().toLocaleTimeString();
             messageDiv.appendChild(timeDiv);
             
-            // Don't add sources separately - they're already in the formatted response
-            // This prevents duplicate display of sources
+            // Add feedback buttons for bot messages with conversation IDs
+            if (type === 'bot' && conversationId && sessionId) {
+                const feedbackContainer = document.createElement('div');
+                feedbackContainer.className = 'feedback-container';
+                feedbackContainer.id = `feedback-${conversationId}`;
+                
+                // Thumbs up button
+                const positiveBtn = document.createElement('button');
+                positiveBtn.className = 'feedback-btn positive';
+                positiveBtn.innerHTML = '👍 Helpful';
+                positiveBtn.onclick = () => submitFeedback(conversationId, 'positive', feedbackContainer);
+                
+                // Thumbs down button
+                const negativeBtn = document.createElement('button');
+                negativeBtn.className = 'feedback-btn negative';
+                negativeBtn.innerHTML = '👎 Not helpful';
+                negativeBtn.onclick = () => submitFeedback(conversationId, 'negative', feedbackContainer);
+                
+                feedbackContainer.appendChild(positiveBtn);
+                feedbackContainer.appendChild(negativeBtn);
+                
+                // Comment area (hidden initially)
+                const commentArea = document.createElement('div');
+                commentArea.className = 'feedback-comment';
+                commentArea.id = `comment-${conversationId}`;
+                
+                const commentTextarea = document.createElement('textarea');
+                commentTextarea.placeholder = 'Additional feedback (optional)';
+                commentTextarea.rows = 2;
+                
+                const submitCommentBtn = document.createElement('button');
+                submitCommentBtn.textContent = 'Submit feedback';
+                submitCommentBtn.onclick = () => submitFeedbackWithComment(conversationId, commentTextarea.value, feedbackContainer);
+                
+                commentArea.appendChild(commentTextarea);
+                commentArea.appendChild(submitCommentBtn);
+                
+                feedbackContainer.appendChild(commentArea);
+                messageDiv.appendChild(feedbackContainer);
+            }
             
             container.appendChild(messageDiv);
             container.scrollTop = container.scrollHeight;
+        }
+
+        async function submitFeedback(conversationId, feedbackType, container) {
+            try {
+                // Mark button as selected
+                const buttons = container.querySelectorAll('.feedback-btn');
+                buttons.forEach(btn => btn.classList.remove('selected'));
+                
+                if (feedbackType === 'positive') {
+                    container.querySelector('.positive').classList.add('selected');
+                } else {
+                    container.querySelector('.negative').classList.add('selected');
+                    // Show comment area for negative feedback
+                    const commentArea = document.getElementById(`comment-${conversationId}`);
+                    if (commentArea) {
+                        commentArea.classList.add('active');
+                        return; // Wait for comment submission
+                    }
+                }
+                
+                // Submit feedback
+                const response = await fetch(`${API_BASE}/api/feedback`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        conversation_id: conversationId,
+                        feedback_type: feedbackType
+                    })
+                });
+                
+                if (response.ok) {
+                    // Replace buttons with thank you message
+                    container.innerHTML = '<span class="feedback-thank-you">✓ Thank you for your feedback!</span>';
+                }
+            } catch (error) {
+                console.error('Failed to submit feedback:', error);
+            }
+        }
+
+        async function submitFeedbackWithComment(conversationId, comment, container) {
+            try {
+                const response = await fetch(`${API_BASE}/api/feedback`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        conversation_id: conversationId,
+                        feedback_type: 'negative',
+                        comment: comment
+                    })
+                });
+                
+                if (response.ok) {
+                    // Replace feedback area with thank you message
+                    container.innerHTML = '<span class="feedback-thank-you">✓ Thank you for your detailed feedback!</span>';
+                }
+            } catch (error) {
+                console.error('Failed to submit feedback:', error);
+            }
         }
 
         function parseMarkdown(text) {
@@ -562,11 +777,12 @@
                     </div>
                 `;
                 
-                await fetch(`${API_BASE}/api/clear_history`, { method: 'POST' });
+                await fetch(`${API_BASE}/api/clear_ui_history`, { method: 'POST' });
             }
         }
 
         // Initialize
+        createSession();
         getStatus();
         setInterval(getStatus, 30000); // Check status every 30 seconds
     </script>
