@@ -5,7 +5,7 @@ An intelligent chatbot that provides Firefox support using Retrieval-Augmented G
 ## Features
 
 - **RAG-powered responses** - Uses ChromaDB vector database with 405+ Firefox support articles
-- **Multi-turn conversations** - Maintains context across questions (powered by any-agent's TinyAgent framework)
+- **Multi-turn conversations** - Maintains context across questions (powered by any-agent using TinyAgent framework)
 - **Multiple LLM support** - Works with GPT-3.5-turbo, GPT-4o, and GPT-5 via any-agent framework
 - **Web interface** - Clean, modern chat UI with conversation management
 - **SUMO KB integration** - Direct access to Mozilla's official support documentation
