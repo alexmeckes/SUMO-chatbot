@@ -105,23 +105,24 @@ class MozillaSupportBotMultiTurn:
         """
         # Map common model names to proper identifiers
         model_mapping = {
-            "gpt-5": "openai/gpt-4o",  # Use GPT-4o as GPT-5 seems to have issues with any-agent
+            "gpt-5": "openai/gpt-5",
             "gpt-4o": "openai/gpt-4o",
             "gpt-3.5-turbo": "openai/gpt-3.5-turbo",
         }
         
         # Use mapping if available
         if model_id in model_mapping:
-            original_model = model_id
             model_id = model_mapping[model_id]
-            if original_model == "gpt-5":
-                logger.warning("GPT-5 has compatibility issues with any-agent, using GPT-4o instead")
         
         # Configure agent based on model
         model_args = {}
-        # Since we're using GPT-4o for GPT-5 requests, use GPT-4 settings
-        model_args['temperature'] = 0.3
-        model_args['max_tokens'] = 15000  # Increased for more comprehensive responses
+        if "gpt-5" in model_id:
+            # GPT-5 specific settings
+            model_args['temperature'] = 1  # GPT-5 only supports temperature=1
+            model_args['max_tokens'] = 15000  # Increased for more comprehensive responses
+        else:
+            model_args['temperature'] = 0.3
+            model_args['max_tokens'] = 15000
         
         # Try creating config without tools first, then add them
         try:
@@ -235,15 +236,24 @@ class MozillaSupportBotMultiTurn:
             if not response_text and hasattr(agent_trace, 'spans') and agent_trace.spans:
                 logger.info(f"final_output empty, checking {len(agent_trace.spans)} spans")
                 
-                # The last call_llm span should have the final response
+                # Look through ALL spans to find the final LLM response
                 for span in reversed(agent_trace.spans):
-                    if hasattr(span, 'name') and 'call_llm' in span.name:
-                        if hasattr(span, 'attributes') and 'gen_ai.output' in span.attributes:
+                    if hasattr(span, 'attributes') and span.attributes:
+                        # Check for the final LLM output (not tool calls)
+                        if 'gen_ai.output' in span.attributes:
                             output = span.attributes['gen_ai.output']
-                            # Skip tool calls (they're JSON arrays)
-                            if output and not output.startswith('[') and not output.startswith('**['):
+                            # Skip tool calls (they're JSON arrays or start with specific patterns)
+                            if output and not output.startswith('[') and not output.startswith('**[') and not output.startswith('Title:'):
                                 response_text = output
-                                logger.info(f"Found response in span: {span.name}")
+                                logger.info(f"Found response in span: {getattr(span, 'name', 'unnamed')}")
+                                break
+                        
+                        # Also check for 'output' directly
+                        elif 'output' in span.attributes:
+                            output = span.attributes['output']
+                            if output and not output.startswith('[') and not output.startswith('**[') and not output.startswith('Title:'):
+                                response_text = output
+                                logger.info(f"Found response in span.attributes['output']")
                                 break
             
             # Fallback
