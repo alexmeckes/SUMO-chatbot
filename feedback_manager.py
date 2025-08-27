@@ -46,7 +46,7 @@ class FeedbackManager:
                 )
             """)
             
-            # Conversations table
+            # Conversations table (with trace_data column)
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS conversations (
                     id TEXT PRIMARY KEY,
@@ -57,6 +57,7 @@ class FeedbackManager:
                     model TEXT,
                     response_time_ms INTEGER,
                     sources TEXT,
+                    trace_data TEXT,
                     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     error BOOLEAN DEFAULT 0,
                     FOREIGN KEY (session_id) REFERENCES sessions(id)
@@ -89,6 +90,17 @@ class FeedbackManager:
                 CREATE INDEX IF NOT EXISTS idx_feedback_conversation 
                 ON feedback(conversation_id)
             """)
+            
+            # Add trace_data column if it doesn't exist (for migration)
+            cursor.execute("""
+                PRAGMA table_info(conversations)
+            """)
+            columns = [col[1] for col in cursor.fetchall()]
+            if 'trace_data' not in columns:
+                cursor.execute("""
+                    ALTER TABLE conversations ADD COLUMN trace_data TEXT
+                """)
+                logger.info("Added trace_data column to conversations table")
             
             conn.commit()
     
@@ -128,6 +140,7 @@ class FeedbackManager:
                          model: str,
                          response_time_ms: int,
                          sources: List[Dict[str, str]] = None,
+                         trace_data: Dict[str, Any] = None,
                          error: bool = False,
                          message_number: int = None) -> str:
         """
@@ -140,6 +153,7 @@ class FeedbackManager:
             model: Model used (e.g., "gpt-5")
             response_time_ms: Response time in milliseconds
             sources: List of source documents used
+            trace_data: Agent trace data with spans and tool calls
             error: Whether an error occurred
             message_number: Message number in conversation (auto-increments if None)
             
@@ -160,16 +174,17 @@ class FeedbackManager:
                 """, (session_id,))
                 message_number = cursor.fetchone()[0]
             
-            # Store sources as JSON
+            # Store sources and trace_data as JSON
             sources_json = json.dumps(sources) if sources else None
+            trace_data_json = json.dumps(trace_data) if trace_data else None
             
             cursor.execute("""
                 INSERT INTO conversations 
                 (id, session_id, message_number, query, response, model, 
-                 response_time_ms, sources, error, timestamp)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 response_time_ms, sources, trace_data, error, timestamp)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (conversation_id, session_id, message_number, query, response, 
-                  model, response_time_ms, sources_json, error, datetime.now()))
+                  model, response_time_ms, sources_json, trace_data_json, error, datetime.now()))
             conn.commit()
         
         logger.info(f"Saved conversation {conversation_id} for session {session_id}")

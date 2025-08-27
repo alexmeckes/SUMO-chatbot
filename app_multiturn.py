@@ -101,6 +101,9 @@ def chat():
                 # Extract sources if available (for future use)
                 sources = []
                 
+                # Extract trace data if available
+                trace_data = response.get('trace_data') if not response.get('error', False) else None
+                
                 conversation_id = feedback_manager.save_conversation(
                     session_id=session_id,
                     query=query,
@@ -108,6 +111,7 @@ def chat():
                     model=model_name,
                     response_time_ms=response_time_ms,
                     sources=sources,
+                    trace_data=trace_data,
                     error=response.get('error', False)
                 )
             except Exception as e:
@@ -230,6 +234,36 @@ def get_feedback_stats():
         stats = feedback_manager.get_feedback_stats(days=days)
         
         return jsonify(stats)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/conversation/<conversation_id>/trace', methods=['GET'])
+def get_conversation_trace(conversation_id):
+    """Get trace data for a specific conversation"""
+    try:
+        import sqlite3
+        
+        with sqlite3.connect(feedback_manager.db_path) as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT query, response, model, response_time_ms, trace_data, timestamp
+                FROM conversations
+                WHERE id = ?
+            """, (conversation_id,))
+            
+            row = cursor.fetchone()
+            
+            if row:
+                import json
+                result = dict(row)
+                # Parse trace_data from JSON if it exists
+                if result['trace_data']:
+                    result['trace_data'] = json.loads(result['trace_data'])
+                return jsonify(result)
+            else:
+                return jsonify({'error': 'Conversation not found'}), 404
+                
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 

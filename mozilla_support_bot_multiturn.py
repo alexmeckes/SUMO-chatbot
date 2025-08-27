@@ -292,13 +292,75 @@ Please respond taking into account the conversation history. Always use the sear
                 if len(self.conversation_traces) > 10:
                     self.conversation_traces = self.conversation_traces[-10:]
             
+            # Serialize trace data for storage
+            trace_data = None
+            if agent_trace and hasattr(agent_trace, 'spans'):
+                try:
+                    # Extract key trace information
+                    trace_data = {
+                        'spans': [],
+                        'total_duration_ms': 0,
+                        'tool_calls': [],
+                        'llm_calls': []
+                    }
+                    
+                    for span in agent_trace.spans:
+                        span_info = {
+                            'name': getattr(span, 'name', 'unknown'),
+                            'start_time': str(getattr(span, 'start_time', '')),
+                            'end_time': str(getattr(span, 'end_time', '')),
+                        }
+                        
+                        # Extract attributes if available
+                        if hasattr(span, 'attributes') and span.attributes:
+                            # Look for tool calls
+                            if 'gen_ai.tool_calls' in span.attributes:
+                                trace_data['tool_calls'].append(span.attributes['gen_ai.tool_calls'])
+                            
+                            # Look for LLM info
+                            if 'gen_ai.usage.input_tokens' in span.attributes:
+                                llm_info = {
+                                    'input_tokens': span.attributes.get('gen_ai.usage.input_tokens'),
+                                    'output_tokens': span.attributes.get('gen_ai.usage.output_tokens'),
+                                    'model': span.attributes.get('gen_ai.request.model')
+                                }
+                                trace_data['llm_calls'].append(llm_info)
+                            
+                            # Add select attributes to span info
+                            span_info['attributes'] = {
+                                k: str(v)[:500]  # Truncate long values
+                                for k, v in span.attributes.items()
+                                if k in ['gen_ai.request.model', 'gen_ai.usage.input_tokens', 
+                                        'gen_ai.usage.output_tokens', 'tool.name']
+                            }
+                        
+                        trace_data['spans'].append(span_info)
+                    
+                    # Calculate total duration if possible
+                    if agent_trace.spans:
+                        first_span = agent_trace.spans[0]
+                        last_span = agent_trace.spans[-1]
+                        if hasattr(first_span, 'start_time') and hasattr(last_span, 'end_time'):
+                            try:
+                                from datetime import datetime
+                                start = datetime.fromisoformat(str(first_span.start_time).replace('Z', '+00:00'))
+                                end = datetime.fromisoformat(str(last_span.end_time).replace('Z', '+00:00'))
+                                trace_data['total_duration_ms'] = int((end - start).total_seconds() * 1000)
+                            except:
+                                pass
+                    
+                except Exception as e:
+                    logger.warning(f"Could not serialize trace data: {e}")
+                    trace_data = None
+            
             return {
                 'query': query,
                 'response': response_text,
                 'model': self.current_model,
                 'agent_type': self.agent_type,
                 'conversation_length': len(self.conversation_messages),
-                'error': False
+                'error': False,
+                'trace_data': trace_data  # Include trace data
             }
             
         except asyncio.TimeoutError:
