@@ -121,7 +121,7 @@ class MozillaSupportBotMultiTurn:
         model_args = {}
         # Since we're using GPT-4o for GPT-5 requests, use GPT-4 settings
         model_args['temperature'] = 0.3
-        model_args['max_tokens'] = 2000
+        model_args['max_tokens'] = 15000  # Increased for more comprehensive responses
         
         # Try creating config without tools first, then add them
         try:
