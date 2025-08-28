@@ -4,7 +4,7 @@ Flask web server for Mozilla Support Chatbot with multi-turn conversation suppor
 Using OpenAI agent via any-agent for native multi-turn capabilities
 """
 
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, Response
 from flask_cors import CORS
 from mozilla_support_bot_multiturn import MozillaSupportBotMultiTurn
 from feedback_manager_production import get_feedback_manager
@@ -13,6 +13,8 @@ from datetime import datetime
 from dotenv import load_dotenv
 import json
 import time
+import csv
+import io
 
 load_dotenv()
 
@@ -264,6 +266,250 @@ def get_conversation_trace(conversation_id):
             else:
                 return jsonify({'error': 'Conversation not found'}), 404
                 
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/conversations/recent', methods=['GET'])
+def get_recent_conversations():
+    """Get recent conversations with feedback info"""
+    try:
+        days = request.args.get('days', 1, type=int)
+        limit = request.args.get('limit', 50, type=int)
+        
+        import sqlite3
+        with sqlite3.connect(feedback_manager.db_path) as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT 
+                    c.id,
+                    c.session_id,
+                    c.query,
+                    c.response,
+                    c.model,
+                    c.response_time_ms,
+                    c.timestamp,
+                    c.error,
+                    f.feedback_type,
+                    f.rating,
+                    f.comment,
+                    CASE 
+                        WHEN c.trace_data IS NOT NULL THEN 1 
+                        ELSE 0 
+                    END as has_trace
+                FROM conversations c
+                LEFT JOIN feedback f ON c.id = f.conversation_id
+                WHERE c.timestamp > datetime('now', '-' || ? || ' days')
+                ORDER BY c.timestamp DESC
+                LIMIT ?
+            """, (days, limit))
+            
+            conversations = []
+            for row in cursor.fetchall():
+                conv = dict(row)
+                # Truncate response for list view
+                conv['response'] = conv['response'][:200] + '...' if len(conv['response']) > 200 else conv['response']
+                conversations.append(conv)
+            
+            return jsonify({
+                'conversations': conversations,
+                'count': len(conversations)
+            })
+            
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/export/csv', methods=['GET'])
+def export_to_csv():
+    """Export conversations and feedback to CSV"""
+    try:
+        days = request.args.get('days', 7, type=int)
+        include_traces = request.args.get('include_traces', 'false').lower() == 'true'
+        
+        import sqlite3
+        with sqlite3.connect(feedback_manager.db_path) as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.cursor()
+            
+            query = """
+                SELECT 
+                    c.id as conversation_id,
+                    c.session_id,
+                    c.timestamp,
+                    c.query,
+                    c.response,
+                    c.model,
+                    c.response_time_ms,
+                    c.error,
+                    f.feedback_type,
+                    f.rating,
+                    f.comment as feedback_comment,
+                    f.timestamp as feedback_timestamp
+            """
+            
+            if include_traces:
+                query += ", c.trace_data"
+            
+            query += """
+                FROM conversations c
+                LEFT JOIN feedback f ON c.id = f.conversation_id
+                WHERE c.timestamp > datetime('now', '-' || ? || ' days')
+                ORDER BY c.timestamp DESC
+            """
+            
+            cursor.execute(query, (days,))
+            rows = cursor.fetchall()
+            
+            # Create CSV in memory
+            output = io.StringIO()
+            writer = csv.writer(output)
+            
+            # Write headers
+            headers = ['conversation_id', 'session_id', 'timestamp', 'query', 'response', 
+                      'model', 'response_time_ms', 'error', 'feedback_type', 'rating', 
+                      'feedback_comment', 'feedback_timestamp']
+            
+            if include_traces:
+                headers.extend(['tool_calls_count', 'total_input_tokens', 'total_output_tokens'])
+            
+            writer.writerow(headers)
+            
+            # Write data
+            for row in rows:
+                row_data = [
+                    row['conversation_id'],
+                    row['session_id'],
+                    row['timestamp'],
+                    row['query'],
+                    row['response'][:500],  # Truncate long responses
+                    row['model'],
+                    row['response_time_ms'],
+                    row['error'],
+                    row['feedback_type'],
+                    row['rating'],
+                    row['feedback_comment'],
+                    row['feedback_timestamp']
+                ]
+                
+                if include_traces and row.get('trace_data'):
+                    try:
+                        trace = json.loads(row['trace_data'])
+                        tool_calls_count = len(trace.get('tool_calls', []))
+                        
+                        # Calculate total tokens
+                        total_input = 0
+                        total_output = 0
+                        for llm_call in trace.get('llm_calls', []):
+                            total_input += llm_call.get('input_tokens', 0) or 0
+                            total_output += llm_call.get('output_tokens', 0) or 0
+                        
+                        row_data.extend([tool_calls_count, total_input, total_output])
+                    except:
+                        row_data.extend([0, 0, 0])
+                elif include_traces:
+                    row_data.extend([0, 0, 0])
+                
+                writer.writerow(row_data)
+            
+            # Create response
+            output.seek(0)
+            return Response(
+                output.getvalue(),
+                mimetype='text/csv',
+                headers={
+                    'Content-Disposition': f'attachment; filename=feedback_export_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+                }
+            )
+            
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/costs', methods=['GET'])
+def calculate_costs():
+    """Calculate API costs based on token usage"""
+    try:
+        days = request.args.get('days', 7, type=int)
+        
+        # OpenAI pricing (as of 2024)
+        pricing = {
+            'gpt-3.5-turbo': {'input': 0.0005, 'output': 0.0015},  # per 1K tokens
+            'gpt-4o': {'input': 0.005, 'output': 0.015},  # per 1K tokens
+            'gpt-5': {'input': 0.03, 'output': 0.06},  # estimated pricing
+        }
+        
+        import sqlite3
+        with sqlite3.connect(feedback_manager.db_path) as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT model, trace_data
+                FROM conversations
+                WHERE timestamp > datetime('now', '-' || ? || ' days')
+                AND trace_data IS NOT NULL
+            """, (days,))
+            
+            costs_by_model = {}
+            total_cost = 0
+            total_conversations = 0
+            total_tokens = {'input': 0, 'output': 0}
+            
+            for row in cursor.fetchall():
+                model = row[0]
+                trace_data = row[1]
+                
+                if trace_data:
+                    try:
+                        trace = json.loads(trace_data)
+                        
+                        # Sum tokens from all LLM calls
+                        input_tokens = 0
+                        output_tokens = 0
+                        
+                        for llm_call in trace.get('llm_calls', []):
+                            input_tokens += llm_call.get('input_tokens', 0) or 0
+                            output_tokens += llm_call.get('output_tokens', 0) or 0
+                        
+                        # Calculate cost
+                        model_key = model.lower() if model else 'gpt-3.5-turbo'
+                        if model_key not in pricing:
+                            model_key = 'gpt-3.5-turbo'  # Default pricing
+                        
+                        input_cost = (input_tokens / 1000) * pricing[model_key]['input']
+                        output_cost = (output_tokens / 1000) * pricing[model_key]['output']
+                        conversation_cost = input_cost + output_cost
+                        
+                        # Update totals
+                        if model not in costs_by_model:
+                            costs_by_model[model] = {
+                                'conversations': 0,
+                                'total_cost': 0,
+                                'input_tokens': 0,
+                                'output_tokens': 0
+                            }
+                        
+                        costs_by_model[model]['conversations'] += 1
+                        costs_by_model[model]['total_cost'] += conversation_cost
+                        costs_by_model[model]['input_tokens'] += input_tokens
+                        costs_by_model[model]['output_tokens'] += output_tokens
+                        
+                        total_cost += conversation_cost
+                        total_conversations += 1
+                        total_tokens['input'] += input_tokens
+                        total_tokens['output'] += output_tokens
+                        
+                    except Exception as e:
+                        print(f"Error parsing trace data: {e}")
+            
+            return jsonify({
+                'period_days': days,
+                'total_cost': round(total_cost, 4),
+                'total_conversations': total_conversations,
+                'total_tokens': total_tokens,
+                'average_cost_per_conversation': round(total_cost / total_conversations, 4) if total_conversations > 0 else 0,
+                'costs_by_model': costs_by_model,
+                'pricing_used': pricing,
+                'note': 'Costs are estimated based on standard OpenAI pricing'
+            })
+            
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
