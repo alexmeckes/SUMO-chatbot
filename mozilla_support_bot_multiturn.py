@@ -104,7 +104,7 @@ class MozillaSupportBotMultiTurn:
         """
         # Map common model names to proper identifiers
         model_mapping = {
-            "gpt-5": "openai/gpt-4o",  # GPT-5 has issues with agent frameworks, use GPT-4o
+            "gpt-5": "openai/gpt-5",  # Try using actual GPT-5
             "gpt-4o": "openai/gpt-4o",
             "gpt-3.5-turbo": "openai/gpt-3.5-turbo",
         }
@@ -119,6 +119,8 @@ class MozillaSupportBotMultiTurn:
             # GPT-5 specific settings
             model_args['temperature'] = 1  # GPT-5 only supports temperature=1
             model_args['max_completion_tokens'] = 15000  # GPT-5 uses this instead of max_tokens
+            # Note: GPT-5 is in preview and may have specific requirements
+            logger.info(f"Configuring GPT-5 with max_completion_tokens: {model_args['max_completion_tokens']}")
         else:
             model_args['temperature'] = 0.3
             model_args['max_tokens'] = 15000
