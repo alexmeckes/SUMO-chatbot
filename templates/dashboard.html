@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozilla Support Bot - Analytics Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header .refresh-btn {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .header .refresh-btn:hover {
+            background: #764ba2;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .metric-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .metric-card h3 {
+            color: #6b7280;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .metric-card .value {
+            color: #1f2937;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .metric-card .subtitle {
+            color: #9ca3af;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        .metric-card.positive .value {
+            color: #10b981;
+        }
+
+        .metric-card.negative .value {
+            color: #ef4444;
+        }
+
+        .metric-card.warning .value {
+            color: #f59e0b;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 1024px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #1f2937;
+            font-size: 18px;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .conversation-item {
+            padding: 12px;
+            border-bottom: 1px solid #f3f4f6;
+            transition: background 0.2s;
+        }
+
+        .conversation-item:hover {
+            background: #f9fafb;
+        }
+
+        .conversation-item:last-child {
+            border-bottom: none;
+        }
+
+        .conversation-query {
+            color: #1f2937;
+            font-weight: 500;
+            margin-bottom: 4px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .conversation-meta {
+            display: flex;
+            gap: 12px;
+            font-size: 12px;
+            color: #6b7280;
+            margin-top: 8px;
+        }
+
+        .feedback-badge {
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .feedback-badge.positive {
+            background: #dcfce7;
+            color: #15803d;
+        }
+
+        .feedback-badge.negative {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .feedback-badge.none {
+            background: #f3f4f6;
+            color: #6b7280;
+        }
+
+        .cost-breakdown {
+            margin-top: 12px;
+        }
+
+        .cost-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .cost-item:last-child {
+            border-bottom: none;
+            padding-top: 12px;
+            font-weight: 600;
+        }
+
+        .export-section {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .export-btn {
+            flex: 1;
+            padding: 10px;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .export-btn:hover {
+            background: #f9fafb;
+            border-color: #667eea;
+        }
+
+        .loading {
+            text-align: center;
+            color: #6b7280;
+            padding: 40px;
+        }
+
+        .error {
+            background: #fee2e2;
+            color: #b91c1c;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 12px 0;
+        }
+
+        .chart-container {
+            height: 200px;
+            margin-top: 16px;
+        }
+
+        .bar {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        .bar-label {
+            width: 100px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        .bar-track {
+            flex: 1;
+            height: 24px;
+            background: #f3f4f6;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+        }
+
+        .bar-value {
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .time-filter {
+            display: flex;
+            gap: 8px;
+        }
+
+        .time-btn {
+            padding: 6px 12px;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .time-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                🦊 Mozilla Support Bot Analytics
+            </h1>
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <div class="time-filter">
+                    <button class="time-btn active" onclick="changeTimeRange(1)">24h</button>
+                    <button class="time-btn" onclick="changeTimeRange(7)">7d</button>
+                    <button class="time-btn" onclick="changeTimeRange(30)">30d</button>
+                </div>
+                <button class="refresh-btn" onclick="loadDashboard()">🔄 Refresh</button>
+            </div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3>Total Conversations</h3>
+                <div class="value" id="totalConversations">-</div>
+                <div class="subtitle" id="conversationsTrend"></div>
+            </div>
+
+            <div class="metric-card positive">
+                <h3>Satisfaction Rate</h3>
+                <div class="value" id="satisfactionRate">-</div>
+                <div class="subtitle" id="feedbackCount"></div>
+            </div>
+
+            <div class="metric-card">
+                <h3>Avg Response Time</h3>
+                <div class="value" id="avgResponseTime">-</div>
+                <div class="subtitle">milliseconds</div>
+            </div>
+
+            <div class="metric-card warning">
+                <h3>Total Cost</h3>
+                <div class="value" id="totalCost">-</div>
+                <div class="subtitle" id="avgCostPerConv"></div>
+            </div>
+
+            <div class="metric-card">
+                <h3>Total Tokens</h3>
+                <div class="value" id="totalTokens">-</div>
+                <div class="subtitle" id="tokenBreakdown"></div>
+            </div>
+
+            <div class="metric-card negative">
+                <h3>Error Rate</h3>
+                <div class="value" id="errorRate">-</div>
+                <div class="subtitle">of all conversations</div>
+            </div>
+        </div>
+
+        <div class="main-grid">
+            <div class="section">
+                <h2>Recent Conversations</h2>
+                <div id="conversationsList" class="loading">Loading...</div>
+            </div>
+
+            <div>
+                <div class="section" style="margin-bottom: 20px;">
+                    <h2>Feedback Distribution</h2>
+                    <div id="feedbackChart"></div>
+                </div>
+
+                <div class="section" style="margin-bottom: 20px;">
+                    <h2>Cost Breakdown</h2>
+                    <div id="costBreakdown" class="loading">Loading...</div>
+                </div>
+
+                <div class="section">
+                    <h2>Export Data</h2>
+                    <div class="export-section">
+                        <button class="export-btn" onclick="exportCSV(false)">
+                            📊 Export CSV
+                        </button>
+                        <button class="export-btn" onclick="exportCSV(true)">
+                            🔍 CSV + Traces
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = window.location.origin;
+        let currentDays = 1;
+
+        function changeTimeRange(days) {
+            currentDays = days;
+            document.querySelectorAll('.time-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            loadDashboard();
+        }
+
+        async function loadDashboard() {
+            try {
+                // Load all data in parallel
+                const [statsResponse, costsResponse, conversationsResponse] = await Promise.all([
+                    fetch(`${API_BASE}/api/feedback/stats?days=${currentDays}`),
+                    fetch(`${API_BASE}/api/costs?days=${currentDays}`),
+                    fetch(`${API_BASE}/api/conversations/recent?days=${currentDays}&limit=20`)
+                ]);
+
+                const stats = await statsResponse.json();
+                const costs = await costsResponse.json();
+                const conversations = await conversationsResponse.json();
+
+                // Update metrics
+                updateMetrics(stats, costs);
+                
+                // Update conversations list
+                updateConversationsList(conversations);
+                
+                // Update charts
+                updateFeedbackChart(stats);
+                updateCostBreakdown(costs);
+                
+            } catch (error) {
+                console.error('Error loading dashboard:', error);
+                showError('Failed to load dashboard data');
+            }
+        }
+
+        function updateMetrics(stats, costs) {
+            // Total conversations
+            document.getElementById('totalConversations').textContent = stats.total_conversations || 0;
+            
+            // Satisfaction rate
+            const satisfaction = stats.satisfaction_rate || 0;
+            document.getElementById('satisfactionRate').textContent = `${satisfaction.toFixed(1)}%`;
+            
+            const totalFeedback = Object.values(stats.feedback_breakdown || {}).reduce((a, b) => a + b, 0);
+            document.getElementById('feedbackCount').textContent = `${totalFeedback} ratings`;
+            
+            // Response time
+            const avgTime = stats.avg_response_time_ms || 0;
+            document.getElementById('avgResponseTime').textContent = avgTime > 1000 
+                ? `${(avgTime / 1000).toFixed(1)}s` 
+                : `${Math.round(avgTime)}ms`;
+            
+            // Cost
+            const totalCost = costs.total_cost || 0;
+            document.getElementById('totalCost').textContent = `$${totalCost.toFixed(2)}`;
+            
+            const avgCost = costs.average_cost_per_conversation || 0;
+            document.getElementById('avgCostPerConv').textContent = `$${avgCost.toFixed(4)}/conv`;
+            
+            // Tokens
+            const totalTokens = (costs.total_tokens?.input || 0) + (costs.total_tokens?.output || 0);
+            document.getElementById('totalTokens').textContent = totalTokens.toLocaleString();
+            document.getElementById('tokenBreakdown').textContent = 
+                `${(costs.total_tokens?.input || 0).toLocaleString()} in, ${(costs.total_tokens?.output || 0).toLocaleString()} out`;
+            
+            // Error rate
+            const errorRate = stats.error_rate || 0;
+            document.getElementById('errorRate').textContent = `${errorRate.toFixed(1)}%`;
+        }
+
+        function updateConversationsList(data) {
+            const container = document.getElementById('conversationsList');
+            
+            if (!data.conversations || data.conversations.length === 0) {
+                container.innerHTML = '<div class="loading">No conversations found</div>';
+                return;
+            }
+            
+            container.innerHTML = data.conversations.map(conv => {
+                const feedbackClass = conv.feedback_type || 'none';
+                const feedbackText = conv.feedback_type || 'No feedback';
+                
+                return `
+                    <div class="conversation-item">
+                        <div class="conversation-query">${escapeHtml(conv.query)}</div>
+                        <div class="conversation-meta">
+                            <span class="feedback-badge ${feedbackClass}">${feedbackText}</span>
+                            <span>${conv.response_time_ms}ms</span>
+                            <span>${conv.model}</span>
+                            ${conv.has_trace ? '<span>📊</span>' : ''}
+                            <span>${new Date(conv.timestamp).toLocaleTimeString()}</span>
+                        </div>
+                        ${conv.comment ? `<div style="margin-top: 8px; font-size: 12px; color: #6b7280; font-style: italic;">"${escapeHtml(conv.comment)}"</div>` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function updateFeedbackChart(stats) {
+            const container = document.getElementById('feedbackChart');
+            const breakdown = stats.feedback_breakdown || {};
+            const total = Object.values(breakdown).reduce((a, b) => a + b, 0);
+            
+            if (total === 0) {
+                container.innerHTML = '<div class="loading">No feedback data</div>';
+                return;
+            }
+            
+            const positive = breakdown.positive || 0;
+            const negative = breakdown.negative || 0;
+            
+            container.innerHTML = `
+                <div class="bar">
+                    <div class="bar-label">Positive</div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: ${(positive / total * 100).toFixed(1)}%; background: #10b981;">
+                            <span class="bar-value">${positive}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="bar-label">Negative</div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: ${(negative / total * 100).toFixed(1)}%; background: #ef4444;">
+                            <span class="bar-value">${negative}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function updateCostBreakdown(costs) {
+            const container = document.getElementById('costBreakdown');
+            const breakdown = costs.costs_by_model || {};
+            
+            if (Object.keys(breakdown).length === 0) {
+                container.innerHTML = '<div class="loading">No cost data available</div>';
+                return;
+            }
+            
+            let html = '<div class="cost-breakdown">';
+            
+            for (const [model, data] of Object.entries(breakdown)) {
+                html += `
+                    <div class="cost-item">
+                        <span>${model}</span>
+                        <span>$${data.total_cost.toFixed(4)}</span>
+                    </div>
+                `;
+            }
+            
+            html += `
+                <div class="cost-item">
+                    <span>Total</span>
+                    <span>$${costs.total_cost.toFixed(4)}</span>
+                </div>
+            `;
+            
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        function exportCSV(includeTraces) {
+            const params = `days=${currentDays}&include_traces=${includeTraces}`;
+            window.location.href = `${API_BASE}/api/export/csv?${params}`;
+        }
+
+        function showError(message) {
+            // You can improve this to show errors in a better way
+            alert(message);
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Load dashboard on page load
+        loadDashboard();
+        
+        // Auto-refresh every 30 seconds
+        setInterval(loadDashboard, 30000);
+    </script>
+</body>
+</html>

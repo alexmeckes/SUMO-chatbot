@@ -59,6 +59,11 @@ def index():
     """Serve the main chat interface"""
     return render_template('index.html')
 
+@app.route('/dashboard')
+def dashboard():
+    """Serve the analytics dashboard"""
+    return render_template('dashboard.html')
+
 @app.route('/api/chat', methods=['POST'])
 def chat():
     """Handle chat requests with multi-turn support"""
