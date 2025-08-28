@@ -133,10 +133,25 @@
             padding: 12px;
             border-bottom: 1px solid #f3f4f6;
             transition: background 0.2s;
+            cursor: pointer;
         }
 
         .conversation-item:hover {
             background: #f9fafb;
+        }
+        
+        .conversation-item.clickable {
+            position: relative;
+        }
+        
+        .conversation-item.clickable::after {
+            content: '→';
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+            font-size: 18px;
         }
 
         .conversation-item:last-child {
@@ -297,6 +312,176 @@
             color: white;
             border-color: #667eea;
         }
+        
+        .token-badge {
+            background: #f3f4f6;
+            color: #4b5563;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.2s;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            animation: slideUp 0.3s;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-header h2 {
+            color: #1f2937;
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #6b7280;
+            cursor: pointer;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+        }
+        
+        .modal-close:hover {
+            background: #f3f4f6;
+        }
+        
+        .modal-body {
+            padding: 20px;
+            overflow-y: auto;
+            flex: 1;
+        }
+        
+        .trace-section {
+            margin-bottom: 24px;
+        }
+        
+        .trace-section h3 {
+            color: #4b5563;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+        
+        .trace-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .trace-stat {
+            background: #f9fafb;
+            padding: 12px;
+            border-radius: 8px;
+        }
+        
+        .trace-stat-label {
+            color: #6b7280;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        
+        .trace-stat-value {
+            color: #1f2937;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .span-list {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 12px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .span-item {
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .span-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .span-name {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .span-attr {
+            color: #6b7280;
+            margin-left: 12px;
+            margin-top: 4px;
+        }
+        
+        .tool-call {
+            background: #dcfce7;
+            color: #15803d;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            display: inline-block;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
@@ -381,6 +566,19 @@
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trace Viewer Modal -->
+    <div id="traceModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Conversation Trace</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be inserted here -->
             </div>
         </div>
     </div>
@@ -471,15 +669,25 @@
             container.innerHTML = data.conversations.map(conv => {
                 const feedbackClass = conv.feedback_type || 'none';
                 const feedbackText = conv.feedback_type || 'No feedback';
+                const hasTrace = conv.has_trace;
+                const clickableClass = hasTrace ? 'clickable' : '';
+                const onClickAttr = hasTrace ? `onclick="viewTrace('${conv.id}')"` : '';
+                
+                // Build token display
+                let tokenDisplay = '';
+                if (conv.total_tokens > 0) {
+                    tokenDisplay = `<span class="token-badge">🪙 ${conv.total_tokens.toLocaleString()} tokens</span>`;
+                }
                 
                 return `
-                    <div class="conversation-item">
+                    <div class="conversation-item ${clickableClass}" ${onClickAttr}>
                         <div class="conversation-query">${escapeHtml(conv.query)}</div>
                         <div class="conversation-meta">
                             <span class="feedback-badge ${feedbackClass}">${feedbackText}</span>
                             <span>${conv.response_time_ms}ms</span>
                             <span>${conv.model}</span>
-                            ${conv.has_trace ? '<span>📊</span>' : ''}
+                            ${tokenDisplay}
+                            ${hasTrace ? '<span title="Has trace data">📊</span>' : ''}
                             <span>${new Date(conv.timestamp).toLocaleTimeString()}</span>
                         </div>
                         ${conv.comment ? `<div style="margin-top: 8px; font-size: 12px; color: #6b7280; font-style: italic;">"${escapeHtml(conv.comment)}"</div>` : ''}
@@ -567,6 +775,181 @@
             div.textContent = text;
             return div.innerHTML;
         }
+
+        async function viewTrace(conversationId) {
+            try {
+                const response = await fetch(`${API_BASE}/api/conversation/${conversationId}/trace`);
+                if (!response.ok) {
+                    showError('Failed to load trace data');
+                    return;
+                }
+                
+                const data = await response.json();
+                showTraceModal(conversationId, data);
+            } catch (error) {
+                console.error('Error loading trace:', error);
+                showError('Failed to load trace data');
+            }
+        }
+
+        function showTraceModal(conversationId, data) {
+            const modal = document.getElementById('traceModal');
+            const modalBody = document.getElementById('modalBody');
+            const modalTitle = document.getElementById('modalTitle');
+            
+            modalTitle.textContent = `Trace: ${data.query.substring(0, 50)}...`;
+            
+            if (!data.trace_data) {
+                modalBody.innerHTML = '<div class="loading">No trace data available</div>';
+            } else {
+                const trace = data.trace_data;
+                
+                let html = '';
+                
+                // Summary section
+                html += '<div class="trace-section">';
+                html += '<h3>Summary</h3>';
+                html += '<div class="trace-grid">';
+                html += `
+                    <div class="trace-stat">
+                        <div class="trace-stat-label">Total Duration</div>
+                        <div class="trace-stat-value">${trace.total_duration_ms || 0}ms</div>
+                    </div>
+                    <div class="trace-stat">
+                        <div class="trace-stat-label">Spans</div>
+                        <div class="trace-stat-value">${(trace.spans || []).length}</div>
+                    </div>
+                    <div class="trace-stat">
+                        <div class="trace-stat-label">Tool Calls</div>
+                        <div class="trace-stat-value">${(trace.tool_calls || []).length}</div>
+                    </div>
+                `;
+                
+                // Calculate total tokens
+                let totalInputTokens = 0;
+                let totalOutputTokens = 0;
+                if (trace.llm_calls) {
+                    trace.llm_calls.forEach(call => {
+                        totalInputTokens += call.input_tokens || 0;
+                        totalOutputTokens += call.output_tokens || 0;
+                    });
+                }
+                
+                html += `
+                    <div class="trace-stat">
+                        <div class="trace-stat-label">Input Tokens</div>
+                        <div class="trace-stat-value">${totalInputTokens.toLocaleString()}</div>
+                    </div>
+                    <div class="trace-stat">
+                        <div class="trace-stat-label">Output Tokens</div>
+                        <div class="trace-stat-value">${totalOutputTokens.toLocaleString()}</div>
+                    </div>
+                    <div class="trace-stat">
+                        <div class="trace-stat-label">Total Tokens</div>
+                        <div class="trace-stat-value">${(totalInputTokens + totalOutputTokens).toLocaleString()}</div>
+                    </div>
+                `;
+                html += '</div>';
+                html += '</div>';
+                
+                // Tool calls section
+                if (trace.tool_calls && trace.tool_calls.length > 0) {
+                    html += '<div class="trace-section">';
+                    html += '<h3>Tool Calls</h3>';
+                    html += '<div>';
+                    
+                    trace.tool_calls.forEach(toolCallGroup => {
+                        // Handle different formats of tool_calls
+                        if (typeof toolCallGroup === 'string') {
+                            try {
+                                toolCallGroup = JSON.parse(toolCallGroup);
+                            } catch (e) {
+                                return;
+                            }
+                        }
+                        
+                        if (Array.isArray(toolCallGroup)) {
+                            toolCallGroup.forEach(tc => {
+                                if (tc && tc.function) {
+                                    html += `<span class="tool-call">${tc.function.name}</span>`;
+                                }
+                            });
+                        }
+                    });
+                    
+                    html += '</div>';
+                    html += '</div>';
+                }
+                
+                // LLM calls section
+                if (trace.llm_calls && trace.llm_calls.length > 0) {
+                    html += '<div class="trace-section">';
+                    html += '<h3>LLM Calls</h3>';
+                    html += '<div class="span-list">';
+                    
+                    trace.llm_calls.forEach((call, i) => {
+                        html += `
+                            <div class="span-item">
+                                <div class="span-name">Call ${i + 1}: ${call.model || 'unknown'}</div>
+                                <div class="span-attr">Input: ${(call.input_tokens || 0).toLocaleString()} tokens</div>
+                                <div class="span-attr">Output: ${(call.output_tokens || 0).toLocaleString()} tokens</div>
+                                ${call.duration_ms ? `<div class="span-attr">Duration: ${call.duration_ms}ms</div>` : ''}
+                            </div>
+                        `;
+                    });
+                    
+                    html += '</div>';
+                    html += '</div>';
+                }
+                
+                // Spans section (first 10)
+                if (trace.spans && trace.spans.length > 0) {
+                    html += '<div class="trace-section">';
+                    html += '<h3>Execution Timeline (First 10 Spans)</h3>';
+                    html += '<div class="span-list">';
+                    
+                    trace.spans.slice(0, 10).forEach(span => {
+                        html += `<div class="span-item">`;
+                        html += `<div class="span-name">${span.name}</div>`;
+                        
+                        if (span.attributes) {
+                            Object.entries(span.attributes).forEach(([key, value]) => {
+                                // Truncate long values
+                                let displayValue = String(value);
+                                if (displayValue.length > 100) {
+                                    displayValue = displayValue.substring(0, 100) + '...';
+                                }
+                                html += `<div class="span-attr">${key}: ${escapeHtml(displayValue)}</div>`;
+                            });
+                        }
+                        
+                        html += `</div>`;
+                    });
+                    
+                    if (trace.spans.length > 10) {
+                        html += `<div style="color: #6b7280; font-style: italic; margin-top: 8px;">... and ${trace.spans.length - 10} more spans</div>`;
+                    }
+                    
+                    html += '</div>';
+                    html += '</div>';
+                }
+                
+                modalBody.innerHTML = html;
+            }
+            
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('traceModal').classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('traceModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
 
         // Load dashboard on page load
         loadDashboard();

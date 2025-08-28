@@ -295,6 +295,7 @@ def get_recent_conversations():
                     c.response_time_ms,
                     c.timestamp,
                     c.error,
+                    c.trace_data,
                     f.feedback_type,
                     f.rating,
                     f.comment,
@@ -314,6 +315,26 @@ def get_recent_conversations():
                 conv = dict(row)
                 # Truncate response for list view
                 conv['response'] = conv['response'][:200] + '...' if len(conv['response']) > 200 else conv['response']
+                
+                # Extract token counts from trace data
+                if conv.get('trace_data'):
+                    try:
+                        import json
+                        trace = json.loads(conv['trace_data'])
+                        total_input = 0
+                        total_output = 0
+                        for llm_call in trace.get('llm_calls', []):
+                            total_input += llm_call.get('input_tokens', 0) or 0
+                            total_output += llm_call.get('output_tokens', 0) or 0
+                        conv['input_tokens'] = total_input
+                        conv['output_tokens'] = total_output
+                        conv['total_tokens'] = total_input + total_output
+                        conv['tool_calls_count'] = len(trace.get('tool_calls', []))
+                    except:
+                        pass
+                
+                # Remove trace_data from response to reduce payload
+                conv.pop('trace_data', None)
                 conversations.append(conv)
             
             return jsonify({
