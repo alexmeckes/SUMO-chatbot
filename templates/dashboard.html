@@ -799,16 +799,33 @@
             
             modalTitle.textContent = `Trace: ${data.query.substring(0, 50)}...`;
             
+            let html = '';
+            
+            // Query and Response section
+            html += '<div class="trace-section">';
+            html += '<h3>Query</h3>';
+            html += '<div style="background: #f9fafb; padding: 12px; border-radius: 8px; margin-bottom: 8px;">';
+            html += `<div style="color: #1f2937; white-space: pre-wrap; word-wrap: break-word;">${escapeHtml(data.query)}</div>`;
+            html += '</div>';
+            html += '</div>';
+            
+            html += '<div class="trace-section">';
+            html += '<h3>Response</h3>';
+            html += '<div style="background: #f9fafb; padding: 12px; border-radius: 8px; margin-bottom: 8px; max-height: 300px; overflow-y: auto;">';
+            html += `<div style="color: #1f2937; white-space: pre-wrap; word-wrap: break-word;">${escapeHtml(data.response)}</div>`;
+            html += '</div>';
+            html += '</div>';
+            
             if (!data.trace_data) {
-                modalBody.innerHTML = '<div class="loading">No trace data available</div>';
+                html += '<div class="trace-section">';
+                html += '<div class="loading">No detailed trace data available for this conversation</div>';
+                html += '</div>';
             } else {
                 const trace = data.trace_data;
                 
-                let html = '';
-                
                 // Summary section
                 html += '<div class="trace-section">';
-                html += '<h3>Summary</h3>';
+                html += '<h3>Execution Summary</h3>';
                 html += '<div class="trace-grid">';
                 html += `
                     <div class="trace-stat">
@@ -888,14 +905,36 @@
                     html += '<div class="span-list">';
                     
                     trace.llm_calls.forEach((call, i) => {
-                        html += `
-                            <div class="span-item">
-                                <div class="span-name">Call ${i + 1}: ${call.model || 'unknown'}</div>
-                                <div class="span-attr">Input: ${(call.input_tokens || 0).toLocaleString()} tokens</div>
-                                <div class="span-attr">Output: ${(call.output_tokens || 0).toLocaleString()} tokens</div>
-                                ${call.duration_ms ? `<div class="span-attr">Duration: ${call.duration_ms}ms</div>` : ''}
-                            </div>
-                        `;
+                        html += `<div class="span-item">`;
+                        html += `<div class="span-name">Call ${i + 1}: ${call.model || 'unknown'}</div>`;
+                        html += `<div class="span-attr">Input: ${(call.input_tokens || 0).toLocaleString()} tokens</div>`;
+                        html += `<div class="span-attr">Output: ${(call.output_tokens || 0).toLocaleString()} tokens</div>`;
+                        
+                        // Show input text if available
+                        if (call.input) {
+                            html += `<details style="margin-top: 8px;">`;
+                            html += `<summary style="cursor: pointer; color: #667eea; font-size: 12px;">Show Input</summary>`;
+                            html += `<div style="margin-top: 4px; padding: 8px; background: #f3f4f6; border-radius: 4px; font-size: 11px; white-space: pre-wrap; word-wrap: break-word; color: #4b5563;">`;
+                            html += escapeHtml(call.input);
+                            html += `</div>`;
+                            html += `</details>`;
+                        }
+                        
+                        // Show output text if available
+                        if (call.output) {
+                            html += `<details style="margin-top: 8px;">`;
+                            html += `<summary style="cursor: pointer; color: #667eea; font-size: 12px;">Show Output</summary>`;
+                            html += `<div style="margin-top: 4px; padding: 8px; background: #f3f4f6; border-radius: 4px; font-size: 11px; white-space: pre-wrap; word-wrap: break-word; color: #4b5563;">`;
+                            html += escapeHtml(call.output);
+                            html += `</div>`;
+                            html += `</details>`;
+                        }
+                        
+                        if (call.duration_ms) {
+                            html += `<div class="span-attr">Duration: ${call.duration_ms}ms</div>`;
+                        }
+                        
+                        html += `</div>`;
                     });
                     
                     html += '</div>';

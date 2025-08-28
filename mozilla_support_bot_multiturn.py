@@ -322,7 +322,9 @@ Please respond taking into account the conversation history. Always use the sear
                                 llm_info = {
                                     'input_tokens': span.attributes.get('gen_ai.usage.input_tokens'),
                                     'output_tokens': span.attributes.get('gen_ai.usage.output_tokens'),
-                                    'model': span.attributes.get('gen_ai.request.model')
+                                    'model': span.attributes.get('gen_ai.request.model'),
+                                    'input': span.attributes.get('gen_ai.input', '')[:500],  # First 500 chars of input
+                                    'output': span.attributes.get('gen_ai.output', '')[:500]  # First 500 chars of output
                                 }
                                 trace_data['llm_calls'].append(llm_info)
                             
